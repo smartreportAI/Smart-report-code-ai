@@ -1,0 +1,17 @@
+<div class="patient-header">
+  <p class="patient-header-title">Patient Details</p>
+  <table class="patient-table">
+    <tr>
+      <td class="label">Name</td>
+      <td class="value">{{patientName}}</td>
+      <td class="label">Age</td>
+      <td class="value">{{age}}</td>
+      <td class="label">Gender</td>
+      <td class="value">{{capitalize gender}}</td>
+      {{#if labNo}}
+      <td class="label">Lab No</td>
+      <td class="value">{{labNo}}</td>
+      {{/if}}
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,21 @@
+<div class="recommendations-section">
+  <h2 class="section-title">Insights &amp; Recommendations</h2>
+  {{#if insights.length}}
+  <div class="recommendation-cards">
+    {{#each insights}}
+    <div class="recommendation-card recommendation-card-{{this.severity}}">
+      <div class="recommendation-severity">
+        <span class="status-badge status-{{this.severity}}">{{this.severity}}</span>
+      </div>
+      <div class="recommendation-text">
+        <span class="recommendation-test">{{this.testName}}</span>: {{this.value}} {{this.unit}} &mdash; {{this.tip}}
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{else}}
+  <div class="all-normal-message">
+    &#10003; All results are within normal range. No specific recommendations at this time.
+  </div>
+  {{/if}}
+</div>

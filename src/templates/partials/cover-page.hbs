@@ -1,0 +1,11 @@
+<div class="cover-page">
+  <div class="cover-logo">&#9764;</div>
+  <h1 class="cover-title">Smart Health Report</h1>
+  <p class="cover-subtitle">Comprehensive Lab Analysis &amp; Health Insights</p>
+  <div class="cover-patient-card">
+    <p class="cover-patient-name">{{patientName}}</p>
+    <p class="cover-patient-info">Age: {{age}} &nbsp;|&nbsp; Gender: {{capitalize gender}}</p>
+    {{#if labNo}}<p class="cover-patient-info">Lab No: {{labNo}}</p>{{/if}}
+  </div>
+  <p class="cover-date">Generated on {{reportDate}}</p>
+</div>

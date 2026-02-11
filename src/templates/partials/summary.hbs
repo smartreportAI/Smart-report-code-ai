@@ -1,0 +1,14 @@
+<div class="summary-section">
+  <h2 class="section-title">Health Summary</h2>
+  <div class="summary-grid">
+    {{#each profiles}}
+    <div class="summary-card summary-card-{{overallStatus}}">
+      <p class="summary-card-title">{{displayName}}</p>
+      <div class="summary-card-stats">
+        <span class="status-badge status-{{overallStatus}}">{{overallStatus}}</span>
+        <span class="summary-card-count">{{testResults.length}} tests{{#if (countAbnormal testResults)}} &middot; {{countAbnormal testResults}} abnormal{{/if}}</span>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>

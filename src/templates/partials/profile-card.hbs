@@ -1,0 +1,33 @@
+<div class="profile-section">
+  <div class="profile-header">
+    <div>
+      <h3 class="profile-name">{{displayName}}</h3>
+      {{#if content.about}}<p class="profile-about">{{content.about}}</p>{{/if}}
+    </div>
+    <span class="status-badge status-{{overallStatus}}">{{overallStatus}}</span>
+  </div>
+  <div class="test-cards">
+    {{#each testResults}}
+    <div class="test-card test-card-{{colorIndicator}}">
+      <div class="test-info">
+        <p class="test-name">{{standardName}}</p>
+        <p class="test-unit">{{unit}}</p>
+      </div>
+      <div class="test-value-col">
+        <p class="test-value test-value-{{colorIndicator}}">{{value}}</p>
+      </div>
+      <div class="test-slider-col">
+        {{{slider sliderPosition colorIndicator referenceRange}}}
+      </div>
+      <div class="test-status-col">
+        <span class="status-badge status-{{colorIndicator}}">{{colorIndicator}}</span>
+      </div>
+    </div>
+    {{#if content.tip}}
+    {{#unless (eq colorIndicator "normal")}}
+    <div class="test-tip">&#9432; {{content.tip}}</div>
+    {{/unless}}
+    {{/if}}
+    {{/each}}
+  </div>
+</div>
