@@ -26,7 +26,10 @@ export class ReportPipeline {
     generatePdf,
   ];
 
-  async generate(input: ReportInput, options?: PipelineOptions): Promise<ReportContext> {
+  async generate(
+    input: ReportInput | Record<string, unknown>,
+    options?: PipelineOptions,
+  ): Promise<ReportContext> {
     let ctx = createContext(input, options?.config, options?.language);
     for (const step of this.steps) {
       ctx = await step(ctx);

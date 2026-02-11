@@ -1,0 +1,13 @@
+<div class="organ-dashboard-section">
+  <h2 class="section-title">Organ Health Dashboard</h2>
+  <div class="organ-dashboard-grid">
+    {{#each organScores}}
+    <div class="organ-card organ-card-{{this.status}}">
+      <div class="organ-card-name">{{this.organ}}</div>
+      <div class="organ-card-score">{{this.score}}</div>
+      <div class="organ-card-max">/100</div>
+      <span class="status-badge status-{{this.status}}">{{this.status}}</span>
+    </div>
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="ai-insights-section">
+  <h2 class="section-title">AI Insights</h2>
+  {{#if insights.length}}
+  {{#each insights}}
+  <div class="ai-insight-block ai-insight-{{this.severity}}">
+    <p class="ai-insight-opening">Your {{this.testName}} is {{this.severity}} ({{this.value}} {{this.unit}}).</p>
+    <p class="ai-insight-context">This may indicate an area that needs attention. Based on your results:</p>
+    <p class="ai-insight-recommend"><strong>We recommend:</strong></p>
+    <ul class="ai-insight-bullets">
+      {{#if this.tip}}
+      <li>{{this.tip}}</li>
+      {{else}}
+      <li>Consult your doctor for personalized advice</li>
+      <li>Re-test after 3 months to track changes</li>
+      {{/if}}
+    </ul>
+  </div>
+  {{/each}}
+  {{else}}
+  <div class="ai-insight-block ai-insight-normal">
+    <p class="ai-insight-opening">All results within normal range.</p>
+    <p class="ai-insight-context">Your lab values are within healthy reference ranges. Continue your current healthy habits.</p>
+    <p class="ai-insight-recommend"><strong>We recommend:</strong></p>
+    <ul class="ai-insight-bullets">
+      <li>Maintain a balanced diet rich in fruits and vegetables</li>
+      <li>Stay physically active – aim for 30 minutes of exercise daily</li>
+      <li>Get adequate sleep (7–8 hours per night)</li>
+      <li>Schedule annual health check-ups</li>
+    </ul>
+  </div>
+  {{/if}}
+</div>

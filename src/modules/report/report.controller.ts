@@ -1,57 +1,69 @@
 import type { FastifyRequest, FastifyReply } from 'fastify';
 import { z } from 'zod';
 import mongoose from 'mongoose';
+import { sendSuccess, sendError } from '../../utils/apiResponse.js';
 import * as reportService from './report.service.js';
 import type { JwtPayload } from '../../types/index.js';
 
+/** Accepts both canonical (nested) and legacy (flat) input formats. Raw body is passed to pipeline; parseInput normalizes it. */
 const reportInputSchema = z.object({
+  version: z.string().optional(),
+  clientId: z.string().optional(),
+  order: z
+    .object({
+      labNo: z.string().optional(),
+      workOrderId: z.string().optional(),
+      org: z.string().optional(),
+      centre: z.string().optional(),
+    })
+    .optional(),
+  patient: z
+    .object({
+      name: z.string().optional(),
+      age: z.number().optional(),
+      gender: z.string().optional(),
+    })
+    .optional(),
+  options: z
+    .object({
+      reportType: z.enum(['compact', 'dynamic']).optional(),
+      language: z.string().optional(),
+    })
+    .optional(),
+  tests: z.array(z.unknown()).optional(),
+  results: z.array(z.unknown()).optional(),
+  data: z.array(z.unknown()).optional(),
   patientName: z.string().optional(),
   age: z.number().optional(),
   gender: z.string().optional(),
-  tests: z.array(z.unknown()).optional(),
   labNo: z.string().optional(),
   workOrderId: z.string().optional(),
   org: z.string().optional(),
   Centre: z.string().optional(),
-  results: z.array(z.unknown()).optional(),
-  data: z.array(z.unknown()).optional(),
-  clientId: z.string().optional(),
+  reportType: z.enum(['compact', 'dynamic']).optional(),
   language: z.string().optional(),
-}).transform((data) => ({
-  patientName: data.patientName ?? '',
-  age: data.age ?? 0,
-  gender: data.gender ?? '',
-  tests: data.tests ?? [],
-  labNo: data.labNo,
-  workOrderId: data.workOrderId,
-  org: data.org,
-  Centre: data.Centre,
-  results: data.results,
-  data: data.data,
-  clientId: data.clientId,
-  language: data.language,
-}));
+}).passthrough();
 
 export async function createPortalReport(
   request: FastifyRequest<{ Body: unknown }>,
   reply: FastifyReply,
 ): Promise<void> {
-  const body = reportInputSchema.parse(request.body);
+  const body = reportInputSchema.parse(request.body) as Record<string, unknown>;
   const user = request.user as JwtPayload;
   const userId = user?.sub ? new mongoose.Types.ObjectId(user.sub) : null;
-  const { clientId, language, ...input } = body;
-  const result = await reportService.createReport(input, userId, clientId);
-  await reply.send(result);
+  const clientId = (body.clientId as string) ?? undefined;
+  const result = await reportService.createReport(body, userId, clientId);
+  sendSuccess(reply, result, request);
 }
 
 export async function createLisReport(
   request: FastifyRequest<{ Body: unknown }>,
   reply: FastifyReply,
 ): Promise<void> {
-  const body = reportInputSchema.parse(request.body);
-  const { clientId, language, ...input } = body;
-  const result = await reportService.createReport(input, null, clientId);
-  await reply.send(result);
+  const body = reportInputSchema.parse(request.body) as Record<string, unknown>;
+  const clientId = (body.clientId as string) ?? undefined;
+  const result = await reportService.createReport(body, null, clientId);
+  sendSuccess(reply, result, request);
 }
 
 export async function listReports(
@@ -67,7 +79,7 @@ export async function listReports(
     status,
     userId,
   });
-  await reply.send(result);
+  sendSuccess(reply, result, request);
 }
 
 export async function getReport(
@@ -76,10 +88,10 @@ export async function getReport(
 ): Promise<void> {
   const report = await reportService.getReport(request.params.reportId);
   if (!report) {
-    await reply.status(404).send({ error: 'Report not found' });
+    sendError(reply, request, 'NOT_FOUND', 'Report not found', 404);
     return;
   }
-  await reply.send(report);
+  sendSuccess(reply, report, request);
 }
 
 export async function downloadReportPdf(
@@ -88,10 +100,10 @@ export async function downloadReportPdf(
 ): Promise<void> {
   const buffer = await reportService.getReportPdfBuffer(request.params.reportId);
   if (!buffer) {
-    await reply.status(404).send({ error: 'Report PDF not found' });
+    sendError(reply, request, 'NOT_FOUND', 'Report PDF not found', 404);
     return;
   }
-  await reply
+  void reply
     .header('Content-Type', 'application/pdf')
     .header('Content-Disposition', `attachment; filename="${request.params.reportId}.pdf"`)
     .send(buffer);
@@ -103,8 +115,8 @@ export async function deleteReport(
 ): Promise<void> {
   const deleted = await reportService.deleteReport(request.params.reportId);
   if (!deleted) {
-    await reply.status(404).send({ error: 'Report not found' });
+    sendError(reply, request, 'NOT_FOUND', 'Report not found', 404);
     return;
   }
-  await reply.send({ success: true, message: 'Report deleted' });
+  sendSuccess(reply, { success: true, message: 'Report deleted' }, request);
 }

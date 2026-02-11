@@ -8,6 +8,7 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "generate": "tsx src/generate-sample.ts",
+    "test": "tsx src/generate-sample.ts",
     "seed": "tsx scripts/seed-biomarkers.ts"
   },
   "keywords": [],

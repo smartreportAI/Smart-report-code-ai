@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Health Report - {{patientName}}</title>
+  <style>{{{styles}}}</style>
+</head>
+<body>
+  {{#if showCoverPage}}{{> cover-page}}{{/if}}
+
+  {{#if showSummary}}
+  <div class="page">
+    {{> patient-header}}
+    {{> summary}}
+  </div>
+  {{/if}}
+
+  {{#if showBodySummary}}
+  <div class="page">
+    {{> patient-header}}
+    {{> body-summary}}
+  </div>
+  {{/if}}
+
+  {{#each profiles}}
+  <div class="page">
+    {{> patient-header}}
+    {{> profile-card}}
+  </div>
+  {{/each}}
+
+  {{#if showRecommendations}}
+  <div class="page">
+    {{> patient-header}}
+    {{> recommendations}}
+  </div>
+  {{/if}}
+
+  <div class="page">
+    {{> patient-header}}
+    {{> legend}}
+  </div>
+</body>
+</html>

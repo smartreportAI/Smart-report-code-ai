@@ -6,34 +6,36 @@
   <style>{{{styles}}}</style>
 </head>
 <body>
-  {{> cover-page}}
+  {{#if showCoverPage}}{{> cover-page}}{{/if}}
 
   <div class="page">
     {{> patient-header}}
-    {{> summary}}
+    {{> health-score}}
   </div>
-
-  {{#if showBodySummary}}
-  <div class="page">
-    {{> patient-header}}
-    {{> body-summary}}
-  </div>
-  {{/if}}
-
-  {{#each profiles}}
-  <div class="page">
-    {{> patient-header patientName=../patientName age=../age gender=../gender labNo=../labNo}}
-    {{> profile-card}}
-  </div>
-  {{/each}}
 
   <div class="page">
     {{> patient-header}}
-    {{> recommendations}}
+    {{> key-abnormal}}
   </div>
 
   <div class="page">
-    {{> legend}}
+    {{> patient-header}}
+    {{> organ-dashboard}}
+  </div>
+
+  <div class="page">
+    {{> patient-header}}
+    {{> full-report-dynamic}}
+  </div>
+
+  <div class="page">
+    {{> patient-header}}
+    {{> ai-insights}}
+  </div>
+
+  <div class="page">
+    {{> patient-header}}
+    {{> action-plan}}
   </div>
 </body>
 </html>

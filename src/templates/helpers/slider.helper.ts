@@ -91,4 +91,14 @@ export function registerHelpers(): void {
     if (!str) return '';
     return str.charAt(0).toUpperCase() + str.slice(1);
   });
+
+  // Slugify for CSS classes (e.g. "Needs Attention" -> "needs-attention")
+  Handlebars.registerHelper('toLower', function (str: string) {
+    if (!str) return '';
+    return str.toLowerCase().replace(/\s+/g, '-');
+  });
+
+  Handlebars.registerHelper('length', function (arr: unknown) {
+    return Array.isArray(arr) ? arr.length : 0;
+  });
 }

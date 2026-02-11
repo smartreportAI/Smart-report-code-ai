@@ -1,3 +1,4 @@
+/** Normalized flat input used internally after parsing. */
 export interface ReportInput {
   patientName: string;
   age: number;
@@ -6,9 +7,49 @@ export interface ReportInput {
   workOrderId?: string;
   org?: string;
   Centre?: string;
+  /** Report type: "compact" or "dynamic". Default "dynamic". */
+  reportType?: 'compact' | 'dynamic' | string;
+  /** Client ID for report config lookup. */
+  clientId?: string;
+  /** Language code (e.g. "en", "hi"). */
+  language?: string;
   results?: unknown[];
   data?: unknown[];
   tests?: unknown[];
+}
+
+/** Raw input structure. Accepts both canonical (nested) and legacy (flat) formats. */
+export interface RawReportInput {
+  version?: string;
+  clientId?: string;
+  order?: {
+    labNo?: string;
+    workOrderId?: string;
+    org?: string;
+    centre?: string;
+  };
+  patient?: {
+    name?: string;
+    age?: number;
+    gender?: string;
+  };
+  options?: {
+    reportType?: 'compact' | 'dynamic' | string;
+    language?: string;
+  };
+  tests?: unknown[];
+  /** Legacy flat fields (for backward compatibility) */
+  patientName?: string;
+  age?: number;
+  gender?: string;
+  labNo?: string;
+  workOrderId?: string;
+  org?: string;
+  Centre?: string;
+  reportType?: string;
+  language?: string;
+  data?: unknown[];
+  results?: unknown[];
 }
 
 export type ColorIndicator = 'normal' | 'borderline' | 'low' | 'high' | 'critical';

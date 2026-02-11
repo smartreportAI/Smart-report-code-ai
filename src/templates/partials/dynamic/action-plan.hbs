@@ -1,0 +1,30 @@
+<div class="action-plan-section">
+  <h2 class="section-title">Action Plan &amp; Next Steps</h2>
+
+  <div class="action-plan-urgent action-plan-block">
+    <h3 class="action-plan-heading">Urgent</h3>
+    <ul>
+      {{#each actionPlan.urgent}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="action-plan-monitor action-plan-block">
+    <h3 class="action-plan-heading">Monitor</h3>
+    <ul>
+      {{#each actionPlan.monitor}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="action-plan-good action-plan-block">
+    <h3 class="action-plan-heading">Good Areas</h3>
+    <ul>
+      {{#each actionPlan.goodAreas}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

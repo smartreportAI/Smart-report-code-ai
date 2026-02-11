@@ -88,7 +88,6 @@ const clientSchema = new Schema<IClient>(
   { versionKey: false }
 );
 
-clientSchema.index({ clientId: 1 }, { unique: true });
 clientSchema.index({ status: 1 });
 
 export const Client: Model<IClient> =

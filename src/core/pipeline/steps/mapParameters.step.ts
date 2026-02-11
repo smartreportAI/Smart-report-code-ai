@@ -1,11 +1,70 @@
 import { Biomarker } from '../../../models/biomarker.model.js';
 import type { IBiomarker, IReferenceRange } from '../../../models/biomarker.model.js';
+import { Mapping } from '../../../models/mapping.model.js';
+import type { IMapping } from '../../../models/mapping.model.js';
 import type { ReportContext } from '../../context/ReportContext.js';
 import type {
   ParsedTest,
+  ReportInput,
   TestResult,
   ColorIndicator,
 } from '../../../types/index.js';
+
+/**
+ * Resolve biomarkerId or standardName from DB mappings.
+ * Returns { biomarkerId?, standardName? } or null if not found.
+ */
+function resolveFromMapping(parsed: ParsedTest, mapping: IMapping): { biomarkerId?: string; standardName?: string } | null {
+  const idMap = mapping?.idMapping ?? {};
+  const nameMap = mapping?.nameMapping ?? {};
+
+  if (parsed.id && typeof parsed.id === 'string') {
+    const id = parsed.id.trim();
+    if (id && idMap[id]) {
+      return { biomarkerId: idMap[id] };
+    }
+  }
+
+  const name = parsed.name?.trim() ?? '';
+  if (!name) return null;
+
+  if (nameMap[name]) {
+    const mapped = String(nameMap[name]);
+    return mapped.startsWith('NGPM') ? { biomarkerId: mapped } : { standardName: mapped };
+  }
+
+  const nameLower = name.toLowerCase();
+  for (const [key, val] of Object.entries(nameMap)) {
+    if (key.toLowerCase() === nameLower) {
+      const mapped = String(val);
+      return mapped.startsWith('NGPM') ? { biomarkerId: mapped } : { standardName: mapped };
+    }
+  }
+  return null;
+}
+
+async function loadBiomarker(
+  biomarkerId?: string,
+  standardName?: string,
+  parsed?: ParsedTest
+): Promise<IBiomarker | null> {
+  if (biomarkerId) {
+    const byId = await Biomarker.findOne({ biomarkerId }).lean();
+    if (byId) return byId as IBiomarker;
+  }
+  if (standardName) {
+    const byName = await Biomarker.findOne({ standardName }).lean();
+    if (byName) return byName as IBiomarker;
+    const byNameCaseInsensitive = await Biomarker.findOne({
+      standardName: new RegExp(`^${standardName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`, 'i'),
+    }).lean();
+    if (byNameCaseInsensitive) return byNameCaseInsensitive as IBiomarker;
+  }
+  if (parsed) {
+    return findBiomarkerFuzzy(parsed);
+  }
+  return null;
+}
 
 function parseNumericValue(value: string | number): number | null {
   if (typeof value === 'number' && !Number.isNaN(value)) return value;
@@ -72,7 +131,7 @@ function resolveContent(biomarker: IBiomarker, color: ColorIndicator, lang: stri
   return { about, tip: tipText };
 }
 
-async function findBiomarker(parsed: ParsedTest): Promise<IBiomarker | null> {
+async function findBiomarkerFuzzy(parsed: ParsedTest): Promise<IBiomarker | null> {
   const name = parsed.name?.trim() ?? '';
   if (!name) return null;
   const byStandard = await Biomarker.findOne({ standardName: name }).lean();
@@ -91,13 +150,34 @@ async function findBiomarker(parsed: ParsedTest): Promise<IBiomarker | null> {
 }
 
 export async function mapParameters(ctx: ReportContext): Promise<ReportContext> {
-  const gender = ctx.input.gender ?? '';
-  const age = typeof ctx.input.age === 'number' ? ctx.input.age : parseInt(String(ctx.input.age ?? '0'), 10) || 0;
+  const input = ctx.input as ReportInput;
+  const gender = input.gender ?? '';
+  const age = typeof input.age === 'number' ? input.age : parseInt(String(input.age ?? '0'), 10) || 0;
   const lang = ctx.language ?? 'en';
   const mapped: TestResult[] = [];
 
+  const enableMapping = ctx.config?.stateData?.enableMappingConfig === true;
+  const clientId = input.clientId ?? '';
+  const mapping: IMapping | null =
+    enableMapping && clientId ? await Mapping.findOne({ clientId }).lean() : null;
+
   for (const parsed of ctx.parsedTests) {
-    const biomarker = await findBiomarker(parsed);
+    let biomarker: IBiomarker | null = null;
+
+    if (mapping) {
+      const resolved = resolveFromMapping(parsed, mapping);
+      if (resolved) {
+        biomarker = await loadBiomarker(
+          resolved.biomarkerId,
+          resolved.standardName,
+          undefined
+        );
+      }
+    }
+
+    if (!biomarker) {
+      biomarker = await findBiomarkerFuzzy(parsed);
+    }
 
     if (!biomarker) {
       // Unmapped test fallback: include with minimal data and "other_tests" profile
@@ -139,7 +219,10 @@ export async function mapParameters(ctx: ReportContext): Promise<ReportContext> 
       }
     }
 
-    const profileId = biomarker.profiles?.[0] ?? 'other_tests';
+    let profileId = biomarker.profiles?.[0] ?? 'other_tests';
+    if (mapping?.profileMapping?.[biomarker.biomarkerId]) {
+      profileId = mapping.profileMapping[biomarker.biomarkerId];
+    }
     const content = resolveContent(biomarker, colorIndicator, lang);
 
     mapped.push({

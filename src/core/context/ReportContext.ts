@@ -13,7 +13,8 @@ export interface ReportContext {
   pdfFileName: string;
   language: string;
   config: ResolvedConfig;
-  input: ReportInput;
+  /** Raw input initially; normalized to ReportInput by parseInput step. */
+  input: ReportInput | Record<string, unknown>;
   parsedTests: ParsedTest[];
   mappedTests: TestResult[];
   profiles: ProfileResult[];
@@ -23,7 +24,7 @@ export interface ReportContext {
 }
 
 export function createContext(
-  input: ReportInput,
+  input: ReportInput | Record<string, unknown>,
   config?: ResolvedConfig,
   language?: string,
 ): ReportContext {

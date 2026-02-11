@@ -122,8 +122,6 @@ const reportConfigSchema = new Schema<IReportConfig>(
   { versionKey: false },
 );
 
-reportConfigSchema.index({ clientId: 1 }, { unique: true });
-
 export const DEFAULT_COLORS: IColorObj = {
   colored: {
     normal: '#0F9D58',

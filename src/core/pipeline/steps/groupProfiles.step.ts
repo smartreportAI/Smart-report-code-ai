@@ -1,5 +1,7 @@
 import { Profile } from '../../../models/profile.model.js';
+import { Mapping } from '../../../models/mapping.model.js';
 import type { ReportContext } from '../../context/ReportContext.js';
+import type { ReportInput } from '../../../types/index.js';
 import type { TestResult, ProfileResult, ColorIndicator } from '../../../types/index.js';
 
 const PRIORITY: Record<ColorIndicator, number> = {
@@ -32,7 +34,29 @@ export async function groupProfiles(ctx: ReportContext): Promise<ReportContext> 
   const lang = ctx.language ?? 'en';
   const profiles: ProfileResult[] = [];
 
-  for (const [profileId, testResults] of byProfile) {
+  const enableProfileOrder = ctx.config?.stateData?.enableProfileOrder === true;
+  const enableParameterOrder = ctx.config?.stateData?.enableParameterOrder === true;
+  const clientId = (ctx.input as ReportInput).clientId ?? '';
+  const mapping =
+    (enableProfileOrder || enableParameterOrder) && clientId
+      ? await Mapping.findOne({ clientId }).lean()
+      : null;
+
+  const parameterOrder = mapping?.parameterOrder ?? [];
+  const profileOrder = mapping?.profileOrder ?? [];
+
+  for (const [profileId, tests] of byProfile) {
+    let testResults = [...tests];
+    if (enableParameterOrder && parameterOrder.length > 0) {
+      testResults.sort((a, b) => {
+        const idxA = parameterOrder.indexOf(a.biomarkerId);
+        const idxB = parameterOrder.indexOf(b.biomarkerId);
+        const posA = idxA >= 0 ? idxA : 999999;
+        const posB = idxB >= 0 ? idxB : 999999;
+        return posA - posB;
+      });
+    }
+
     const doc = profileMap.get(profileId);
     const fallbackName = profileId === 'other_tests' ? 'Other Tests' : profileId.replace(/_/g, ' ');
     const displayName = doc?.displayName?.[lang] ?? doc?.displayName?.en ?? fallbackName;
@@ -50,14 +74,25 @@ export async function groupProfiles(ctx: ReportContext): Promise<ReportContext> 
     });
   }
 
-  // Sort: known profiles by sortOrder, "other_tests" always last
-  profiles.sort((a, b) => {
-    if (a.profileId === 'other_tests') return 1;
-    if (b.profileId === 'other_tests') return -1;
-    const orderA = profileMap.get(a.profileId)?.sortOrder ?? 999;
-    const orderB = profileMap.get(b.profileId)?.sortOrder ?? 999;
-    return orderA - orderB;
-  });
+  if (enableProfileOrder && profileOrder.length > 0) {
+    profiles.sort((a, b) => {
+      if (a.profileId === 'other_tests' || a.profileId === 'all_other_tests') return 1;
+      if (b.profileId === 'other_tests' || b.profileId === 'all_other_tests') return -1;
+      const idxA = profileOrder.indexOf(a.profileId);
+      const idxB = profileOrder.indexOf(b.profileId);
+      const posA = idxA >= 0 ? idxA : 999999;
+      const posB = idxB >= 0 ? idxB : 999999;
+      return posA - posB;
+    });
+  } else {
+    profiles.sort((a, b) => {
+      if (a.profileId === 'other_tests' || a.profileId === 'all_other_tests') return 1;
+      if (b.profileId === 'other_tests' || b.profileId === 'all_other_tests') return -1;
+      const orderA = profileMap.get(a.profileId)?.sortOrder ?? 999;
+      const orderB = profileMap.get(b.profileId)?.sortOrder ?? 999;
+      return orderA - orderB;
+    });
+  }
 
   ctx.profiles = profiles;
   return ctx;

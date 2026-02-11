@@ -13,6 +13,8 @@ import { lisRoutes } from './api/routes/lis.routes.js';
 import { reportRoutes } from './api/routes/report.routes.js';
 import { configRoutes } from './api/routes/config.routes.js';
 import { clientRoutes } from './api/routes/client.routes.js';
+import { mappingRoutes } from './api/routes/mapping.routes.js';
+import { biomarkerRoutes } from './api/routes/biomarker.routes.js';
 
 export async function buildApp() {
   const isDev = env.NODE_ENV === 'development';
@@ -53,6 +55,8 @@ export async function buildApp() {
     await apiScope.register(reportRoutes, { prefix: '/api/v1' });
     await apiScope.register(configRoutes, { prefix: '/api/v1' });
     await apiScope.register(clientRoutes, { prefix: '/api/v1' });
+    await apiScope.register(mappingRoutes, { prefix: '/api/v1' });
+    await apiScope.register(biomarkerRoutes, { prefix: '/api/v1' });
   });
 
   return fastify;

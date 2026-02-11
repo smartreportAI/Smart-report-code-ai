@@ -10,19 +10,27 @@ This document describes the JSON structure that LIS (Laboratory Information Syst
 
 ## 1. Recommended (Canonical) Structure
 
-This is the **preferred** format. Use it for new integrations.
+This is the **preferred** format. It is self-documenting and supports all use cases.
 
 ```json
 {
-  "patientName": "Ravi Sharma",
-  "age": 35,
-  "gender": "male",
-  "labNo": "LAB-2026-001",
-  "workOrderId": "WO-12345",
-  "org": "City Hospital",
-  "Centre": "Main Lab",
+  "version": "1.0",
   "clientId": "client_abc",
-  "language": "en",
+  "order": {
+    "labNo": "LAB-2026-001",
+    "workOrderId": "WO-12345",
+    "org": "City Hospital",
+    "centre": "Main Lab"
+  },
+  "patient": {
+    "name": "Ravi Sharma",
+    "age": 35,
+    "gender": "male"
+  },
+  "options": {
+    "reportType": "dynamic",
+    "language": "en"
+  },
   "tests": [
     {
       "name": "Haemoglobin",
@@ -47,18 +55,38 @@ This is the **preferred** format. Use it for new integrations.
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| **patientName** | string | Yes | Full name of the patient |
-| **age** | number | Yes | Age in years (0–120) |
-| **gender** | string | Yes | `"male"`, `"female"`, `"m"`, `"f"` |
+| **version** | string | No | Input schema version (e.g. `"1.0"`). Reserved for future use. |
+| **clientId** | string | No | Client ID for report config (colors, layout). If omitted, defaults are used. |
+| **order** | object | No | Order/sample metadata (see below) |
+| **patient** | object | Yes | Patient demographics (see below) |
+| **options** | object | No | Report options (see below) |
 | **tests** | array | Yes | List of test results (see below) |
+
+### `order` object
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
 | **labNo** | string | No | Lab report/sample number |
 | **workOrderId** | string | No | Work order or order ID |
 | **org** | string | No | Organisation name |
-| **Centre** | string | No | Lab centre name |
-| **clientId** | string | No | Client ID for report config (colors, layout). If omitted, defaults are used. |
+| **centre** | string | No | Lab centre name |
+
+### `patient` object
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| **name** | string | Yes | Full name of the patient |
+| **age** | number | Yes | Age in years (0–120) |
+| **gender** | string | Yes | `"male"`, `"female"`, `"m"`, `"f"` |
+
+### `options` object
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| **reportType** | string | No | `"compact"` or `"dynamic"`. Default: `"dynamic"`. Compact = summary + profile cards + legend. Dynamic = health score + key abnormals + organ dashboard + full report + AI insights + action plan. |
 | **language** | string | No | Report language code (e.g. `"en"`, `"hi"`). Default: `"en"`. |
 
-### Each item in `tests` (Canonical)
+### Each item in `tests`
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
@@ -71,21 +99,61 @@ This is the **preferred** format. Use it for new integrations.
 
 ---
 
-## 2. Alternative Keys We Accept (LIS Compatibility)
+## 2. Legacy (Flat) Structure & Migration
+
+The parser accepts both the **canonical nested structure** and the **legacy flat structure** for backward compatibility.
+
+### Legacy flat format (still supported)
+
+```json
+{
+  "patientName": "Ravi Sharma",
+  "age": 35,
+  "gender": "male",
+  "labNo": "LAB-2026-001",
+  "workOrderId": "WO-12345",
+  "org": "City Hospital",
+  "Centre": "Main Lab",
+  "clientId": "client_abc",
+  "language": "en",
+  "reportType": "dynamic",
+  "tests": [ ... ]
+}
+```
+
+### Migration: Flat to Canonical
+
+| Flat key | Canonical equivalent |
+|----------|----------------------|
+| `patientName` | `patient.name` |
+| `age` | `patient.age` |
+| `gender` | `patient.gender` |
+| `labNo` | `order.labNo` |
+| `workOrderId` | `order.workOrderId` |
+| `org` | `order.org` |
+| `Centre` | `order.centre` |
+| `reportType` | `options.reportType` |
+| `language` | `options.language` |
+
+---
+
+## 3. Alternative Keys We Accept (LIS Compatibility)
 
 The parser accepts **multiple key names** for the same concept so different LIS systems can send their existing payloads.
 
-### Root level (patient / order)
+### Root level / patient / order
 
-| Concept | Accepted keys (first match wins) |
-|---------|----------------------------------|
-| Patient name | `patientName`, `PatientName`, `Patient_Name` |
-| Age | `age`, `Age`, `AGE` |
-| Gender | `gender`, `Gender`, `GENDER`, `Sex` |
-| Lab number | `labNo`, `LabNo`, `LabID` |
-| Work order | `workOrderId`, `WorkOrderID` |
-| Organisation | `org`, `Organisation` |
-| Centre | `Centre`, `centre` |
+| Concept | Canonical | Alternative keys (first match wins) |
+|---------|-----------|-------------------------------------|
+| Patient name | `patient.name` | `patientName`, `PatientName`, `Patient_Name` |
+| Age | `patient.age` | `age`, `Age`, `AGE` |
+| Gender | `patient.gender` | `gender`, `Gender`, `GENDER`, `Sex` |
+| Lab number | `order.labNo` | `labNo`, `LabNo`, `LabID` |
+| Work order | `order.workOrderId` | `workOrderId`, `WorkOrderID` |
+| Organisation | `order.org` | `org`, `Organisation` |
+| Centre | `order.centre` | `Centre`, `centre` |
+| Report type | `options.reportType` | `reportType`, `ReportType`, `report_type` |
+| Client ID | `clientId` | `ClientId` |
 
 ### Where are the tests?
 
@@ -157,7 +225,7 @@ So both of these are valid:
 
 ---
 
-## 3. Validation Rules (What We Reject)
+## 4. Validation Rules (What We Reject)
 
 - **Test name:** Ignored if empty, `"-"`, `"Gender"`, or longer than 50 characters.
 - **Test value:** Ignored if empty or `"-"` or longer than 40 characters.
@@ -165,7 +233,7 @@ So both of these are valid:
 
 ---
 
-## 4. Minimal Valid Example
+## 5. Minimal Valid Example
 
 Smallest valid body (all optional fields omitted):
 
@@ -182,19 +250,27 @@ Smallest valid body (all optional fields omitted):
 
 ---
 
-## 5. Full Example (All Optional Fields)
+## 6. Full Example (Canonical with All Optional Fields)
 
 ```json
 {
-  "patientName": "Ravi Sharma",
-  "age": 35,
-  "gender": "male",
-  "labNo": "LAB-2026-001",
-  "workOrderId": "WO-12345",
-  "org": "City Hospital",
-  "Centre": "Main Lab",
+  "version": "1.0",
   "clientId": "client_abc",
-  "language": "en",
+  "order": {
+    "labNo": "LAB-2026-001",
+    "workOrderId": "WO-12345",
+    "org": "City Hospital",
+    "centre": "Main Lab"
+  },
+  "patient": {
+    "name": "Ravi Sharma",
+    "age": 35,
+    "gender": "male"
+  },
+  "options": {
+    "reportType": "dynamic",
+    "language": "en"
+  },
   "tests": [
     {
       "name": "Haemoglobin",
@@ -224,7 +300,7 @@ Smallest valid body (all optional fields omitted):
 
 ---
 
-## 6. Response (Success)
+## 7. Response (Success)
 
 ```json
 {
@@ -241,7 +317,7 @@ Smallest valid body (all optional fields omitted):
 
 ---
 
-## 7. Summary: What to Ask Users / LIS
+## 8. Summary: What to Ask Users / LIS
 
 Ask integrators to provide:
 
@@ -251,3 +327,11 @@ Ask integrators to provide:
 4. **Optional:** Organisation, centre, clientId (for branding/config), language.
 
 Recommend they use the **canonical** structure above for new integrations; we will continue to accept the **alternative** keys for backward compatibility.
+
+---
+
+## 9. Report Configuration
+
+Client-specific report behavior (report type, cover page, body summary, colors, etc.) is controlled via the **Report Configuration API**. See [Report-Config-API.md](Report-Config-API.md) for details.
+
+When `clientId` is provided in the request, the system loads that client's configuration from the database and merges it with system defaults. Per-request overrides (e.g. `options.reportType`) take precedence over stored config.

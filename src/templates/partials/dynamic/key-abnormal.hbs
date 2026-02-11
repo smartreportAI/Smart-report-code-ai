@@ -1,0 +1,32 @@
+<div class="key-abnormal-section">
+  <h2 class="section-title">Key Abnormal Results</h2>
+  {{#if keyAbnormal.length}}
+  <table class="key-abnormal-table">
+    <thead>
+      <tr>
+        <th>Test</th>
+        <th>Value</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each keyAbnormal}}
+      <tr class="key-abnormal-row key-abnormal-{{this.severity}}">
+        <td>
+          <strong>{{this.testName}}</strong>
+          {{#if this.tip}}<p class="key-abnormal-tip">{{this.tip}}</p>{{/if}}
+        </td>
+        <td>{{this.value}} {{this.unit}}</td>
+        <td><span class="status-badge status-{{this.severity}}">{{this.severity}}</span></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{else}}
+  <p class="all-normal-message">All key results are within normal range. Continue healthy habits.</p>
+  <ul class="key-abnormal-monitor-list">
+    <li>Monitor cholesterol levels annually</li>
+    <li>Maintain balanced diet and regular exercise</li>
+  </ul>
+  {{/if}}
+</div>

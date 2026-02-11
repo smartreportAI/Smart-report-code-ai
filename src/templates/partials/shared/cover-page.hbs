@@ -6,6 +6,7 @@
     <p class="cover-patient-name">{{patientName}}</p>
     <p class="cover-patient-info">Age: {{age}} &nbsp;|&nbsp; Gender: {{capitalize gender}}</p>
     {{#if labNo}}<p class="cover-patient-info">Lab No: {{labNo}}</p>{{/if}}
+    {{#if testPackageName}}<p class="cover-package-name">{{testPackageName}}</p>{{/if}}
   </div>
   <p class="cover-date">Generated on {{reportDate}}</p>
 </div>

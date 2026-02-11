@@ -1,7 +1,11 @@
 import type { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
 import { z } from 'zod';
 import { authenticatePreHandler } from '../../plugins/auth.plugin.js';
+import { requestStartPreHandler, sendSuccess, sendError } from '../../utils/apiResponse.js';
 import { Client } from '../../models/client.model.js';
+import { Report } from '../../modules/report/report.model.js';
+
+const preHandlers = [requestStartPreHandler, authenticatePreHandler];
 
 const createClientSchema = z.object({
   clientId: z.string().min(1),
@@ -34,7 +38,7 @@ const updateClientSchema = createClientSchema.omit({ clientId: true }).partial()
 export async function clientRoutes(fastify: FastifyInstance): Promise<void> {
   // List all clients
   fastify.get('/clients', {
-    preHandler: [authenticatePreHandler],
+    preHandler: preHandlers,
     handler: async (
       request: FastifyRequest<{ Querystring: { page?: string; limit?: string; status?: string } }>,
       reply: FastifyReply,
@@ -51,29 +55,53 @@ export async function clientRoutes(fastify: FastifyInstance): Promise<void> {
         Client.countDocuments(filter),
       ]);
 
-      await reply.send({ clients, total, page, pages: Math.ceil(total / limit) });
+      sendSuccess(reply, { clients, total, page, pages: Math.ceil(total / limit) }, request);
+    },
+  });
+
+  // Get client usage statistics
+  fastify.get('/clients/:clientId/usage', {
+    preHandler: preHandlers,
+    handler: async (
+      request: FastifyRequest<{ Params: { clientId: string } }>,
+      reply: FastifyReply,
+    ) => {
+      const { clientId } = request.params;
+      const client = await Client.findOne({ clientId }).lean();
+      if (!client) {
+        sendError(reply, request, 'NOT_FOUND', 'Client not found', 404);
+        return;
+      }
+
+      const [successfulReports, failedReports] = await Promise.all([
+        Report.countDocuments({ clientId, status: 'completed' }),
+        Report.countDocuments({ clientId, status: 'failed' }),
+      ]);
+      const totalReports = successfulReports + failedReports;
+
+      sendSuccess(reply, { totalReports, successfulReports, failedReports }, request);
     },
   });
 
   // Get single client
   fastify.get('/clients/:clientId', {
-    preHandler: [authenticatePreHandler],
+    preHandler: preHandlers,
     handler: async (
       request: FastifyRequest<{ Params: { clientId: string } }>,
       reply: FastifyReply,
     ) => {
       const client = await Client.findOne({ clientId: request.params.clientId }).lean();
       if (!client) {
-        await reply.status(404).send({ error: 'Client not found' });
+        sendError(reply, request, 'NOT_FOUND', 'Client not found', 404);
         return;
       }
-      await reply.send(client);
+      sendSuccess(reply, client, request);
     },
   });
 
   // Create new client
   fastify.post('/clients', {
-    preHandler: [authenticatePreHandler],
+    preHandler: preHandlers,
     handler: async (
       request: FastifyRequest<{ Body: unknown }>,
       reply: FastifyReply,
@@ -82,7 +110,7 @@ export async function clientRoutes(fastify: FastifyInstance): Promise<void> {
 
       const existing = await Client.findOne({ clientId: body.clientId }).lean();
       if (existing) {
-        await reply.status(409).send({ error: 'Client already exists' });
+        sendError(reply, request, 'CONFLICT', 'Client already exists', 409);
         return;
       }
 
@@ -92,13 +120,14 @@ export async function clientRoutes(fastify: FastifyInstance): Promise<void> {
         updatedAt: new Date(),
       });
 
-      await reply.status(201).send(client.toObject());
+      reply.status(201);
+      sendSuccess(reply, client.toObject(), request);
     },
   });
 
   // Update client
   fastify.put('/clients/:clientId', {
-    preHandler: [authenticatePreHandler],
+    preHandler: preHandlers,
     handler: async (
       request: FastifyRequest<{ Params: { clientId: string }; Body: unknown }>,
       reply: FastifyReply,
@@ -112,11 +141,11 @@ export async function clientRoutes(fastify: FastifyInstance): Promise<void> {
       );
 
       if (!client) {
-        await reply.status(404).send({ error: 'Client not found' });
+        sendError(reply, request, 'NOT_FOUND', 'Client not found', 404);
         return;
       }
 
-      await reply.send(client);
+      sendSuccess(reply, client, request);
     },
   });
 }

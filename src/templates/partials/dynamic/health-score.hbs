@@ -1,0 +1,11 @@
+<div class="health-score-page">
+  <h2 class="section-title">Overall Health Score</h2>
+  <div class="health-score-display">
+    <span class="health-score-value">{{healthScore}}</span>
+    <span class="health-score-max">/100</span>
+  </div>
+  <div class="health-score-status-wrap">
+    <span class="status-badge health-status-{{toLower healthScoreStatus}}">{{healthScoreStatus}}</span>
+  </div>
+  <p class="health-score-explanation">{{healthScoreExplanation}}</p>
+</div>

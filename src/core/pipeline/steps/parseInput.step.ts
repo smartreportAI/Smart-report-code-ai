@@ -57,12 +57,72 @@ function normalizeInput(raw: unknown): ReportInput {
   if (Array.isArray(obj?.data) && obj.data.length > 0) {
     obj = (obj.data as Record<string, unknown>[])[0] as Record<string, unknown>;
   }
-  const patientName =
-    (obj.patientName as string) ?? (obj.PatientName as string) ?? (obj.Patient_Name as string) ?? '';
-  const ageRaw = obj.age ?? obj.Age ?? obj.AGE;
-  const age = typeof ageRaw === 'number' ? ageRaw : typeof ageRaw === 'string' ? parseInt(ageRaw, 10) || 0 : 0;
-  const gender =
-    (obj.gender as string) ?? (obj.Gender as string) ?? (obj.GENDER as string) ?? (obj.Sex as string) ?? '';
+
+  const patientObj = obj.patient as Record<string, unknown> | undefined;
+  const orderObj = obj.order as Record<string, unknown> | undefined;
+  const optionsObj = obj.options as Record<string, unknown> | undefined;
+  const isCanonical = patientObj != null || orderObj != null || optionsObj != null;
+
+  let patientName: string;
+  let age: number;
+  let gender: string;
+  let labNo: string | undefined;
+  let workOrderId: string | undefined;
+  let org: string | undefined;
+  let centre: string | undefined;
+  let reportType: 'compact' | 'dynamic';
+  let language: string | undefined;
+  let clientId: string | undefined;
+
+  if (isCanonical && patientObj) {
+    patientName =
+      String(patientObj.name ?? patientObj.patientName ?? patientObj.PatientName ?? '').trim() || '';
+    const ageRaw = patientObj.age ?? patientObj.Age;
+    age =
+      typeof ageRaw === 'number'
+        ? ageRaw
+        : typeof ageRaw === 'string'
+          ? parseInt(ageRaw, 10) || 0
+          : 0;
+    gender = String(patientObj.gender ?? patientObj.Gender ?? patientObj.Sex ?? '').trim() || '';
+  } else {
+    patientName =
+      (obj.patientName as string) ?? (obj.PatientName as string) ?? (obj.Patient_Name as string) ?? '';
+    const ageRaw = obj.age ?? obj.Age ?? obj.AGE;
+    age =
+      typeof ageRaw === 'number'
+        ? ageRaw
+        : typeof ageRaw === 'string'
+          ? parseInt(ageRaw, 10) || 0
+          : 0;
+    gender =
+      (obj.gender as string) ?? (obj.Gender as string) ?? (obj.GENDER as string) ?? (obj.Sex as string) ?? '';
+  }
+
+  if (isCanonical && orderObj) {
+    labNo = (orderObj.labNo ?? orderObj.LabNo ?? orderObj.LabID) as string | undefined;
+    workOrderId = (orderObj.workOrderId ?? orderObj.WorkOrderID) as string | undefined;
+    org = (orderObj.org ?? orderObj.Organisation) as string | undefined;
+    centre = (orderObj.centre ?? orderObj.Centre) as string | undefined;
+  } else {
+    labNo = (obj.labNo ?? obj.LabNo ?? obj.LabID) as string | undefined;
+    workOrderId = (obj.workOrderId ?? obj.WorkOrderID) as string | undefined;
+    org = (obj.org ?? obj.Organisation) as string | undefined;
+    centre = (obj.Centre ?? obj.centre) as string | undefined;
+  }
+
+  if (isCanonical && optionsObj) {
+    const rt = (optionsObj.reportType ?? optionsObj.ReportType) as string | undefined;
+    reportType = rt === 'compact' || rt === 'dynamic' ? rt : 'dynamic';
+    language = (optionsObj.language as string) ?? undefined;
+  } else {
+    const rt = (obj.reportType ?? obj.ReportType ?? obj.report_type) as string | undefined;
+    reportType = rt === 'compact' || rt === 'dynamic' ? rt : 'dynamic';
+    language = (obj.language as string) ?? undefined;
+  }
+
+  clientId = (obj.clientId ?? obj.ClientId) as string | undefined;
+
   let tests: unknown[] = (obj.tests as unknown[]) ?? (obj.Tests as unknown[]) ?? [];
   if (tests.length === 0 && Array.isArray(obj.results)) {
     const collected: unknown[] = [];
@@ -72,14 +132,18 @@ function normalizeInput(raw: unknown): ReportInput {
     }
     tests = collected;
   }
+
   return {
     patientName: String(patientName ?? ''),
     age: Number.isFinite(age) ? age : 0,
     gender: String(gender ?? ''),
-    labNo: (obj.labNo ?? obj.LabNo ?? obj.LabID) as string | undefined,
-    workOrderId: (obj.workOrderId ?? obj.WorkOrderID) as string | undefined,
-    org: (obj.org ?? obj.Organisation) as string | undefined,
-    Centre: (obj.Centre ?? obj.centre) as string | undefined,
+    labNo,
+    workOrderId,
+    org,
+    Centre: centre,
+    reportType,
+    language,
+    clientId,
     tests,
   };
 }

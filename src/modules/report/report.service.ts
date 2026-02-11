@@ -4,7 +4,6 @@ import { Report } from './report.model.js';
 import type { IReport } from './report.model.js';
 import { ReportPipeline } from '../../core/pipeline/ReportPipeline.js';
 import { loadConfig } from '../../core/config/loadConfig.js';
-import type { ReportInput } from '../../types/index.js';
 import type { Types } from 'mongoose';
 
 export interface CreateReportResult {
@@ -16,30 +15,51 @@ export interface CreateReportResult {
 }
 
 export async function createReport(
-  input: ReportInput,
+  input: Record<string, unknown>,
   userId: Types.ObjectId | null,
   clientId?: string,
 ): Promise<CreateReportResult> {
-  // Load client config (or defaults)
-  const config = await loadConfig(clientId);
+  const resolvedClientId =
+    clientId ?? (input.clientId as string) ?? (input.ClientId as string) ?? undefined;
+  const config = await loadConfig(resolvedClientId);
 
+  const startTime = Date.now();
   const pipeline = new ReportPipeline();
   const ctx = await pipeline.generate(input, { config });
+  const totalDurationMs = Date.now() - startTime;
 
   const pdfUrl = '/reports/sample.pdf';
+  const abnormalCount = ctx.mappedTests.filter(
+    (t) => t.colorIndicator !== 'normal'
+  ).length;
 
   await Report.create({
     reportId: ctx.reportId,
     userId,
-    clientId: clientId ?? null,
+    clientId: resolvedClientId ?? null,
     patientName: ctx.input.patientName ?? '',
     labNo: ctx.input.labNo ?? null,
+    workOrderId: ctx.input.workOrderId ?? null,
     testCount: ctx.mappedTests.length,
     profileCount: ctx.profiles.length,
     insightCount: ctx.insights.length,
     status: 'completed',
     pdfUrl,
     generatedAt: new Date(),
+    input: {
+      testCount: ctx.mappedTests.length,
+      profileCount: ctx.profiles.length,
+      abnormalCount,
+      jsonUrl: null,
+    },
+    output: {
+      reportType: (ctx.input.reportType ?? ctx.config?.stateData?.reportType ?? 'dynamic') as string,
+      language: ctx.language,
+      fileSizeBytes: ctx.pdfBuffer?.length ?? null,
+    },
+    performance: {
+      totalDurationMs,
+    },
   });
 
   return {
