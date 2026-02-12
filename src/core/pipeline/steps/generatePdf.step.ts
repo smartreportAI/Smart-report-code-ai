@@ -19,6 +19,7 @@ export async function generatePdf(ctx: ReportContext): Promise<ReportContext> {
     await mkdir(reportsDir, { recursive: true });
     const outputPath = join(reportsDir, 'sample.pdf');
     await writeFile(outputPath, ctx.pdfBuffer);
+    await writeFile(join(reportsDir, 'debug.html'), ctx.html);
   } finally {
     await page.close();
   }

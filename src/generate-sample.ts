@@ -69,6 +69,7 @@ async function main() {
   console.log('  - HTML length:', ctx.html.length, 'chars');
   console.log('  - PDF buffer:', ctx.pdfBuffer?.length ?? 0, 'bytes');
   console.log('\nPDF saved to: reports/sample.pdf');
+  console.log('HTML saved to: reports/debug.html');
 
   // Close browser pool
   const { closeBrowser } = await import('./services/pdf/browser-pool.service.js');

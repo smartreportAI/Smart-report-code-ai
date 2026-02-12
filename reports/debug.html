@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Health Report - Ravi Sharma</title>
+  <style>/* ===== CSS Custom Properties (Color Scheme) ===== */
+:root {
+  --color-normal: #0F9D58;
+  --color-borderline: #F4B400;
+  --color-high: #DB4437;
+  --color-low: #DB4437;
+  --color-critical: #C26564;
+  --color-heading: #1a237e;
+  --color-bg-light: #f8f9fa;
+  --color-bg-profile: #F0F6FB;
+  --color-text: #212121;
+  --color-text-muted: #666;
+  --color-border: #e0e0e0;
+  --font-family: 'Segoe UI', 'Nunito Sans', Arial, sans-serif;
+  --font-size-base: 10px;
+}
+
+/* ===== Reset & Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ===== Page Breaks ===== */
+.page {
+  page-break-after: always;
+  padding: 24px 28px;
+  min-height: 100%;
+}
+
+.page:last-child {
+  page-break-after: auto;
+}
+
+/* ===== Cover Page ===== */
+.cover-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%) !important;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+.cover-logo {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  font-size: 36px;
+}
+
+.cover-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: 1px;
+}
+
+.cover-subtitle {
+  font-size: 13px;
+  opacity: 0.85;
+  margin: 0 0 40px;
+  letter-spacing: 0.5px;
+}
+
+.cover-patient-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 28px 40px;
+  min-width: 320px;
+}
+
+.cover-patient-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.cover-patient-info {
+  font-size: 12px;
+  opacity: 0.8;
+  margin: 4px 0;
+}
+
+.cover-date {
+  margin-top: 20px;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.cover-package-name {
+  margin-top: 12px;
+  font-size: 11px;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+/* ===== Patient Header ===== */
+.patient-header {
+  background: var(--color-bg-light);
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 16px;
+  border: 1px solid var(--color-border);
+}
+
+.patient-header-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.patient-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.patient-table td {
+  padding: 3px 16px 3px 0;
+  font-size: 10px;
+  vertical-align: top;
+}
+
+.patient-table .label {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  width: 80px;
+  white-space: nowrap;
+}
+
+.patient-table .value {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* ===== Summary Section ===== */
+.summary-section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 0 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--color-heading);
+}
+
+.summary-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.summary-card {
+  flex: 1 1 calc(33.333% - 8px);
+  min-width: 150px;
+  max-width: calc(33.333% - 8px);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.summary-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+.summary-card-normal::before {
+  background: var(--color-normal);
+}
+
+.summary-card-borderline::before {
+  background: var(--color-borderline);
+}
+
+.summary-card-low::before,
+.summary-card-high::before {
+  background: var(--color-high);
+}
+
+.summary-card-critical::before {
+  background: var(--color-critical);
+}
+
+.summary-card-title {
+  font-size: 11px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  padding-left: 8px;
+}
+
+.summary-card-stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+}
+
+.summary-card-count {
+  font-size: 9px;
+  color: var(--color-text-muted);
+}
+
+/* ===== Status Badges ===== */
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.status-normal {
+  background: var(--color-normal);
+  color: #fff;
+}
+
+.status-borderline {
+  background: var(--color-borderline);
+  color: #000;
+}
+
+.status-low {
+  background: var(--color-low);
+  color: #fff;
+}
+
+.status-high {
+  background: var(--color-high);
+  color: #fff;
+}
+
+.status-critical {
+  background: var(--color-critical);
+  color: #fff;
+}
+
+/* ===== Profile Cards ===== */
+.profile-section {
+  margin-bottom: 8px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-bg-profile);
+  border-radius: 8px 8px 0 0;
+  padding: 10px 16px;
+  border: 1px solid var(--color-border);
+  border-bottom: none;
+}
+
+.profile-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 0;
+}
+
+.profile-about {
+  font-size: 9px;
+  color: var(--color-text-muted);
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+}
+
+/* ===== Test Result Cards (Compact) ===== */
+.test-cards {
+  border: 1px solid var(--color-border);
+  border-radius: 0 0 8px 8px;
+}
+
+.test-card {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.test-card:last-child {
+  border-bottom: none;
+}
+
+.test-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+}
+
+.test-card-normal::before {
+  background: var(--color-normal);
+}
+
+.test-card-borderline::before {
+  background: var(--color-borderline);
+}
+
+.test-card-low::before {
+  background: var(--color-low);
+}
+
+.test-card-high::before {
+  background: var(--color-high);
+}
+
+.test-card-critical::before {
+  background: var(--color-critical);
+}
+
+.test-info {
+  flex: 0 0 160px;
+  padding-left: 8px;
+}
+
+.test-name {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.test-unit {
+  font-size: 8px;
+  color: var(--color-text-muted);
+  margin: 1px 0 0;
+}
+
+.test-value-col {
+  flex: 0 0 70px;
+  text-align: center;
+}
+
+.test-value {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.test-value-normal {
+  color: var(--color-normal);
+}
+
+.test-value-borderline {
+  color: var(--color-borderline);
+}
+
+.test-value-low {
+  color: var(--color-low);
+}
+
+.test-value-high {
+  color: var(--color-high);
+}
+
+.test-value-critical {
+  color: var(--color-critical);
+}
+
+.test-slider-col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.test-status-col {
+  flex: 0 0 80px;
+  text-align: right;
+}
+
+.test-tip {
+  width: 100%;
+  padding: 4px 16px 8px 24px;
+  font-size: 8.5px;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+/* ===== Body Summary ===== */
+.body-summary-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.body-summary-container {
+  display: inline-block;
+  position: relative;
+  width: 320px;
+  height: 440px;
+}
+
+.body-organ-marker {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.organ-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.organ-dot-normal {
+  background: var(--color-normal);
+}
+
+.organ-dot-borderline {
+  background: var(--color-borderline);
+}
+
+.organ-dot-low,
+.organ-dot-high {
+  background: var(--color-high);
+}
+
+.organ-dot-critical {
+  background: var(--color-critical);
+}
+
+/* ===== Recommendations ===== */
+.recommendations-section {
+  margin-bottom: 16px;
+}
+
+.recommendation-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recommendation-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: #fff;
+}
+
+.recommendation-card-critical {
+  border-left: 4px solid var(--color-critical);
+  background: #fce4ec;
+}
+
+.recommendation-card-high,
+.recommendation-card-low {
+  border-left: 4px solid var(--color-high);
+  background: #ffebee;
+}
+
+.recommendation-card-borderline {
+  border-left: 4px solid var(--color-borderline);
+  background: #fffde7;
+}
+
+.recommendation-card-normal {
+  border-left: 4px solid var(--color-normal);
+  background: #e8f5e9;
+}
+
+.recommendation-severity {
+  flex-shrink: 0;
+}
+
+.recommendation-text {
+  font-size: 9.5px;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.recommendation-test {
+  font-weight: 600;
+}
+
+/* ===== Legend ===== */
+.legend-section {
+  margin-top: 12px;
+}
+
+.legend-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 180px;
+}
+
+.legend-color-bar {
+  width: 32px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.legend-label {
+  font-size: 9px;
+  color: var(--color-text);
+}
+
+.legend-desc {
+  font-size: 8px;
+  color: var(--color-text-muted);
+}
+
+.legend-slider-example {
+  margin-top: 16px;
+  padding: 12px;
+  background: var(--color-bg-light);
+  border-radius: 8px;
+}
+
+.legend-slider-title {
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.legend-slider-desc {
+  font-size: 9px;
+  color: var(--color-text-muted);
+  margin: 4px 0 0;
+}
+
+/* ===== All Results Normal ===== */
+.all-normal-message {
+  text-align: center;
+  padding: 20px;
+  color: var(--color-normal);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ===== Health Score Page ===== */
+.health-score-page {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.health-score-display {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 16px 0 8px;
+  line-height: 1;
+}
+
+.health-score-value {
+  color: var(--color-normal);
+}
+
+.health-score-max {
+  font-size: 24px;
+  color: var(--color-text-muted);
+}
+
+.health-score-status-wrap {
+  margin: 12px 0 20px;
+}
+
+.health-score-explanation {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.health-status-excellent {
+  background: var(--color-normal) !important;
+  color: #fff !important;
+}
+
+.health-status-good {
+  background: var(--color-borderline) !important;
+  color: #000 !important;
+}
+
+.health-status-needs-attention {
+  background: var(--color-high) !important;
+  color: #fff !important;
+}
+
+/* ===== Key Abnormal Table ===== */
+.key-abnormal-section {
+  margin-bottom: 16px;
+}
+
+.key-abnormal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.key-abnormal-table th {
+  text-align: left;
+  padding: 10px 12px;
+  background: var(--color-bg-profile);
+  border-bottom: 2px solid var(--color-border);
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.key-abnormal-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.key-abnormal-tip {
+  font-size: 8.5px;
+  color: var(--color-text-muted);
+  margin: 4px 0 0;
+  line-height: 1.4;
+}
+
+.key-abnormal-monitor-list {
+  margin: 12px 0 0 24px;
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+/* ===== Organ Dashboard ===== */
+.organ-dashboard-section {
+  margin-bottom: 16px;
+}
+
+.organ-dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.organ-card {
+  flex: 1 1 calc(33.333% - 10px);
+  min-width: 120px;
+  max-width: calc(33.333% - 10px);
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid var(--color-border);
+  text-align: center;
+  position: relative;
+}
+
+.organ-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.organ-card-normal::before {
+  background: var(--color-normal);
+}
+
+.organ-card-borderline::before {
+  background: var(--color-borderline);
+}
+
+.organ-card-high::before,
+.organ-card-low::before {
+  background: var(--color-high);
+}
+
+.organ-card-critical::before {
+  background: var(--color-critical);
+}
+
+.organ-card-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-heading);
+  margin: 0 0 6px;
+}
+
+.organ-card-score {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.organ-card-max {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.organ-card .status-badge {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+/* ===== Full Report Dynamic ===== */
+.full-report-dynamic-section {
+  margin-bottom: 16px;
+}
+
+.compact-test-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+  font-size: 9px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.compact-test-name {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.compact-test-value {
+  color: var(--color-text-muted);
+}
+
+.profile-empty {
+  font-size: 9px;
+  color: var(--color-text-muted);
+  padding: 8px 16px;
+  margin: 0;
+}
+
+/* ===== AI Insights ===== */
+.ai-insights-section {
+  margin-bottom: 16px;
+}
+
+.ai-insight-block {
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 4px solid var(--color-border);
+}
+
+.ai-insight-critical {
+  border-left-color: var(--color-critical);
+  background: #fce4ec;
+}
+
+.ai-insight-high,
+.ai-insight-low {
+  border-left-color: var(--color-high);
+  background: #ffebee;
+}
+
+.ai-insight-borderline {
+  border-left-color: var(--color-borderline);
+  background: #fffde7;
+}
+
+.ai-insight-normal {
+  border-left-color: var(--color-normal);
+  background: #e8f5e9;
+}
+
+.ai-insight-opening {
+  font-size: 11px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: var(--color-text);
+}
+
+.ai-insight-context {
+  font-size: 9.5px;
+  margin: 0 0 8px;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.ai-insight-recommend {
+  font-size: 9px;
+  margin: 0 0 4px;
+  color: var(--color-heading);
+}
+
+.ai-insight-bullets {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 9px;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+/* ===== Action Plan ===== */
+.action-plan-section {
+  margin-bottom: 16px;
+}
+
+.action-plan-block {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.action-plan-heading {
+  font-size: 11px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.action-plan-urgent {
+  border-left: 4px solid var(--color-critical);
+  background: #fce4ec;
+}
+
+.action-plan-urgent .action-plan-heading {
+  color: var(--color-critical);
+}
+
+.action-plan-monitor {
+  border-left: 4px solid var(--color-borderline);
+  background: #fffde7;
+}
+
+.action-plan-monitor .action-plan-heading {
+  color: #b8860b;
+}
+
+.action-plan-good {
+  border-left: 4px solid var(--color-normal);
+  background: #e8f5e9;
+}
+
+.action-plan-good .action-plan-heading {
+  color: var(--color-normal);
+}
+
+.action-plan-block ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 9.5px;
+  line-height: 1.6;
+}
+
+/* ===== Screen Preview Mode (A4 Simulation) ===== */
+@media screen {
+  body {
+    background: #e6e6e6;
+    /* Moderate gray for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .cover-page,
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    /* Drop shadow to simulate sheet */
+    box-sizing: border-box;
+  }
+
+  .cover-page {
+    height: 297mm;
+    min-height: 297mm;
+    flex: none;
+    /* override the display: flex stretch behavior if any */
+    display: flex;
+    /* restore flex for internal layout */
+  }
+}
+    :root {
+      --color-normal: #0F9D58;
+      --color-borderline: #F4B400;
+      --color-high: #DB4437;
+      --color-low: #DB4437;
+      --color-critical: #C26564;
+    }</style>
+</head>
+<body>
+  <div class="cover-page">
+  <div class="cover-logo">&#9764;</div>
+  <h1 class="cover-title">Smart Health Report</h1>
+  <p class="cover-subtitle">Comprehensive Lab Analysis &amp; Health Insights</p>
+  <div class="cover-patient-card">
+    <p class="cover-patient-name">Ravi Sharma</p>
+    <p class="cover-patient-info">Age: 35 &nbsp;|&nbsp; Gender: Male</p>
+    <p class="cover-patient-info">Lab No: LAB-2026-001</p>
+    <p class="cover-package-name">Complete Health Panel</p>
+  </div>
+  <p class="cover-date">Generated on 12 February 2026</p>
+</div>
+
+
+  <div class="page">
+    <div class="patient-header">
+      <p class="patient-header-title">Patient Details</p>
+      <table class="patient-table">
+        <tr>
+          <td class="label">Name</td>
+          <td class="value">Ravi Sharma</td>
+          <td class="label">Age</td>
+          <td class="value">35</td>
+          <td class="label">Gender</td>
+          <td class="value">Male</td>
+          <td class="label">Lab No</td>
+          <td class="value">LAB-2026-001</td>
+        </tr>
+      </table>
+    </div>
+    <div class="health-score-page">
+      <h2 class="section-title">Overall Health Score</h2>
+      <div class="health-score-display">
+        <span class="health-score-value">70</span>
+        <span class="health-score-max">/100</span>
+      </div>
+      <div class="health-score-status-wrap">
+        <span class="status-badge health-status-good">Good</span>
+      </div>
+      <p class="health-score-explanation">Your overall lab results suggest good health with a few areas to monitor. Focus on the abnormal values highlighted in this report.</p>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="patient-header">
+      <p class="patient-header-title">Patient Details</p>
+      <table class="patient-table">
+        <tr>
+          <td class="label">Name</td>
+          <td class="value">Ravi Sharma</td>
+          <td class="label">Age</td>
+          <td class="value">35</td>
+          <td class="label">Gender</td>
+          <td class="value">Male</td>
+          <td class="label">Lab No</td>
+          <td class="value">LAB-2026-001</td>
+        </tr>
+      </table>
+    </div>
+    <div class="key-abnormal-section">
+      <h2 class="section-title">Key Abnormal Results</h2>
+      <table class="key-abnormal-table">
+        <thead>
+          <tr>
+            <th>Test</th>
+            <th>Value</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="key-abnormal-row key-abnormal-high">
+            <td>
+              <strong>Total Cholesterol</strong>
+              <p class="key-abnormal-tip">Cholesterol in your body is mainly produced by your liver, but you can also consume it by eating foods that come from animals, such as egg yolks, meat, and cheese. Consumption of high saturated fats (such as palm oil and coconut oil) and trans fats cause your liver to make more cholesterol than it would otherwise. A person can get a heart attack when blood flow to his heart is blocked (due to obstruction of his blood vessels).</p>
+            </td>
+            <td>245 mg/dL</td>
+            <td><span class="status-badge status-high">high</span></td>
+          </tr>
+          <tr class="key-abnormal-row key-abnormal-high">
+            <td>
+              <strong>LDL Cholesterol</strong>
+              <p class="key-abnormal-tip">Saturated fats occur naturally in many foods, primarily meat and dairy products. Beef, lamb, pork and poultry (with the skin on), butter, cream and cheese made from whole milk, are high in saturated fats. Plant-based foods that contain saturated fats include coconut oil, cocoa butter, palm oil and palm kernel oil (often called tropical oils).</p>
+            </td>
+            <td>155 mg/dL</td>
+            <td><span class="status-badge status-high">high</span></td>
+          </tr>
+          <tr class="key-abnormal-row key-abnormal-low">
+            <td>
+              <strong>Haemoglobin</strong>
+              <p class="key-abnormal-tip">Anemia. Eat iron rich foods as iron is essential for the production of hemoglobin. Iron-rich foods include meat, fish, eggs and oysters, beans, lentils, dark green leafy vegetables (spinach, watercress, curly kale), broccoli, iron fortified cereals and dried fruits (apricots, prunes and raisins). Avoid drinking tea and coffee with meals, and foods with high phytic acid, such as whole grain cereals, as they can affect digestive absorption of iron from your diet. Your body absorbs iron from plant-based foods better when you eat them with vitamin-C rich foods, such as oranges, strawberries, melons, peppers and tomatoes. Avoid alcohol as it can cause folate deficiency.</p>
+            </td>
+            <td>12.8 g/dL</td>
+            <td><span class="status-badge status-low">low</span></td>
+          </tr>
+          <tr class="key-abnormal-row key-abnormal-low">
+            <td>
+              <strong>Haemoglobin</strong>
+              <p class="key-abnormal-tip">Slightly below range. Consider iron-rich diet.</p>
+            </td>
+            <td>12.0 g/dL</td>
+            <td><span class="status-badge status-low">low</span></td>
+          </tr>
+          <tr class="key-abnormal-row key-abnormal-high">
+            <td>
+              <strong>Glucose</strong>
+              <p class="key-abnormal-tip">Fasting glucose elevated. Monitor and consider dietary changes.</p>
+            </td>
+            <td>142 mg/dL</td>
+            <td><span class="status-badge status-high">high</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="patient-header">
+      <p class="patient-header-title">Patient Details</p>
+      <table class="patient-table">
+        <tr>
+          <td class="label">Name</td>
+          <td class="value">Ravi Sharma</td>
+          <td class="label">Age</td>
+          <td class="value">35</td>
+          <td class="label">Gender</td>
+          <td class="value">Male</td>
+          <td class="label">Lab No</td>
+          <td class="value">LAB-2026-001</td>
+        </tr>
+      </table>
+    </div>
+    <div class="organ-dashboard-section">
+      <h2 class="section-title">Organ Health Dashboard</h2>
+      <div class="organ-dashboard-grid">
+        <div class="organ-card organ-card-high">
+          <div class="organ-card-name">Heart</div>
+          <div class="organ-card-score">58</div>
+          <div class="organ-card-max">/100</div>
+          <span class="status-badge status-high">high</span>
+        </div>
+        <div class="organ-card organ-card-normal">
+          <div class="organ-card-name">Liver</div>
+          <div class="organ-card-score">92</div>
+          <div class="organ-card-max">/100</div>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+        <div class="organ-card organ-card-normal">
+          <div class="organ-card-name">Kidney</div>
+          <div class="organ-card-score">92</div>
+          <div class="organ-card-max">/100</div>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+        <div class="organ-card organ-card-normal">
+          <div class="organ-card-name">Thyroid</div>
+          <div class="organ-card-score">92</div>
+          <div class="organ-card-max">/100</div>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+        <div class="organ-card organ-card-low">
+          <div class="organ-card-name">Blood</div>
+          <div class="organ-card-score">58</div>
+          <div class="organ-card-max">/100</div>
+          <span class="status-badge status-low">low</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="patient-header">
+      <p class="patient-header-title">Patient Details</p>
+      <table class="patient-table">
+        <tr>
+          <td class="label">Name</td>
+          <td class="value">Ravi Sharma</td>
+          <td class="label">Age</td>
+          <td class="value">35</td>
+          <td class="label">Gender</td>
+          <td class="value">Male</td>
+          <td class="label">Lab No</td>
+          <td class="value">LAB-2026-001</td>
+        </tr>
+      </table>
+    </div>
+    <div class="full-report-dynamic-section">
+      <h2 class="section-title">Full Report</h2>
+      <div class="profile-section">
+        <div class="profile-header">
+          <h3 class="profile-name">Lipid Profile</h3>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+    
+    
+        <div class="compact-test-row">
+          <span class="compact-test-name">SGPT (ALT)</span>
+          <span class="compact-test-value">28 IU/L</span>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+        <div class="compact-test-row">
+          <span class="compact-test-name">SGOT (AST)</span>
+          <span class="compact-test-value">22 IU/L</span>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+    
+      </div>
+      <div class="profile-section">
+        <div class="profile-header">
+          <h3 class="profile-name">About Kidney</h3>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+    
+    
+        <div class="compact-test-row">
+          <span class="compact-test-name">Serum Creatinine</span>
+          <span class="compact-test-value">1.0 mg/dL</span>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+        <div class="compact-test-row">
+          <span class="compact-test-name">Blood Urea</span>
+          <span class="compact-test-value">28 mg/dL</span>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+    
+      </div>
+      <div class="profile-section">
+        <div class="profile-header">
+          <h3 class="profile-name">About Thyroid</h3>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+    
+    
+        <div class="compact-test-row">
+          <span class="compact-test-name">TSH</span>
+          <span class="compact-test-value">2.5 mIU/L</span>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+    
+      </div>
+      <div class="profile-section">
+        <div class="profile-header">
+          <h3 class="profile-name">lipid profile</h3>
+          <span class="status-badge status-high">high</span>
+        </div>
+    
+        <div class="test-card test-card-high">
+          <div class="test-info">
+            <p class="test-name">Total Cholesterol</p>
+            <p class="test-unit">mg/dL</p>
+          </div>
+          <div class="test-value-col">
+            <p class="test-value test-value-high">245</p>
+          </div>
+          <div class="test-slider-col">
+            <svg width="220" height="38" viewBox="0 0 220 38" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="220" height="14" rx="7" fill="#e0e0e0"/>
+            <rect x="0" y="0" width="33" height="14" rx="0" fill="var(--color-critical, #C26564)" opacity="0.25"/><rect x="33" y="0" width="22" height="14" rx="0" fill="var(--color-borderline, #F4B400)" opacity="0.25"/><rect x="55" y="0" width="110" height="14" rx="0" fill="var(--color-normal, #0F9D58)" opacity="0.25"/><rect x="165" y="0" width="22" height="14" rx="0" fill="var(--color-borderline, #F4B400)" opacity="0.25"/><rect x="187" y="0" width="33" height="14" rx="0" fill="var(--color-critical, #C26564)" opacity="0.25"/>
+            <rect x="0" y="0" width="220" height="14" rx="7" fill="none" stroke="#ccc" stroke-width="0.5"/>
+            <circle cx="122.27678571428571" cy="7" r="7" fill="var(--color-high, #DB4437)" stroke="#fff" stroke-width="2"/>
+            
+              <text x="0" y="28" font-size="8" fill="#888" font-family="sans-serif">0</text>
+              <text x="220" y="28" font-size="8" fill="#888" font-family="sans-serif" text-anchor="end">240</text>
+          </svg>
+          </div>
+          <div class="test-status-col">
+            <span class="status-badge status-high">high</span>
+          </div>
+        </div>
+        <div class="test-tip">&#9432; Cholesterol in your body is mainly produced by your liver, but you can also consume it by eating foods that come from animals, such as egg yolks, meat, and cheese. Consumption of high saturated fats (such as palm oil and coconut oil) and trans fats cause your liver to make more cholesterol than it would otherwise. A person can get a heart attack when blood flow to his heart is blocked (due to obstruction of his blood vessels).</div>
+        <div class="test-card test-card-high">
+          <div class="test-info">
+            <p class="test-name">LDL Cholesterol</p>
+            <p class="test-unit">mg/dL</p>
+          </div>
+          <div class="test-value-col">
+            <p class="test-value test-value-high">155</p>
+          </div>
+          <div class="test-slider-col">
+            <svg width="220" height="38" viewBox="0 0 220 38" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="220" height="14" rx="7" fill="#e0e0e0"/>
+            <rect x="0" y="0" width="33" height="14" rx="0" fill="var(--color-critical, #C26564)" opacity="0.25"/><rect x="33" y="0" width="22" height="14" rx="0" fill="var(--color-borderline, #F4B400)" opacity="0.25"/><rect x="55" y="0" width="110" height="14" rx="0" fill="var(--color-normal, #0F9D58)" opacity="0.25"/><rect x="165" y="0" width="22" height="14" rx="0" fill="var(--color-borderline, #F4B400)" opacity="0.25"/><rect x="187" y="0" width="33" height="14" rx="0" fill="var(--color-critical, #C26564)" opacity="0.25"/>
+            <rect x="0" y="0" width="220" height="14" rx="7" fill="none" stroke="#ccc" stroke-width="0.5"/>
+            <circle cx="116.3768115942029" cy="7" r="7" fill="var(--color-high, #DB4437)" stroke="#fff" stroke-width="2"/>
+            
+              <text x="0" y="28" font-size="8" fill="#888" font-family="sans-serif">60</text>
+              <text x="220" y="28" font-size="8" fill="#888" font-family="sans-serif" text-anchor="end">130</text>
+          </svg>
+          </div>
+          <div class="test-status-col">
+            <span class="status-badge status-high">high</span>
+          </div>
+        </div>
+        <div class="test-tip">&#9432; Saturated fats occur naturally in many foods, primarily meat and dairy products. Beef, lamb, pork and poultry (with the skin on), butter, cream and cheese made from whole milk, are high in saturated fats. Plant-based foods that contain saturated fats include coconut oil, cocoa butter, palm oil and palm kernel oil (often called tropical oils).</div>
+    
+        <div class="compact-test-row">
+          <span class="compact-test-name">HDL Cholesterol</span>
+          <span class="compact-test-value">52 mg/dL</span>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+        <div class="compact-test-row">
+          <span class="compact-test-name">Triglycerides</span>
+          <span class="compact-test-value">180 mg/dL</span>
+          <span class="status-badge status-normal">normal</span>
+        </div>
+    
+      </div>
+      <div class="profile-section">
+        <div class="profile-header">
+          <h3 class="profile-name">blood counts</h3>
+          <span class="status-badge status-low">low</span>
+        </div>
+    
+        <div class="test-card test-card-low">
+          <div class="test-info">
+            <p class="test-name">Haemoglobin</p>
+            <p class="test-unit">g/dL</p>
+          </div>
+          <div class="test-value-col">
+            <p class="test-value test-value-low">12.8</p>
+          </div>
+          <div class="test-slider-col">
+            <svg width="220" height="38" viewBox="0 0 220 38" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="220" height="14" rx="7" fill="#e0e0e0"/>
+            <rect x="0" y="0" width="33" height="14" rx="0" fill="var(--color-critical, #C26564)" opacity="0.25"/><rect x="33" y="0" width="22" height="14" rx="0" fill="var(--color-borderline, #F4B400)" opacity="0.25"/><rect x="55" y="0" width="110" height="14" rx="0" fill="var(--color-normal, #0F9D58)" opacity="0.25"/><rect x="165" y="0" width="22" height="14" rx="0" fill="var(--color-borderline, #F4B400)" opacity="0.25"/><rect x="187" y="0" width="33" height="14" rx="0" fill="var(--color-critical, #C26564)" opacity="0.25"/>
+            <rect x="0" y="0" width="220" height="14" rx="7" fill="none" stroke="#ccc" stroke-width="0.5"/>
+            <circle cx="109.75848303393214" cy="7" r="7" fill="var(--color-low, #DB4437)" stroke="#fff" stroke-width="2"/>
+            
+              <text x="0" y="28" font-size="8" fill="#888" font-family="sans-serif">13</text>
+              <text x="220" y="28" font-size="8" fill="#888" font-family="sans-serif" text-anchor="end">17</text>
+          </svg>
+          </div>
+          <div class="test-status-col">
+            <span class="status-badge status-low">low</span>
+          </div>
+        </div>
+        <div class="test-tip">&#9432; Anemia. Eat iron rich foods as iron is essential for the production of hemoglobin. Iron-rich foods include meat, fish, eggs and oysters, beans, lentils, dark green leafy vegetables (spinach, watercress, curly kale), broccoli, iron fortified cereals and dried fruits (apricots, prunes and raisins). Avoid drinking tea and coffee with meals, and foods with high phytic acid, such as whole grain cereals, as they can affect digestive absorption of iron from your diet. Your body absorbs iron from plant-based foods better when you eat them with vitamin-C rich foods, such as oranges, strawberries, melons, peppers and tomatoes. Avoid alcohol as it can cause folate deficiency.</div>
+    
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="patient-header">
+      <p class="patient-header-title">Patient Details</p>
+      <table class="patient-table">
+        <tr>
+          <td class="label">Name</td>
+          <td class="value">Ravi Sharma</td>
+          <td class="label">Age</td>
+          <td class="value">35</td>
+          <td class="label">Gender</td>
+          <td class="value">Male</td>
+          <td class="label">Lab No</td>
+          <td class="value">LAB-2026-001</td>
+        </tr>
+      </table>
+    </div>
+    <div class="ai-insights-section">
+      <h2 class="section-title">AI Insights</h2>
+      <div class="ai-insight-block ai-insight-high">
+        <p class="ai-insight-opening">Your Total Cholesterol is high (245 mg/dL).</p>
+        <p class="ai-insight-context">This may indicate an area that needs attention. Based on your results:</p>
+        <p class="ai-insight-recommend"><strong>We recommend:</strong></p>
+        <ul class="ai-insight-bullets">
+          <li>Cholesterol in your body is mainly produced by your liver, but you can also consume it by eating foods that come from animals, such as egg yolks, meat, and cheese. Consumption of high saturated fats (such as palm oil and coconut oil) and trans fats cause your liver to make more cholesterol than it would otherwise. A person can get a heart attack when blood flow to his heart is blocked (due to obstruction of his blood vessels).</li>
+        </ul>
+      </div>
+      <div class="ai-insight-block ai-insight-high">
+        <p class="ai-insight-opening">Your LDL Cholesterol is high (155 mg/dL).</p>
+        <p class="ai-insight-context">This may indicate an area that needs attention. Based on your results:</p>
+        <p class="ai-insight-recommend"><strong>We recommend:</strong></p>
+        <ul class="ai-insight-bullets">
+          <li>Saturated fats occur naturally in many foods, primarily meat and dairy products. Beef, lamb, pork and poultry (with the skin on), butter, cream and cheese made from whole milk, are high in saturated fats. Plant-based foods that contain saturated fats include coconut oil, cocoa butter, palm oil and palm kernel oil (often called tropical oils).</li>
+        </ul>
+      </div>
+      <div class="ai-insight-block ai-insight-low">
+        <p class="ai-insight-opening">Your Haemoglobin is low (12.8 g/dL).</p>
+        <p class="ai-insight-context">This may indicate an area that needs attention. Based on your results:</p>
+        <p class="ai-insight-recommend"><strong>We recommend:</strong></p>
+        <ul class="ai-insight-bullets">
+          <li>Anemia. Eat iron rich foods as iron is essential for the production of hemoglobin. Iron-rich foods include meat, fish, eggs and oysters, beans, lentils, dark green leafy vegetables (spinach, watercress, curly kale), broccoli, iron fortified cereals and dried fruits (apricots, prunes and raisins). Avoid drinking tea and coffee with meals, and foods with high phytic acid, such as whole grain cereals, as they can affect digestive absorption of iron from your diet. Your body absorbs iron from plant-based foods better when you eat them with vitamin-C rich foods, such as oranges, strawberries, melons, peppers and tomatoes. Avoid alcohol as it can cause folate deficiency.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="patient-header">
+      <p class="patient-header-title">Patient Details</p>
+      <table class="patient-table">
+        <tr>
+          <td class="label">Name</td>
+          <td class="value">Ravi Sharma</td>
+          <td class="label">Age</td>
+          <td class="value">35</td>
+          <td class="label">Gender</td>
+          <td class="value">Male</td>
+          <td class="label">Lab No</td>
+          <td class="value">LAB-2026-001</td>
+        </tr>
+      </table>
+    </div>
+    <div class="action-plan-section">
+      <h2 class="section-title">Action Plan &amp; Next Steps</h2>
+    
+      <div class="action-plan-urgent action-plan-block">
+        <h3 class="action-plan-heading">Urgent</h3>
+        <ul>
+          <li>No urgent items</li>
+        </ul>
+      </div>
+    
+      <div class="action-plan-monitor action-plan-block">
+        <h3 class="action-plan-heading">Monitor</h3>
+        <ul>
+          <li>Total Cholesterol – high at 245 mg/dL. Cholesterol in your body is mainly produced by your liver, but you can also consume it by eating foods that come from animals, such as egg yolks, meat, and cheese. Consumption of high saturated fats (such as palm oil and coconut oil) and trans fats cause your liver to make more cholesterol than it would otherwise. A person can get a heart attack when blood flow to his heart is blocked (due to obstruction of his blood vessels).</li>
+          <li>LDL Cholesterol – high at 155 mg/dL. Saturated fats occur naturally in many foods, primarily meat and dairy products. Beef, lamb, pork and poultry (with the skin on), butter, cream and cheese made from whole milk, are high in saturated fats. Plant-based foods that contain saturated fats include coconut oil, cocoa butter, palm oil and palm kernel oil (often called tropical oils).</li>
+          <li>Haemoglobin – low at 12.8 g/dL. Anemia. Eat iron rich foods as iron is essential for the production of hemoglobin. Iron-rich foods include meat, fish, eggs and oysters, beans, lentils, dark green leafy vegetables (spinach, watercress, curly kale), broccoli, iron fortified cereals and dried fruits (apricots, prunes and raisins). Avoid drinking tea and coffee with meals, and foods with high phytic acid, such as whole grain cereals, as they can affect digestive absorption of iron from your diet. Your body absorbs iron from plant-based foods better when you eat them with vitamin-C rich foods, such as oranges, strawberries, melons, peppers and tomatoes. Avoid alcohol as it can cause folate deficiency.</li>
+        </ul>
+      </div>
+    
+      <div class="action-plan-good action-plan-block">
+        <h3 class="action-plan-heading">Good Areas</h3>
+        <ul>
+          <li>Lipid Profile is in good shape</li>
+          <li>About Kidney is in good shape</li>
+          <li>About Thyroid is in good shape</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
