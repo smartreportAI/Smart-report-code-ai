@@ -1,0 +1,290 @@
+{
+    "profiles": [
+        {
+            "name": "lipid_profile",
+            "displayName": {
+                "en": "Lipid Profile",
+                "hi": "लिपिड प्रोफाइल",
+                "cz": "Lipidový profil",
+                "ar": "ملف الدهون"
+            },
+            "testIds": [
+                "Total Cholesterol",
+                "HDL Cholesterol",
+                "LDL Cholesterol",
+                "Triglycerides",
+                "VLDL Cholesterol",
+                "Cholesterol/HDL Ratio",
+                "LDL/HDL Ratio"
+            ],
+            "description": {
+                "en": "Lipid Profile measures cholesterol and fat levels in your blood. It helps assess your risk of heart disease and stroke.",
+                "hi": "लिपिड प्रोफाइल आपके रक्त में कोलेस्ट्रॉल और वसा के स्तर को मापता है। यह हृदय रोग और स्ट्रोक के जोखिम का आकलन करने में मदद करता है।"
+            },
+            "icon": "❤️"
+        },
+        {
+            "name": "liver_function_test",
+            "displayName": {
+                "en": "Liver Function Test",
+                "hi": "यकृत कार्य परीक्षण",
+                "cz": "Jaterní funkční test",
+                "ar": "اختبار وظائف الكبد"
+            },
+            "testIds": [
+                "SGPT (ALT)",
+                "SGOT (AST)",
+                "Alkaline Phosphatase",
+                "Bilirubin Total",
+                "Bilirubin Direct",
+                "Bilirubin Indirect",
+                "Total Protein",
+                "Albumin",
+                "Globulin",
+                "A/G Ratio",
+                "GGT"
+            ],
+            "description": {
+                "en": "Liver Function Tests check how well your liver is working by measuring enzymes, proteins, and bilirubin levels.",
+                "hi": "यकृत कार्य परीक्षण एंजाइम, प्रोटीन और बिलीरुबिन के स्तर को मापकर यह जांचते हैं कि आपका यकृत कितनी अच्छी तरह काम कर रहा है।"
+            },
+            "icon": "🫀"
+        },
+        {
+            "name": "kidney_function_test",
+            "displayName": {
+                "en": "Kidney Function Test",
+                "hi": "गुर्दा कार्य परीक्षण",
+                "cz": "Renální funkční test",
+                "ar": "اختبار وظائف الكلى"
+            },
+            "testIds": [
+                "Creatinine",
+                "Blood Urea",
+                "BUN",
+                "Uric Acid",
+                "Sodium",
+                "Potassium",
+                "Chloride",
+                "Calcium",
+                "Phosphorus",
+                "eGFR"
+            ],
+            "description": {
+                "en": "Kidney Function Tests measure how well your kidneys filter waste from your blood.",
+                "hi": "गुर्दा कार्य परीक्षण मापते हैं कि आपके गुर्दे आपके रक्त से अपशिष्ट को कितनी अच्छी तरह फ़िल्टर करते हैं।"
+            },
+            "icon": "🫘"
+        },
+        {
+            "name": "thyroid_profile",
+            "displayName": {
+                "en": "Thyroid Profile",
+                "hi": "थायराइड प्रोफाइल",
+                "cz": "Štítná žláza profil",
+                "ar": "ملف الغدة الدرقية"
+            },
+            "testIds": [
+                "TSH",
+                "T3 Total",
+                "T4 Total",
+                "Free T3",
+                "Free T4",
+                "Anti-TPO",
+                "Thyroglobulin"
+            ],
+            "description": {
+                "en": "Thyroid Profile checks your thyroid gland function, which regulates metabolism, energy, and growth.",
+                "hi": "थायराइड प्रोफाइल आपके थायराइड ग्रंथि के कार्य की जांच करता है, जो चयापचय, ऊर्जा और विकास को नियंत्रित करता है।"
+            },
+            "icon": "🦋"
+        },
+        {
+            "name": "complete_blood_count",
+            "displayName": {
+                "en": "Complete Blood Count (CBC)",
+                "hi": "पूर्ण रक्त गणना",
+                "cz": "Kompletní krevní obraz",
+                "ar": "تعداد الدم الكامل"
+            },
+            "testIds": [
+                "Hemoglobin",
+                "RBC Count",
+                "WBC Count",
+                "Platelet Count",
+                "Hematocrit",
+                "MCV",
+                "MCH",
+                "MCHC",
+                "RDW",
+                "Neutrophils",
+                "Lymphocytes",
+                "Monocytes",
+                "Eosinophils",
+                "Basophils"
+            ],
+            "description": {
+                "en": "Complete Blood Count measures different components of your blood, including red cells, white cells, and platelets.",
+                "hi": "पूर्ण रक्त गणना आपके रक्त के विभिन्न घटकों को मापती है, जिसमें लाल कोशिकाएं, सफेद कोशिकाएं और प्लेटलेट्स शामिल हैं।"
+            },
+            "icon": "🩸"
+        },
+        {
+            "name": "diabetes_profile",
+            "displayName": {
+                "en": "Diabetes Profile",
+                "hi": "मधुमेह प्रोफाइल",
+                "cz": "Diabetický profil",
+                "ar": "ملف السكري"
+            },
+            "testIds": [
+                "Blood Glucose Fasting",
+                "Blood Glucose PP",
+                "HbA1c",
+                "Insulin Fasting",
+                "C-Peptide",
+                "Fructosamine"
+            ],
+            "description": {
+                "en": "Diabetes Profile tests help diagnose and monitor diabetes by measuring blood sugar and related markers.",
+                "hi": "मधुमेह प्रोफाइल परीक्षण रक्त शर्करा और संबंधित मार्करों को मापकर मधुमेह का निदान और निगरानी करने में मदद करते हैं।"
+            },
+            "icon": "🍬"
+        },
+        {
+            "name": "vitamin_profile",
+            "displayName": {
+                "en": "Vitamin Profile",
+                "hi": "विटामिन प्रोफाइल",
+                "cz": "Vitaminový profil",
+                "ar": "ملف الفيتامينات"
+            },
+            "testIds": [
+                "Vitamin D",
+                "Vitamin B12",
+                "Folate",
+                "Vitamin A",
+                "Vitamin E",
+                "Vitamin C"
+            ],
+            "description": {
+                "en": "Vitamin Profile measures essential vitamins in your blood to detect deficiencies.",
+                "hi": "विटामिन प्रोफाइल कमियों का पता लगाने के लिए आपके रक्त में आवश्यक विटामिन को मापता है।"
+            },
+            "icon": "💊"
+        },
+        {
+            "name": "hormone_profile_male",
+            "displayName": {
+                "en": "Hormone Profile (Male)",
+                "hi": "हार्मोन प्रोफाइल (पुरुष)",
+                "cz": "Hormonální profil (muži)",
+                "ar": "ملف الهرمونات (ذكور)"
+            },
+            "testIds": [
+                "Testosterone Total",
+                "Testosterone Free",
+                "FSH",
+                "LH",
+                "Prolactin",
+                "DHEA-S"
+            ],
+            "description": {
+                "en": "Male Hormone Profile measures hormones that affect male reproductive health and overall well-being.",
+                "hi": "पुरुष हार्मोन प्रोफाइल उन हार्मोन को मापता है जो पुरुष प्रजनन स्वास्थ्य और समग्र कल्याण को प्रभावित करते हैं।"
+            },
+            "icon": "♂️"
+        },
+        {
+            "name": "hormone_profile_female",
+            "displayName": {
+                "en": "Hormone Profile (Female)",
+                "hi": "हार्मोन प्रोफाइल (महिला)",
+                "cz": "Hormonální profil (ženy)",
+                "ar": "ملف الهرمونات (إناث)"
+            },
+            "testIds": [
+                "FSH",
+                "LH",
+                "Estradiol",
+                "Progesterone",
+                "Prolactin",
+                "AMH",
+                "DHEA-S"
+            ],
+            "description": {
+                "en": "Female Hormone Profile measures hormones that affect female reproductive health, menstrual cycle, and fertility.",
+                "hi": "महिला हार्मोन प्रोफाइल उन हार्मोन को मापता है जो महिला प्रजनन स्वास्थ्य, मासिक धर्म चक्र और प्रजनन क्षमता को प्रभावित करते हैं।"
+            },
+            "icon": "♀️"
+        },
+        {
+            "name": "cardiac_markers",
+            "displayName": {
+                "en": "Cardiac Markers",
+                "hi": "हृदय मार्कर",
+                "cz": "Srdeční markery",
+                "ar": "علامات القلب"
+            },
+            "testIds": [
+                "Troponin I",
+                "Troponin T",
+                "CK-MB",
+                "CPK",
+                "LDH",
+                "Myoglobin",
+                "BNP",
+                "NT-proBNP"
+            ],
+            "description": {
+                "en": "Cardiac Markers help diagnose heart attacks and assess heart muscle damage.",
+                "hi": "हृदय मार्कर दिल के दौरे का निदान करने और हृदय की मांसपेशियों की क्षति का आकलन करने में मदद करते हैं।"
+            },
+            "icon": "💓"
+        },
+        {
+            "name": "iron_profile",
+            "displayName": {
+                "en": "Iron Profile",
+                "hi": "आयरन प्रोफाइल",
+                "cz": "Železný profil",
+                "ar": "ملف الحديد"
+            },
+            "testIds": [
+                "Serum Iron",
+                "TIBC",
+                "Transferrin Saturation",
+                "Ferritin",
+                "Transferrin"
+            ],
+            "description": {
+                "en": "Iron Profile measures iron levels and storage in your body to detect anemia or iron overload.",
+                "hi": "आयरन प्रोफाइल एनीमिया या आयरन अधिभार का पता लगाने के लिए आपके शरीर में आयरन के स्तर और भंडारण को मापता है।"
+            },
+            "icon": "🧲"
+        },
+        {
+            "name": "electrolytes",
+            "displayName": {
+                "en": "Electrolytes",
+                "hi": "इलेक्ट्रोलाइट्स",
+                "cz": "Elektrolyty",
+                "ar": "الكهارل"
+            },
+            "testIds": [
+                "Sodium",
+                "Potassium",
+                "Chloride",
+                "Bicarbonate",
+                "Calcium",
+                "Magnesium",
+                "Phosphorus"
+            ],
+            "description": {
+                "en": "Electrolytes are minerals that help maintain fluid balance, nerve function, and muscle function.",
+                "hi": "इलेक्ट्रोलाइट्स खनिज हैं जो द्रव संतुलन, तंत्रिका कार्य और मांसपेशियों के कार्य को बनाए रखने में मदद करते हैं।"
+            },
+            "icon": "⚡"
+        }
+    ]
+}

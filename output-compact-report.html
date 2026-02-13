@@ -1,0 +1,790 @@
+
+      <!DOCTYPE html>
+      <html lang="en" dir="ltr">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Medical Laboratory Report - Rajesh Kumar</title>
+        <style>
+          :root { --report-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+          
+      :root {
+        --primary: #1976D2;
+        --secondary: #424242;
+        --accent: #FFA726;
+        --success: #4CAF50;
+        --warning: #FFA726;
+        --danger: #F44336;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: var(--report-font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
+        line-height: 1.6;
+        color: #333;
+        background: #fff;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .page-break {
+        page-break-after: always;
+      }
+      
+      /* Header Styles */
+      .report-header {
+        border-bottom: 3px solid var(--primary);
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+      
+      .report-title {
+        font-size: 28px;
+        color: var(--primary);
+        margin-bottom: 10px;
+      }
+      
+      .report-subtitle {
+        font-size: 16px;
+        color: #666;
+      }
+      
+      /* Patient Details */
+      .patient-details {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+      }
+      
+      .patient-details table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      .patient-details td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .patient-details td:first-child {
+        font-weight: 600;
+        width: 150px;
+        color: #555;
+      }
+      
+      /* Profile Section */
+      .profile-section {
+        margin-bottom: 40px;
+        break-inside: avoid;
+      }
+      
+      .profile-header {
+        background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .profile-header.status-normal {
+        background: linear-gradient(135deg, var(--success) 0%, #45a049 100%);
+      }
+      
+      .profile-header.status-attention {
+        background: linear-gradient(135deg, var(--warning) 0%, #FB8C00 100%);
+      }
+      
+      .profile-header.status-critical {
+        background: linear-gradient(135deg, var(--danger) 0%, #E53935 100%);
+      }
+      
+      .profile-name {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+      .profile-summary {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+      
+      /* Test Table */
+      .test-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border-radius: 0 0 8px 8px;
+        overflow: hidden;
+      }
+      
+      .test-table thead {
+        background: #f8f9fa;
+      }
+      
+      .test-table th {
+        padding: 12px;
+        text-align: left;
+        font-weight: 600;
+        color: #555;
+        border-bottom: 2px solid #ddd;
+      }
+      
+      .test-table td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+      }
+      
+      .test-table tr:last-child td {
+        border-bottom: none;
+      }
+      
+      .test-table tr:hover {
+        background: #f8f9fa;
+      }
+      
+      /* Color Indicators */
+      .value-normal {
+        color: var(--success);
+        font-weight: 600;
+      }
+      
+      .value-oneFromNormal {
+        color: var(--warning);
+        font-weight: 600;
+      }
+      
+      .value-twoFromNormal {
+        color: #FF7043;
+        font-weight: 600;
+      }
+      
+      .value-threeFromNormal {
+        color: var(--danger);
+        font-weight: 600;
+      }
+      
+      .value-finalCritical {
+        color: #B71C1C;
+        font-weight: 700;
+      }
+      
+      /* Status Badge */
+      .status-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      
+      .status-badge.normal {
+        background: #E8F5E9;
+        color: var(--success);
+      }
+      
+      .status-badge.borderline {
+        background: #FFF3E0;
+        color: #E65100;
+      }
+      
+      .status-badge.abnormal {
+        background: #FFEBEE;
+        color: #C62828;
+      }
+      
+      .status-badge.critical {
+        background: #B71C1C;
+        color: white;
+      }
+      
+      /* Accreditation Badges */
+      .badge {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 5px;
+      }
+      
+      .badge-nabl {
+        background: var(--primary);
+        color: white;
+      }
+      
+      .badge-cap {
+        background: var(--success);
+        color: white;
+      }
+      
+      .badge-ngsp {
+        background: var(--accent);
+        color: white;
+      }
+      
+      /* Recommendations */
+      .recommendations {
+        margin-top: 30px;
+        padding: 20px;
+        background: #FFF9C4;
+        border-left: 4px solid var(--warning);
+        border-radius: 4px;
+      }
+      
+      .recommendations h3 {
+        color: #F57F17;
+        margin-bottom: 15px;
+      }
+      
+      .recommendation-item {
+        margin-bottom: 15px;
+      }
+      
+      .recommendation-item h4 {
+        color: #555;
+        margin-bottom: 8px;
+      }
+      
+      .recommendation-item ul {
+        margin-left: 20px;
+      }
+      
+      .recommendation-item li {
+        margin-bottom: 5px;
+        color: #666;
+      }
+      
+      /* Summary */
+      .summary {
+        margin-top: 30px;
+        padding: 20px;
+        background: #E3F2FD;
+        border-radius: 8px;
+      }
+      
+      .summary h3 {
+        color: var(--primary);
+        margin-bottom: 15px;
+      }
+      
+      .summary-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+      
+      .stat-card {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      
+      .stat-value {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--primary);
+      }
+      
+      .stat-label {
+        font-size: 14px;
+        color: #666;
+        margin-top: 5px;
+      }
+      
+      @media print {
+        body {
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+        
+        .page-break {
+          page-break-after: always;
+        }
+      }
+    
+          
+          /* Compact Report Specific Styles */
+          .compact-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 20px;
+          }
+          
+          .compact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+          }
+          
+          .compact-info-item {
+            display: flex;
+            gap: 10px;
+          }
+          
+          .compact-info-label {
+            font-weight: 600;
+            color: #555;
+            min-width: 100px;
+          }
+          
+          .compact-info-value {
+            color: #333;
+          }
+          
+          .compact-table {
+            font-size: 13px;
+          }
+          
+          .compact-table th {
+            padding: 8px;
+            font-size: 12px;
+          }
+          
+          .compact-table td {
+            padding: 8px;
+          }
+          
+          .profile-compact {
+            margin-bottom: 25px;
+          }
+          
+          .profile-compact-header {
+            background: var(--primary);
+            color: white;
+            padding: 10px 15px;
+            font-weight: 600;
+            border-radius: 4px 4px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          .profile-compact-header.status-attention {
+            background: var(--warning);
+          }
+          
+          .profile-compact-header.status-critical {
+            background: var(--danger);
+          }
+          
+          .abnormal-highlight {
+            background: #FFF3E0 !important;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+    
+      <div style="text-align: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 3px solid var(--primary);">
+        
+        <h1 style="color: var(--primary); font-size: 24px; margin-bottom: 5px;">
+          Medical Laboratory
+        </h1>
+        <p style="color: #666; font-size: 14px;">Compact Laboratory Report</p>
+      </div>
+      
+      <div class="compact-header">
+        <div class="compact-info">
+          <div class="compact-info-item">
+            <span class="compact-info-label">Patient:</span>
+            <span class="compact-info-value"><strong>Rajesh Kumar</strong></span>
+          </div>
+          <div class="compact-info-item">
+            <span class="compact-info-label">Age/Gender:</span>
+            <span class="compact-info-value">45 / Male</span>
+          </div>
+          <div class="compact-info-item">
+            <span class="compact-info-label">Lab Number:</span>
+            <span class="compact-info-value">LAB123456</span>
+          </div>
+        </div>
+        
+        <div class="compact-info">
+          <div class="compact-info-item">
+            <span class="compact-info-label">Date:</span>
+            <span class="compact-info-value">2026-02-13</span>
+          </div>
+          
+          <div class="compact-info-item">
+            <span class="compact-info-label">Referred By:</span>
+            <span class="compact-info-value">Dr. Sharma</span>
+          </div>
+          
+          <div class="compact-info-item">
+            <span class="compact-info-label">Total Tests:</span>
+            <span class="compact-info-value"><strong>10</strong></span>
+          </div>
+        </div>
+      </div>
+    <div class="test-results">
+        <div class="profile-compact">
+          <div class="profile-compact-header status-critical">
+            <span>❤️ Lipid Profile</span>
+            
+              <span style="font-size: 12px; opacity: 0.9;">
+                ⚠️ 4 abnormal
+              </span>
+            
+          </div>
+          
+          <table class="test-table compact-table">
+            <thead>
+              <tr>
+                <th style="width: 35%;">Test</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 25%;">Range</th>
+                <th style="width: 15%;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr class="abnormal-highlight">
+            <td>
+              Total Cholesterol
+              <span class="badge badge-nabl">NABL</span> <span class="badge badge-cap">CAP</span>
+            </td>
+            <td class="value-twoFromNormal"><strong>245</strong></td>
+            <td>mg/dL</td>
+            <td>0 - 200</td>
+            <td>
+              <span style="color: var(--danger); font-weight: 600;">⚠ Abnormal</span>
+            </td>
+          </tr>
+        
+          <tr class="abnormal-highlight">
+            <td>
+              Total Cholesterol
+              <span class="badge badge-nabl">NABL</span>
+            </td>
+            <td class="value-oneFromNormal"><strong>38</strong></td>
+            <td>mg/dL</td>
+            <td>40 - 100</td>
+            <td>
+              <span style="color: var(--danger); font-weight: 600;">⚠ Borderline</span>
+            </td>
+          </tr>
+        
+          <tr class="abnormal-highlight">
+            <td>
+              Total Cholesterol
+              <span class="badge badge-nabl">NABL</span> <span class="badge badge-cap">CAP</span>
+            </td>
+            <td class="value-finalCritical"><strong>165</strong></td>
+            <td>mg/dL</td>
+            <td>0 - 100</td>
+            <td>
+              <span style="color: var(--danger); font-weight: 600;">⚠ Critical</span>
+            </td>
+          </tr>
+        
+          <tr class="abnormal-highlight">
+            <td>
+              Triglycerides
+              <span class="badge badge-nabl">NABL</span>
+            </td>
+            <td class="value-threeFromNormal"><strong>210</strong></td>
+            <td>mg/dL</td>
+            <td>0 - 150</td>
+            <td>
+              <span style="color: var(--danger); font-weight: 600;">⚠ High Risk</span>
+            </td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-compact">
+          <div class="profile-compact-header status-attention">
+            <span>🫀 Liver Function Test</span>
+            
+              <span style="font-size: 12px; opacity: 0.9;">
+                ⚠️ 1 abnormal
+              </span>
+            
+          </div>
+          
+          <table class="test-table compact-table">
+            <thead>
+              <tr>
+                <th style="width: 35%;">Test</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 25%;">Range</th>
+                <th style="width: 15%;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr class="abnormal-highlight">
+            <td>
+              SGPT/ALT (Liver Enzyme)
+              <span class="badge badge-nabl">NABL</span>
+            </td>
+            <td class="value-twoFromNormal"><strong>52</strong></td>
+            <td>U/L</td>
+            <td>0 - 40</td>
+            <td>
+              <span style="color: var(--danger); font-weight: 600;">⚠ Abnormal</span>
+            </td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-compact">
+          <div class="profile-compact-header status-normal">
+            <span>🫘 Kidney Function Test</span>
+            
+              <span style="font-size: 12px; opacity: 0.9;">
+                ✓ All normal
+              </span>
+            
+          </div>
+          
+          <table class="test-table compact-table">
+            <thead>
+              <tr>
+                <th style="width: 35%;">Test</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 25%;">Range</th>
+                <th style="width: 15%;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr class="">
+            <td>
+              Creatinine
+              <span class="badge badge-nabl">NABL</span>
+            </td>
+            <td class="value-normal"><strong>0.9</strong></td>
+            <td>mg/dL</td>
+            <td>0.7 - 1.3</td>
+            <td>
+              <span style="color: var(--success);">✓</span>
+            </td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-compact">
+          <div class="profile-compact-header status-normal">
+            <span>🦋 Thyroid Profile</span>
+            
+              <span style="font-size: 12px; opacity: 0.9;">
+                ✓ All normal
+              </span>
+            
+          </div>
+          
+          <table class="test-table compact-table">
+            <thead>
+              <tr>
+                <th style="width: 35%;">Test</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 25%;">Range</th>
+                <th style="width: 15%;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr class="">
+            <td>
+              TSH (Thyroid Stimulating Hormone)
+              <span class="badge badge-nabl">NABL</span> <span class="badge badge-cap">CAP</span>
+            </td>
+            <td class="value-normal"><strong>2.5</strong></td>
+            <td>µIU/mL</td>
+            <td>0.4 - 4</td>
+            <td>
+              <span style="color: var(--success);">✓</span>
+            </td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-compact">
+          <div class="profile-compact-header status-attention">
+            <span>🩸 Complete Blood Count (CBC)</span>
+            
+              <span style="font-size: 12px; opacity: 0.9;">
+                ⚠️ 1 abnormal
+              </span>
+            
+          </div>
+          
+          <table class="test-table compact-table">
+            <thead>
+              <tr>
+                <th style="width: 35%;">Test</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 25%;">Range</th>
+                <th style="width: 15%;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr class="abnormal-highlight">
+            <td>
+              Hemoglobin
+              <span class="badge badge-nabl">NABL</span>
+            </td>
+            <td class="value-oneFromNormal"><strong>11.5</strong></td>
+            <td>g/dL</td>
+            <td>13 - 17</td>
+            <td>
+              <span style="color: var(--danger); font-weight: 600;">⚠ Borderline</span>
+            </td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-compact">
+          <div class="profile-compact-header status-attention">
+            <span>🍬 Diabetes Profile</span>
+            
+              <span style="font-size: 12px; opacity: 0.9;">
+                ⚠️ 2 abnormal
+              </span>
+            
+          </div>
+          
+          <table class="test-table compact-table">
+            <thead>
+              <tr>
+                <th style="width: 35%;">Test</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 25%;">Range</th>
+                <th style="width: 15%;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr class="abnormal-highlight">
+            <td>
+              Blood Glucose (Fasting)
+              <span class="badge badge-nabl">NABL</span> <span class="badge badge-ngsp">NGSP</span>
+            </td>
+            <td class="value-twoFromNormal"><strong>118</strong></td>
+            <td>mg/dL</td>
+            <td>70 - 100</td>
+            <td>
+              <span style="color: var(--danger); font-weight: 600;">⚠ Abnormal</span>
+            </td>
+          </tr>
+        
+          <tr class="abnormal-highlight">
+            <td>
+              HbA1c (Glycated Hemoglobin)
+              <span class="badge badge-nabl">NABL</span> <span class="badge badge-cap">CAP</span> <span class="badge badge-ngsp">NGSP</span>
+            </td>
+            <td class="value-oneFromNormal"><strong>6.2</strong></td>
+            <td>%</td>
+            <td>4 - 5.6</td>
+            <td>
+              <span style="color: var(--danger); font-weight: 600;">⚠ Borderline</span>
+            </td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div style="margin-top: 20px; padding: 15px; background: #FFF3E0; border-left: 4px solid var(--warning); border-radius: 4px;">
+        <strong style="color: var(--warning);">⚠️ 8 test(s) require attention:</strong>
+        <ul style="margin-top: 10px; margin-left: 20px;">
+    
+        <li style="margin-bottom: 5px;">
+          <strong>Hemoglobin:</strong> 
+          11.5 g/dL 
+          <span style="color: #FFA726;">(Borderline)</span>
+        </li>
+      
+        <li style="margin-bottom: 5px;">
+          <strong>Total Cholesterol:</strong> 
+          245 mg/dL 
+          <span style="color: #FF7043;">(Abnormal)</span>
+        </li>
+      
+        <li style="margin-bottom: 5px;">
+          <strong>Total Cholesterol:</strong> 
+          38 mg/dL 
+          <span style="color: #FFA726;">(Borderline)</span>
+        </li>
+      
+        <li style="margin-bottom: 5px;">
+          <strong>Total Cholesterol:</strong> 
+          165 mg/dL 
+          <span style="color: #B71C1C;">(Critical)</span>
+        </li>
+      
+        <li style="margin-bottom: 5px;">
+          <strong>Triglycerides:</strong> 
+          210 mg/dL 
+          <span style="color: #F44336;">(High Risk)</span>
+        </li>
+      
+        <li style="margin-bottom: 5px;">
+          <strong>Blood Glucose (Fasting):</strong> 
+          118 mg/dL 
+          <span style="color: #FF7043;">(Abnormal)</span>
+        </li>
+      
+        <li style="margin-bottom: 5px;">
+          <strong>HbA1c (Glycated Hemoglobin):</strong> 
+          6.2 % 
+          <span style="color: #FFA726;">(Borderline)</span>
+        </li>
+      
+        <li style="margin-bottom: 5px;">
+          <strong>SGPT/ALT (Liver Enzyme):</strong> 
+          52 U/L 
+          <span style="color: #FF7043;">(Abnormal)</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+        </div>
+        
+        <div style="margin-top: 30px; padding: 15px; border-top: 2px solid #eee; text-align: center; color: #999; font-size: 11px;">
+          <p>This report is computer-generated and for informational purposes only. Please consult your healthcare provider for medical advice.</p>
+          
+          <p style="margin-top: 3px;">Generated: 13/2/2026, 11:05:39 am</p>
+        </div>
+      </body>
+      </html>
+    

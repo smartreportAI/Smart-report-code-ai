@@ -1,0 +1,54 @@
+{
+  "report": {
+    "title": "Medical Laboratory Report",
+    "summary": "Report Summary",
+    "patientInfo": "Patient Information",
+    "patientName": "Patient Name",
+    "patient": "Patient",
+    "age": "Age",
+    "gender": "Gender",
+    "labNo": "Lab Number",
+    "workOrderId": "Work Order ID",
+    "referredBy": "Referred By",
+    "reportDate": "Report Date",
+    "date": "Date",
+    "totalTests": "Total Tests",
+    "normal": "Normal",
+    "needAttention": "Need Attention",
+    "profileSummary": "Profile Summary",
+    "healthInsights": "Health Insights & Analytics",
+    "overallHealthScore": "Overall Health Score",
+    "riskAssessment": "Risk Assessment",
+    "keyRecommendations": "Key Recommendations",
+    "keyFindings": "Key Findings",
+    "basedOnBiomarkers": "Based on {count} biomarkers analyzed.",
+    "noRiskFactors": "No specific risk factors identified based on current results.",
+    "keepUpLifestyle": "Keep up the healthy lifestyle!",
+    "consultProvider": "Please consult your healthcare provider for detailed guidance.",
+    "consultProviderBrief": "Please consult your healthcare provider for personalized guidance.",
+    "importantNote": "These recommendations are general guidelines. Always consult with your healthcare provider before making any changes to your diet, exercise routine, or medication.",
+    "allNormal": "All tests are within normal range.",
+    "noAbnormalFindings": "All test results are within normal reference ranges. No abnormal findings to report.",
+    "testsRequireAttention": "{count} test(s) require attention",
+    "generateDate": "Generated on"
+  },
+  "status": {
+    "normal": "Normal",
+    "borderline": "Borderline",
+    "abnormal": "Abnormal",
+    "highRisk": "High Risk",
+    "critical": "Critical",
+    "allNormal": "All Normal",
+    "review": "Review",
+    "needsAttention": "Needs Attention"
+  },
+  "gender": {
+    "male": "Male",
+    "female": "Female"
+  },
+  "format": {
+    "years": "years",
+    "compactReport": "Compact Laboratory Report",
+    "hybridReport": "Laboratory Report (Hybrid Format)"
+  }
+}

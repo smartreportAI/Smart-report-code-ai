@@ -9,7 +9,14 @@
     "start": "node dist/index.js",
     "generate": "tsx src/generate-sample.ts",
     "test": "tsx src/generate-sample.ts",
-    "seed": "tsx scripts/seed-biomarkers.ts"
+    "seed": "tsx scripts/seed-biomarkers.ts",
+    "test-phase1": "tsx src/test-phase1.ts",
+    "test-reports": "tsx src/test-reports.ts",
+    "test-customization": "tsx src/test-customization.ts",
+    "test-analytics": "tsx src/test-analytics.ts",
+    "test-all-types": "tsx src/test-all-report-types.ts",
+    "test-i18n-viz": "tsx src/test-i18n-and-viz.ts",
+    "generate-mappings": "tsx scripts/generate-parameter-mappings.ts"
   },
   "keywords": [],
   "author": "",

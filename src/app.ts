@@ -11,6 +11,7 @@ import { authRoutes } from './api/routes/auth.routes.js';
 import { portalRoutes } from './api/routes/portal.routes.js';
 import { lisRoutes } from './api/routes/lis.routes.js';
 import { reportRoutes } from './api/routes/report.routes.js';
+import { reportRoutes as reportV2Routes } from './api/routes/reports-v2.routes.js';
 import { configRoutes } from './api/routes/config.routes.js';
 import { clientRoutes } from './api/routes/client.routes.js';
 import { mappingRoutes } from './api/routes/mapping.routes.js';
@@ -53,6 +54,7 @@ export async function buildApp() {
     await apiScope.register(portalRoutes, { prefix: '/api/v1' });
     await apiScope.register(lisRoutes, { prefix: '/api/v1' });
     await apiScope.register(reportRoutes, { prefix: '/api/v1' });
+    await apiScope.register(reportV2Routes, { prefix: '/api/v1/reports/v2' });
     await apiScope.register(configRoutes, { prefix: '/api/v1' });
     await apiScope.register(clientRoutes, { prefix: '/api/v1' });
     await apiScope.register(mappingRoutes, { prefix: '/api/v1' });

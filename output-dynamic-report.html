@@ -1,0 +1,896 @@
+
+      <!DOCTYPE html>
+      <html lang="en" dir="ltr">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Medical Laboratory Report - Rajesh Kumar</title>
+        <style>
+          :root { --report-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+          
+      :root {
+        --primary: #1976D2;
+        --secondary: #424242;
+        --accent: #FFA726;
+        --success: #4CAF50;
+        --warning: #FFA726;
+        --danger: #F44336;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: var(--report-font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
+        line-height: 1.6;
+        color: #333;
+        background: #fff;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .page-break {
+        page-break-after: always;
+      }
+      
+      /* Header Styles */
+      .report-header {
+        border-bottom: 3px solid var(--primary);
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+      
+      .report-title {
+        font-size: 28px;
+        color: var(--primary);
+        margin-bottom: 10px;
+      }
+      
+      .report-subtitle {
+        font-size: 16px;
+        color: #666;
+      }
+      
+      /* Patient Details */
+      .patient-details {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+      }
+      
+      .patient-details table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      .patient-details td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .patient-details td:first-child {
+        font-weight: 600;
+        width: 150px;
+        color: #555;
+      }
+      
+      /* Profile Section */
+      .profile-section {
+        margin-bottom: 40px;
+        break-inside: avoid;
+      }
+      
+      .profile-header {
+        background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .profile-header.status-normal {
+        background: linear-gradient(135deg, var(--success) 0%, #45a049 100%);
+      }
+      
+      .profile-header.status-attention {
+        background: linear-gradient(135deg, var(--warning) 0%, #FB8C00 100%);
+      }
+      
+      .profile-header.status-critical {
+        background: linear-gradient(135deg, var(--danger) 0%, #E53935 100%);
+      }
+      
+      .profile-name {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+      .profile-summary {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+      
+      /* Test Table */
+      .test-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border-radius: 0 0 8px 8px;
+        overflow: hidden;
+      }
+      
+      .test-table thead {
+        background: #f8f9fa;
+      }
+      
+      .test-table th {
+        padding: 12px;
+        text-align: left;
+        font-weight: 600;
+        color: #555;
+        border-bottom: 2px solid #ddd;
+      }
+      
+      .test-table td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+      }
+      
+      .test-table tr:last-child td {
+        border-bottom: none;
+      }
+      
+      .test-table tr:hover {
+        background: #f8f9fa;
+      }
+      
+      /* Color Indicators */
+      .value-normal {
+        color: var(--success);
+        font-weight: 600;
+      }
+      
+      .value-oneFromNormal {
+        color: var(--warning);
+        font-weight: 600;
+      }
+      
+      .value-twoFromNormal {
+        color: #FF7043;
+        font-weight: 600;
+      }
+      
+      .value-threeFromNormal {
+        color: var(--danger);
+        font-weight: 600;
+      }
+      
+      .value-finalCritical {
+        color: #B71C1C;
+        font-weight: 700;
+      }
+      
+      /* Status Badge */
+      .status-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      
+      .status-badge.normal {
+        background: #E8F5E9;
+        color: var(--success);
+      }
+      
+      .status-badge.borderline {
+        background: #FFF3E0;
+        color: #E65100;
+      }
+      
+      .status-badge.abnormal {
+        background: #FFEBEE;
+        color: #C62828;
+      }
+      
+      .status-badge.critical {
+        background: #B71C1C;
+        color: white;
+      }
+      
+      /* Accreditation Badges */
+      .badge {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 5px;
+      }
+      
+      .badge-nabl {
+        background: var(--primary);
+        color: white;
+      }
+      
+      .badge-cap {
+        background: var(--success);
+        color: white;
+      }
+      
+      .badge-ngsp {
+        background: var(--accent);
+        color: white;
+      }
+      
+      /* Recommendations */
+      .recommendations {
+        margin-top: 30px;
+        padding: 20px;
+        background: #FFF9C4;
+        border-left: 4px solid var(--warning);
+        border-radius: 4px;
+      }
+      
+      .recommendations h3 {
+        color: #F57F17;
+        margin-bottom: 15px;
+      }
+      
+      .recommendation-item {
+        margin-bottom: 15px;
+      }
+      
+      .recommendation-item h4 {
+        color: #555;
+        margin-bottom: 8px;
+      }
+      
+      .recommendation-item ul {
+        margin-left: 20px;
+      }
+      
+      .recommendation-item li {
+        margin-bottom: 5px;
+        color: #666;
+      }
+      
+      /* Summary */
+      .summary {
+        margin-top: 30px;
+        padding: 20px;
+        background: #E3F2FD;
+        border-radius: 8px;
+      }
+      
+      .summary h3 {
+        color: var(--primary);
+        margin-bottom: 15px;
+      }
+      
+      .summary-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+      
+      .stat-card {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      
+      .stat-value {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--primary);
+      }
+      
+      .stat-label {
+        font-size: 14px;
+        color: #666;
+        margin-top: 5px;
+      }
+      
+      @media print {
+        body {
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+        
+        .page-break {
+          page-break-after: always;
+        }
+      }
+    
+          
+          /* Dynamic Report Specific Styles */
+          .test-description {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 3px solid var(--primary);
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+          }
+          
+          .test-row-expanded {
+            background: #fafafa;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+    
+      <div class="report-header" style="text-align: center; border: none;">
+        
+        <h1 class="report-title" style="font-size: 32px; margin-bottom: 5px;">Medical Laboratory</h1>
+        <p class="report-subtitle"></p>
+        <p class="report-subtitle"> | </p>
+      </div>
+      
+      <div style="text-align: center; padding: 60px 0; margin-top: 40px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+        <h2 style="color: var(--primary); font-size: 28px; margin-bottom: 10px;">
+          Medical Laboratory Report
+        </h2>
+        <h3 style="color: #444; font-size: 24px; margin-top: 30px; margin-bottom: 10px;">
+          Rajesh Kumar
+        </h3>
+        <p style="color: #666; font-size: 16px;">
+          Lab No: LAB123456
+        </p>
+        <p style="color: #666; font-size: 16px;">
+          Date: 2026-02-13
+        </p>
+        <p style="color: #999; font-size: 14px; margin-top: 10px;">Central Laboratory - Mumbai</p>
+      </div>
+      
+      <div class="page-break"></div>
+    
+      <div class="patient-details">
+        <h3 style="margin-bottom: 15px; color: var(--primary);">Patient Information</h3>
+        <table>
+          <tr>
+            <td>Patient Name</td>
+            <td>Rajesh Kumar</td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>45 years</td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td>Lab Number</td>
+            <td>LAB123456</td>
+          </tr>
+          <tr>
+            <td>Work Order ID</td>
+            <td>WO2026021301</td>
+          </tr>
+          
+          <tr>
+            <td>Referred By</td>
+            <td>Dr. Sharma</td>
+          </tr>
+          
+          <tr>
+            <td>Report Date</td>
+            <td>2026-02-13</td>
+          </tr>
+        </table>
+      </div>
+    <div class="test-results">
+        <div class="profile-section">
+          <div class="profile-header status-critical">
+            <div>
+              <div class="profile-name">
+                ❤️ Lipid Profile
+              </div>
+              <div class="profile-summary">4 of 4 tests require immediate attention</div>
+            </div>
+          </div>
+          
+          <table class="test-table">
+            <thead>
+              <tr>
+                <th style="width: 30%;">Test Parameter</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 20%;">Reference Range</th>
+                <th style="width: 15%;">Status</th>
+                <th style="width: 10%;">Accred.</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr>
+            <td>
+              <strong>Total Cholesterol</strong>
+              
+                <div class="test-description">
+                  Total cholesterol measures all the cholesterol in your blood, including LDL and HDL.
+                </div>
+              
+            </td>
+            <td class="value-twoFromNormal">245</td>
+            <td>mg/dL</td>
+            <td>0 - 200</td>
+            <td>
+              <span class="status-badge abnormal">
+                Abnormal
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span> <span class="badge badge-cap">CAP</span></td>
+          </tr>
+        
+          <tr>
+            <td>
+              <strong>Total Cholesterol</strong>
+              
+                <div class="test-description">
+                  Total cholesterol measures all the cholesterol in your blood, including LDL and HDL.
+                </div>
+              
+            </td>
+            <td class="value-oneFromNormal">38</td>
+            <td>mg/dL</td>
+            <td>40 - 100</td>
+            <td>
+              <span class="status-badge abnormal">
+                Borderline
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span></td>
+          </tr>
+        
+          <tr>
+            <td>
+              <strong>Total Cholesterol</strong>
+              
+                <div class="test-description">
+                  Total cholesterol measures all the cholesterol in your blood, including LDL and HDL.
+                </div>
+              
+            </td>
+            <td class="value-finalCritical">165</td>
+            <td>mg/dL</td>
+            <td>0 - 100</td>
+            <td>
+              <span class="status-badge critical">
+                Critical
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span> <span class="badge badge-cap">CAP</span></td>
+          </tr>
+        
+          <tr>
+            <td>
+              <strong>Triglycerides</strong>
+              
+                <div class="test-description">
+                  Triglycerides are a type of fat in your blood. High levels increase heart disease risk.
+                </div>
+              
+            </td>
+            <td class="value-threeFromNormal">210</td>
+            <td>mg/dL</td>
+            <td>0 - 150</td>
+            <td>
+              <span class="status-badge critical">
+                High Risk
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span></td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-section">
+          <div class="profile-header status-attention">
+            <div>
+              <div class="profile-name">
+                🫀 Liver Function Test
+              </div>
+              <div class="profile-summary">1 of 1 tests need attention</div>
+            </div>
+          </div>
+          
+          <table class="test-table">
+            <thead>
+              <tr>
+                <th style="width: 30%;">Test Parameter</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 20%;">Reference Range</th>
+                <th style="width: 15%;">Status</th>
+                <th style="width: 10%;">Accred.</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr>
+            <td>
+              <strong>SGPT/ALT (Liver Enzyme)</strong>
+              
+                <div class="test-description">
+                  SGPT/ALT is an enzyme found in the liver. Elevated levels may indicate liver damage.
+                </div>
+              
+            </td>
+            <td class="value-twoFromNormal">52</td>
+            <td>U/L</td>
+            <td>0 - 40</td>
+            <td>
+              <span class="status-badge abnormal">
+                Abnormal
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span></td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-section">
+          <div class="profile-header status-normal">
+            <div>
+              <div class="profile-name">
+                🫘 Kidney Function Test
+              </div>
+              <div class="profile-summary">All 1 tests in normal range</div>
+            </div>
+          </div>
+          
+          <table class="test-table">
+            <thead>
+              <tr>
+                <th style="width: 30%;">Test Parameter</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 20%;">Reference Range</th>
+                <th style="width: 15%;">Status</th>
+                <th style="width: 10%;">Accred.</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr>
+            <td>
+              <strong>Creatinine</strong>
+              
+                <div class="test-description">
+                  Creatinine is a waste product filtered by kidneys. Levels indicate kidney function.
+                </div>
+              
+            </td>
+            <td class="value-normal">0.9</td>
+            <td>mg/dL</td>
+            <td>0.7 - 1.3</td>
+            <td>
+              <span class="status-badge normal">
+                Normal
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span></td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-section">
+          <div class="profile-header status-normal">
+            <div>
+              <div class="profile-name">
+                🦋 Thyroid Profile
+              </div>
+              <div class="profile-summary">All 1 tests in normal range</div>
+            </div>
+          </div>
+          
+          <table class="test-table">
+            <thead>
+              <tr>
+                <th style="width: 30%;">Test Parameter</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 20%;">Reference Range</th>
+                <th style="width: 15%;">Status</th>
+                <th style="width: 10%;">Accred.</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr>
+            <td>
+              <strong>TSH (Thyroid Stimulating Hormone)</strong>
+              
+                <div class="test-description">
+                  TSH regulates thyroid hormone production. Abnormal levels indicate thyroid dysfunction.
+                </div>
+              
+            </td>
+            <td class="value-normal">2.5</td>
+            <td>µIU/mL</td>
+            <td>0.4 - 4</td>
+            <td>
+              <span class="status-badge normal">
+                Normal
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span> <span class="badge badge-cap">CAP</span></td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-section">
+          <div class="profile-header status-attention">
+            <div>
+              <div class="profile-name">
+                🩸 Complete Blood Count (CBC)
+              </div>
+              <div class="profile-summary">1 of 1 tests need attention</div>
+            </div>
+          </div>
+          
+          <table class="test-table">
+            <thead>
+              <tr>
+                <th style="width: 30%;">Test Parameter</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 20%;">Reference Range</th>
+                <th style="width: 15%;">Status</th>
+                <th style="width: 10%;">Accred.</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr>
+            <td>
+              <strong>Hemoglobin</strong>
+              
+                <div class="test-description">
+                  Hemoglobin is a protein in red blood cells that carries oxygen throughout your body.
+                </div>
+              
+            </td>
+            <td class="value-oneFromNormal">11.5</td>
+            <td>g/dL</td>
+            <td>13 - 17</td>
+            <td>
+              <span class="status-badge abnormal">
+                Borderline
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span></td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="profile-section">
+          <div class="profile-header status-attention">
+            <div>
+              <div class="profile-name">
+                🍬 Diabetes Profile
+              </div>
+              <div class="profile-summary">2 of 2 tests need attention</div>
+            </div>
+          </div>
+          
+          <table class="test-table">
+            <thead>
+              <tr>
+                <th style="width: 30%;">Test Parameter</th>
+                <th style="width: 15%;">Result</th>
+                <th style="width: 10%;">Unit</th>
+                <th style="width: 20%;">Reference Range</th>
+                <th style="width: 15%;">Status</th>
+                <th style="width: 10%;">Accred.</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+          <tr>
+            <td>
+              <strong>Blood Glucose (Fasting)</strong>
+              
+                <div class="test-description">
+                  Fasting blood glucose measures blood sugar levels after not eating for 8-12 hours.
+                </div>
+              
+            </td>
+            <td class="value-twoFromNormal">118</td>
+            <td>mg/dL</td>
+            <td>70 - 100</td>
+            <td>
+              <span class="status-badge abnormal">
+                Abnormal
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span> <span class="badge badge-ngsp">NGSP</span></td>
+          </tr>
+        
+          <tr>
+            <td>
+              <strong>HbA1c (Glycated Hemoglobin)</strong>
+              
+                <div class="test-description">
+                  HbA1c shows average blood sugar levels over the past 2-3 months. Important for diabetes management.
+                </div>
+              
+            </td>
+            <td class="value-oneFromNormal">6.2</td>
+            <td>%</td>
+            <td>4 - 5.6</td>
+            <td>
+              <span class="status-badge abnormal">
+                Borderline
+              </span>
+            </td>
+            <td><span class="badge badge-nabl">NABL</span> <span class="badge badge-cap">CAP</span> <span class="badge badge-ngsp">NGSP</span></td>
+          </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="page-break"></div>
+      <div class="recommendations">
+        <h3>⚕️ Key Recommendations</h3>
+        <p style="margin-bottom: 20px; color: #666;">
+          Please consult your healthcare provider for detailed guidance.
+        </p>
+    
+          <div class="recommendation-item">
+            <h4>🔸 Hemoglobin (Borderline)</h4>
+            <ul>
+              <li>Increase iron-rich foods (spinach, red meat, beans)</li><li>Consider iron supplements after consulting your doctor</li><li>Get tested for iron deficiency anemia</li><li>Ensure adequate vitamin C intake for better iron absorption</li>
+            </ul>
+          </div>
+        
+          <div class="recommendation-item">
+            <h4>🔸 Total Cholesterol (Abnormal)</h4>
+            <ul>
+              <li>Reduce saturated and trans fats</li><li>Increase fiber intake (oats, beans, fruits)</li><li>Exercise regularly (30 minutes daily)</li><li>Consider medication if lifestyle changes insufficient</li><li>Limit red meat and full-fat dairy</li>
+            </ul>
+          </div>
+        
+          <div class="recommendation-item">
+            <h4>🔸 Total Cholesterol (Borderline)</h4>
+            <ul>
+              <li>Ensure adequate healthy fats in diet</li><li>Include nuts, avocados, and olive oil</li><li>Consult doctor if persistently low</li>
+            </ul>
+          </div>
+        
+          <div class="recommendation-item">
+            <h4>🔸 Total Cholesterol (Critical)</h4>
+            <ul>
+              <li>Reduce saturated and trans fats</li><li>Increase fiber intake (oats, beans, fruits)</li><li>Exercise regularly (30 minutes daily)</li><li>Consider medication if lifestyle changes insufficient</li><li>Limit red meat and full-fat dairy</li>
+            </ul>
+          </div>
+        
+          <div class="recommendation-item">
+            <h4>🔸 Triglycerides (High Risk)</h4>
+            <ul>
+              <li>Limit sugar and refined carbohydrates</li><li>Reduce alcohol consumption</li><li>Lose weight if overweight</li><li>Exercise regularly</li><li>Increase omega-3 fatty acids (fish, flaxseed)</li><li>Avoid sugary drinks completely</li>
+            </ul>
+          </div>
+        
+          <div class="recommendation-item">
+            <h4>🔸 Blood Glucose (Fasting) (Abnormal)</h4>
+            <ul>
+              <li>Reduce refined carbohydrates and sugar</li><li>Exercise regularly (helps insulin sensitivity)</li><li>Lose weight if overweight</li><li>Monitor blood sugar regularly</li><li>Consult endocrinologist if persistently high</li><li>Consider diabetes screening</li>
+            </ul>
+          </div>
+        
+          <div class="recommendation-item">
+            <h4>🔸 HbA1c (Glycated Hemoglobin) (Borderline)</h4>
+            <ul>
+              <li>Improve blood sugar control</li><li>Review diabetes medication with doctor</li><li>Strict diet control</li><li>Regular blood sugar monitoring</li><li>Increase physical activity</li><li>Consider diabetes education program</li>
+            </ul>
+          </div>
+        
+          <div class="recommendation-item">
+            <h4>🔸 SGPT/ALT (Liver Enzyme) (Abnormal)</h4>
+            <ul>
+              <li>Limit alcohol consumption</li><li>Avoid hepatotoxic medications</li><li>Lose weight if overweight (fatty liver)</li><li>Get tested for hepatitis</li><li>Consult hepatologist if very high</li><li>Avoid processed foods</li>
+            </ul>
+          </div>
+        
+        <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 4px;">
+          <strong>⚠️ These recommendations are general guidelines. Always consult with your healthcare provider before making any changes to your diet, exercise routine, or medication.</strong>
+        </div>
+      </div>
+    
+      <div class="summary">
+        <h3>📊 Report Summary</h3>
+        <div class="summary-stats">
+          <div class="stat-card">
+            <div class="stat-value">10</div>
+            <div class="stat-label">Total Tests</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" style="color: var(--success);">2</div>
+            <div class="stat-label">Normal</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" style="color: var(--danger);">
+              8
+            </div>
+            <div class="stat-label">Need Attention</div>
+          </div>
+        </div>
+        
+        <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 4px;">
+          <p style="margin-bottom: 10px;"><strong>Profile Summary:</strong></p>
+          <ul style="margin-left: 20px;">
+            
+              <li style="margin-bottom: 5px;">
+                ❤️ <strong>Lipid Profile:</strong> 4 of 4 tests require immediate attention
+              </li>
+            
+              <li style="margin-bottom: 5px;">
+                🫀 <strong>Liver Function Test:</strong> 1 of 1 tests need attention
+              </li>
+            
+              <li style="margin-bottom: 5px;">
+                🫘 <strong>Kidney Function Test:</strong> All 1 tests in normal range
+              </li>
+            
+              <li style="margin-bottom: 5px;">
+                🦋 <strong>Thyroid Profile:</strong> All 1 tests in normal range
+              </li>
+            
+              <li style="margin-bottom: 5px;">
+                🩸 <strong>Complete Blood Count (CBC):</strong> 1 of 1 tests need attention
+              </li>
+            
+              <li style="margin-bottom: 5px;">
+                🍬 <strong>Diabetes Profile:</strong> 2 of 2 tests need attention
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    
+        </div>
+        
+        <div style="margin-top: 40px; padding: 20px; border-top: 2px solid #eee; color: #666; font-size: 12px;">
+          
+          
+          <div style="text-align: center;">
+            <p>This report is computer-generated and for informational purposes only. Please consult your healthcare provider for medical advice.</p>
+            
+            <p style="margin-top: 5px; color: #999;">Generated on 13/2/2026, 11:05:39 am</p>
+          </div>
+        </div>
+      </body>
+      </html>
+    

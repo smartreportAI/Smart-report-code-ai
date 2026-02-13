@@ -1,0 +1,183 @@
+{
+    "clients": [
+        {
+            "clientId": "niroggyan",
+            "clientName": "NirogGyan Labs",
+            "branding": {
+                "colors": {
+                    "primary": "#2563EB",
+                    "secondary": "#1E40AF",
+                    "accent": "#F59E0B",
+                    "success": "#10B981",
+                    "warning": "#F59E0B",
+                    "danger": "#EF4444"
+                },
+                "header": {
+                    "logoUrl": "https://example.com/logos/niroggyan.png",
+                    "labName": "NirogGyan Medical Laboratories",
+                    "labAddress": "123 Health Street, Mumbai, Maharashtra 400001",
+                    "labContact": "+91-22-1234-5678",
+                    "labEmail": "reports@niroggyan.com",
+                    "labWebsite": "www.niroggyan.com",
+                    "showPatientPhoto": false
+                },
+                "footer": {
+                    "disclaimer": "This report is computer-generated and certified by NirogGyan Labs. All tests are performed under strict quality control. For queries, contact your healthcare provider.",
+                    "customText": "Accredited by NABL | ISO 15189:2012 Certified",
+                    "showSignature": true,
+                    "signatureText": "Dr. Rajesh Sharma, MD\nLaboratory Director",
+                    "signatureImageUrl": "https://example.com/signatures/dr-sharma.png"
+                }
+            },
+            "features": {
+                "showTestDescriptions": true,
+                "showRecommendations": true,
+                "showAccreditation": true,
+                "showProfileIcons": true,
+                "showSummaryStats": true,
+                "showCoverPage": true,
+                "showQRCode": true,
+                "showPastDataComparison": true,
+                "showAnalytics": true
+            },
+            "reportSettings": {
+                "defaultReportType": "dynamic",
+                "defaultLanguage": "en",
+                "pageSize": "A4",
+                "includeWatermark": false,
+                "watermarkText": null
+            },
+            "customContent": {
+                "welcomeMessage": "Thank you for choosing NirogGyan Labs for your health screening needs.",
+                "healthTips": [
+                    "Stay hydrated - drink at least 8 glasses of water daily",
+                    "Exercise regularly - aim for 30 minutes of physical activity daily",
+                    "Eat a balanced diet rich in fruits and vegetables",
+                    "Get 7-8 hours of quality sleep each night"
+                ],
+                "emergencyContact": "For urgent queries: +91-22-1234-9999 (24/7 Helpline)",
+                "additionalInfo": "Download our mobile app for easy access to all your reports and health tracking."
+            },
+            "metadata": {
+                "createdAt": "2026-01-15T10:00:00Z",
+                "updatedAt": "2026-02-13T10:00:00Z",
+                "isActive": true
+            }
+        },
+        {
+            "clientId": "citycare",
+            "clientName": "CityCare Diagnostics",
+            "branding": {
+                "colors": {
+                    "primary": "#059669",
+                    "secondary": "#047857",
+                    "accent": "#F97316",
+                    "success": "#22C55E",
+                    "warning": "#FBBF24",
+                    "danger": "#DC2626"
+                },
+                "header": {
+                    "logoUrl": "https://example.com/logos/citycare.png",
+                    "labName": "CityCare Diagnostics Center",
+                    "labAddress": "456 Medical Plaza, Delhi 110001",
+                    "labContact": "+91-11-9876-5432",
+                    "labEmail": "info@citycare.in",
+                    "labWebsite": "www.citycare.in",
+                    "showPatientPhoto": false
+                },
+                "footer": {
+                    "disclaimer": "Results are confidential and for the use of the referring physician only. This is a computer-generated report.",
+                    "customText": "NABL Accredited | CAP Certified",
+                    "showSignature": true,
+                    "signatureText": "Dr. Priya Mehta, PhD\nChief Pathologist"
+                }
+            },
+            "features": {
+                "showTestDescriptions": true,
+                "showRecommendations": true,
+                "showAccreditation": true,
+                "showProfileIcons": true,
+                "showSummaryStats": true,
+                "showCoverPage": true,
+                "showQRCode": false,
+                "showPastDataComparison": false,
+                "showAnalytics": true
+            },
+            "reportSettings": {
+                "defaultReportType": "dynamic",
+                "defaultLanguage": "en",
+                "pageSize": "A4",
+                "includeWatermark": false
+            },
+            "customContent": {
+                "welcomeMessage": "CityCare Diagnostics - Your Health, Our Priority",
+                "healthTips": [
+                    "Regular health checkups help detect problems early",
+                    "Maintain a healthy weight through diet and exercise",
+                    "Avoid smoking and limit alcohol consumption"
+                ],
+                "emergencyContact": "24/7 Support: +91-11-9876-0000"
+            },
+            "metadata": {
+                "createdAt": "2026-01-20T09:00:00Z",
+                "updatedAt": "2026-02-10T15:30:00Z",
+                "isActive": true
+            }
+        },
+        {
+            "clientId": "quicklab",
+            "clientName": "QuickLab Express",
+            "branding": {
+                "colors": {
+                    "primary": "#7C3AED",
+                    "secondary": "#6D28D9",
+                    "accent": "#EC4899",
+                    "success": "#34D399",
+                    "warning": "#FBBF24",
+                    "danger": "#F87171"
+                },
+                "header": {
+                    "logoUrl": "https://example.com/logos/quicklab.png",
+                    "labName": "QuickLab Express",
+                    "labAddress": "789 Fast Lane, Bangalore 560001",
+                    "labContact": "+91-80-5555-6666",
+                    "labEmail": "results@quicklab.co.in",
+                    "labWebsite": "www.quicklab.co.in",
+                    "showPatientPhoto": false
+                },
+                "footer": {
+                    "disclaimer": "Fast, Accurate, Reliable - QuickLab Express. This is a computer-generated report.",
+                    "customText": "Same-day results | Home collection available",
+                    "showSignature": false
+                }
+            },
+            "features": {
+                "showTestDescriptions": false,
+                "showRecommendations": false,
+                "showAccreditation": true,
+                "showProfileIcons": false,
+                "showSummaryStats": true,
+                "showCoverPage": false,
+                "showQRCode": true,
+                "showPastDataComparison": false,
+                "showAnalytics": false
+            },
+            "reportSettings": {
+                "defaultReportType": "compact",
+                "defaultLanguage": "en",
+                "pageSize": "A4",
+                "includeWatermark": true,
+                "watermarkText": "QuickLab Express - Fast Results"
+            },
+            "customContent": {
+                "welcomeMessage": "Thank you for choosing QuickLab Express",
+                "emergencyContact": "Customer Care: +91-80-5555-7777"
+            },
+            "metadata": {
+                "createdAt": "2026-02-01T08:00:00Z",
+                "updatedAt": "2026-02-12T12:00:00Z",
+                "isActive": true
+            }
+        }
+    ]
+}

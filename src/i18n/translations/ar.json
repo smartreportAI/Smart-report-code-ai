@@ -1,0 +1,54 @@
+{
+  "report": {
+    "title": "تقرير المختبر الطبي",
+    "summary": "ملخص التقرير",
+    "patientInfo": "معلومات المريض",
+    "patientName": "اسم المريض",
+    "patient": "المريض",
+    "age": "العمر",
+    "gender": "الجنس",
+    "labNo": "رقم المختبر",
+    "workOrderId": "معرف أمر العمل",
+    "referredBy": "أحاله",
+    "reportDate": "تاريخ التقرير",
+    "date": "التاريخ",
+    "totalTests": "إجمالي الاختبارات",
+    "normal": "طبيعي",
+    "needAttention": "يحتاج اهتماماً",
+    "profileSummary": "ملخص الملف",
+    "healthInsights": "رؤى الصحة والتحليلات",
+    "overallHealthScore": "درجة الصحة الإجمالية",
+    "riskAssessment": "تقييم المخاطر",
+    "keyRecommendations": "التوصيات الرئيسية",
+    "keyFindings": "النتائج الرئيسية",
+    "basedOnBiomarkers": "بناءً على تحليل {count} من المؤشرات الحيوية.",
+    "noRiskFactors": "لم يتم تحديد عوامل خطر محددة بناءً على النتائج الحالية.",
+    "keepUpLifestyle": "استمر في نمط الحياة الصحي!",
+    "consultProvider": "يرجى استشارة مقدم الرعاية الصحية للحصول على إرشادات تفصيلية.",
+    "consultProviderBrief": "يرجى استشارة مقدم الرعاية الصحية للحصول على إرشادات مخصصة.",
+    "importantNote": "هذه التوصيات هي إرشادات عامة. استشر دائماً مقدم الرعاية الصحية قبل إجراء أي تغييرات على نظامك الغذائي أو التمارين أو الأدوية.",
+    "allNormal": "جميع الاختبارات ضمن النطاق الطبيعي.",
+    "noAbnormalFindings": "جميع نتائج الاختبارات ضمن النطاقات المرجعية الطبيعية. لا توجد نتائج غير طبيعية للإبلاغ عنها.",
+    "testsRequireAttention": "{count} اختبار(ات) تحتاج اهتماماً",
+    "generateDate": "تم الإنشاء:"
+  },
+  "status": {
+    "normal": "طبيعي",
+    "borderline": "حدودي",
+    "abnormal": "غير طبيعي",
+    "highRisk": "خطر عالٍ",
+    "critical": "حرج",
+    "allNormal": "الكل طبيعي",
+    "review": "مراجعة",
+    "needsAttention": "يحتاج اهتماماً"
+  },
+  "gender": {
+    "male": "ذكر",
+    "female": "أنثى"
+  },
+  "format": {
+    "years": "سنوات",
+    "compactReport": "تقرير مختبر موجز",
+    "hybridReport": "تقرير المختبر (تنسيق هجين)"
+  }
+}

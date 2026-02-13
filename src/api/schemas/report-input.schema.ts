@@ -55,7 +55,7 @@ export const OrderSchema = z.object({
 
 // Report options schema
 export const ReportOptionsSchema = z.object({
-    reportType: z.enum(['compact', 'advanced', 'hybrid', 'summary', 'dynamic']).default('dynamic'),
+    reportType: z.enum(['compact', 'dynamic']).default('dynamic'),
     language: z.enum(['en', 'hi', 'ar', 'cz']).default('en'),
     generateCoverPage: z.boolean().default(true),
     generatePrintPdf: z.boolean().default(true),
@@ -88,7 +88,7 @@ export const ReportInputSchemaV1 = z.object({
         typeof val === 'string' ? parseInt(val, 10) : val
     ),
     Gender: z.enum(['Male', 'Female', 'Other', 'male', 'female', 'other']),
-    reportType: z.enum(['compact', 'advanced', 'hybrid', 'summary', 'dynamic']).optional(),
+    reportType: z.enum(['compact', 'dynamic']).optional(),
     reportLang: z.enum(['en', 'hi', 'ar', 'cz']).optional(),
     tests: z.array(TestSchema).min(1, 'At least one test result is required'),
     results: z.array(PackageSchema).optional(),

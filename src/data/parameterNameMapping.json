@@ -1,0 +1,5094 @@
+{
+  "ALLERGY INDIVIDUAL MARKER PEANUT": {
+    "standardName": "ALLERGY INDIVIDUAL MARKER PEANUT",
+    "paramId": "SRA_P011"
+  },
+  "ALLERGY, INDIVIDUAL MARKER, BUCKWHEAT": {
+    "standardName": "ALLERGY, INDIVIDUAL MARKER, BUCKWHEAT",
+    "paramId": "SRA_P012"
+  },
+  "Allergen-ACTH": {
+    "standardName": "Allergen-ACTH",
+    "paramId": "SRA_P013"
+  },
+  "Allergen-Gluten": {
+    "standardName": "Allergen-Gluten",
+    "paramId": "SRA_P014"
+  },
+  "Allergy Acacia Spp (Acacia)": {
+    "standardName": "Allergy Acacia Spp (Acacia)",
+    "paramId": "SRA_P015"
+  },
+  "Allergy Acarus Siro (Flour Mite) By EIA": {
+    "standardName": "Allergy Acarus Siro (Flour Mite) By EIA",
+    "paramId": "SRA_P016"
+  },
+  "Allergy Acetylcysteine": {
+    "standardName": "Allergy Acetylcysteine",
+    "paramId": "SRA_P017"
+  },
+  "Allergy Agrostis Stolonifera (Bentgrass) By EIA": {
+    "standardName": "Triglycerides",
+    "paramId": "SRA_P005"
+  },
+  "Allergy Amaranthus Retroflexus (Common Pigweed)": {
+    "standardName": "Allergy Amaranthus Retroflexus (Common Pigweed)",
+    "paramId": "SRA_P018"
+  },
+  "Allergy Ambroxol": {
+    "standardName": "Allergy Ambroxol",
+    "paramId": "SRA_P019"
+  },
+  "Allergy Anise": {
+    "standardName": "Allergy Anise",
+    "paramId": "SRA_P020"
+  },
+  "Allergy Anthoxanthum Odoratum (Sweet Vernal Grass)": {
+    "standardName": "Allergy Anthoxanthum Odoratum (Sweet Vernal Grass)",
+    "paramId": "SRA_P021"
+  },
+  "Allergy Apricot": {
+    "standardName": "Allergy Apricot",
+    "paramId": "SRA_P022"
+  },
+  "Allergy Ascaris Lumbricoides": {
+    "standardName": "Allergy Ascaris Lumbricoides",
+    "paramId": "SRA_P023"
+  },
+  "Allergy Aspirin": {
+    "standardName": "Allergy Aspirin",
+    "paramId": "SRA_P024"
+  },
+  "Allergy Azithromycin": {
+    "standardName": "Allergy Azithromycin",
+    "paramId": "SRA_P025"
+  },
+  "Allergy Basil": {
+    "standardName": "Allergy Basil",
+    "paramId": "SRA_P026"
+  },
+  "Allergy Beet": {
+    "standardName": "Allergy Beet",
+    "paramId": "SRA_P027"
+  },
+  "Allergy Benzocaine": {
+    "standardName": "Allergy Benzocaine",
+    "paramId": "SRA_P028"
+  },
+  "Allergy Black": {
+    "standardName": "Allergy Black",
+    "paramId": "SRA_P029"
+  },
+  "Allergy Books Dust": {
+    "standardName": "Allergy Books Dust",
+    "paramId": "SRA_P030"
+  },
+  "Allergy Brassica Napus (Rape)": {
+    "standardName": "Allergy Brassica Napus (Rape)",
+    "paramId": "SRA_P031"
+  },
+  "Allergy Broccoli": {
+    "standardName": "Allergy Broccoli",
+    "paramId": "SRA_P032"
+  },
+  "Allergy Bromhexine": {
+    "standardName": "Allergy Bromhexine",
+    "paramId": "SRA_P033"
+  },
+  "Allergy Budgerigar Dropping": {
+    "standardName": "Allergy Budgerigar Dropping",
+    "paramId": "SRA_P034"
+  },
+  "Allergy Budgerigar Feathers": {
+    "standardName": "Allergy Budgerigar Feathers",
+    "paramId": "SRA_P035"
+  },
+  "Allergy Budgerigar Serum Proteins": {
+    "standardName": "Allergy Budgerigar Serum Proteins",
+    "paramId": "SRA_P036"
+  },
+  "Allergy Canarian Feathers": {
+    "standardName": "Allergy Canarian Feathers",
+    "paramId": "SRA_P037"
+  },
+  "Allergy Cardamon": {
+    "standardName": "Allergy Cardamon",
+    "paramId": "SRA_P038"
+  },
+  "Allergy Cherry": {
+    "standardName": "Allergy Cherry",
+    "paramId": "SRA_P039"
+  },
+  "Allergy Chicken Droppings": {
+    "standardName": "Allergy Chicken Droppings",
+    "paramId": "SRA_P040"
+  },
+  "Allergy Chicken Feathers": {
+    "standardName": "Allergy Chicken Feathers",
+    "paramId": "SRA_P041"
+  },
+  "Allergy Chloramphenicol": {
+    "standardName": "Allergy Chloramphenicol",
+    "paramId": "SRA_P042"
+  },
+  "Allergy Clarithromycin": {
+    "standardName": "Allergy Clarithromycin",
+    "paramId": "SRA_P043"
+  },
+  "Allergy Co-Trimoxazole": {
+    "standardName": "Allergy Co-Trimoxazole",
+    "paramId": "SRA_P044"
+  },
+  "Allergy Cobalamin": {
+    "standardName": "Allergy Cobalamin",
+    "paramId": "SRA_P045"
+  },
+  "Allergy Cranberry": {
+    "standardName": "Allergy Cranberry",
+    "paramId": "SRA_P046"
+  },
+  "Allergy Curcuma": {
+    "standardName": "Allergy Curcuma",
+    "paramId": "SRA_P047"
+  },
+  "Allergy Curry": {
+    "standardName": "Allergy Curry",
+    "paramId": "SRA_P048"
+  },
+  "Allergy Dactylis Glomerata (Cocksfoot)": {
+    "standardName": "Allergy Dactylis Glomerata (Cocksfoot)",
+    "paramId": "SRA_P049"
+  },
+  "Allergy Date": {
+    "standardName": "Allergy Date",
+    "paramId": "SRA_P050"
+  },
+  "Allergy Drug Insulin Human By Immuno CAP": {
+    "standardName": "Allergy Drug Insulin Human By Immuno CAP",
+    "paramId": "SRA_P051"
+  },
+  "Allergy Duck Feathers": {
+    "standardName": "Allergy Duck Feathers",
+    "paramId": "SRA_P052"
+  },
+  "Allergy Duck Meat": {
+    "standardName": "Allergy Duck Meat",
+    "paramId": "SRA_P053"
+  },
+  "Allergy Euroglyphus Maynei (House Mite)": {
+    "standardName": "Allergy Euroglyphus Maynei (House Mite)",
+    "paramId": "SRA_P054"
+  },
+  "Allergy Fennel": {
+    "standardName": "Allergy Fennel",
+    "paramId": "SRA_P055"
+  },
+  "Allergy Festuca Elatior (Meadow Fescue)": {
+    "standardName": "Allergy Festuca Elatior (Meadow Fescue)",
+    "paramId": "SRA_P056"
+  },
+  "Allergy Fig": {
+    "standardName": "Allergy Fig",
+    "paramId": "SRA_P057"
+  },
+  "Allergy Flax Seed": {
+    "standardName": "Allergy Flax Seed",
+    "paramId": "SRA_P058"
+  },
+  "Allergy Flaxseed": {
+    "standardName": "Allergy Flaxseed",
+    "paramId": "SRA_P059"
+  },
+  "Allergy Gelatin": {
+    "standardName": "Allergy Gelatin",
+    "paramId": "SRA_P060"
+  },
+  "Allergy Gentamycin": {
+    "standardName": "Allergy Gentamycin",
+    "paramId": "SRA_P061"
+  },
+  "Allergy Glycyphagus Domesticus (Store Mite)": {
+    "standardName": "Allergy Glycyphagus Domesticus (Store Mite)",
+    "paramId": "SRA_P062"
+  },
+  "Allergy Goose Feathers": {
+    "standardName": "Allergy Goose Feathers",
+    "paramId": "SRA_P063"
+  },
+  "Allergy Helminthosporium Halodes": {
+    "standardName": "Allergy Helminthosporium Halodes",
+    "paramId": "SRA_P064"
+  },
+  "Allergy Henna": {
+    "standardName": "Allergy Henna",
+    "paramId": "SRA_P065"
+  },
+  "Allergy Heterocera Mix (Moth)": {
+    "standardName": "Allergy Heterocera Mix (Moth)",
+    "paramId": "SRA_P066"
+  },
+  "Allergy Housefly Musca Domestica": {
+    "standardName": "Allergy Housefly Musca Domestica",
+    "paramId": "SRA_P067"
+  },
+  "Allergy Ibuprofen": {
+    "standardName": "Allergy Ibuprofen",
+    "paramId": "SRA_P068"
+  },
+  "Allergy Jute": {
+    "standardName": "Allergy Jute",
+    "paramId": "SRA_P069"
+  },
+  "Allergy Ketoprofen": {
+    "standardName": "Allergy Ketoprofen",
+    "paramId": "SRA_P070"
+  },
+  "Allergy Kiwi": {
+    "standardName": "Allergy Kiwi",
+    "paramId": "SRA_P071"
+  },
+  "Allergy Lentil": {
+    "standardName": "Allergy Lentil",
+    "paramId": "SRA_P072"
+  },
+  "Allergy Lentil (Dal)": {
+    "standardName": "Allergy Lentil (Dal)",
+    "paramId": "SRA_P073"
+  },
+  "Allergy Lepidoglyphus Destructor (Hay Mite)": {
+    "standardName": "Allergy Lepidoglyphus Destructor (Hay Mite)",
+    "paramId": "SRA_P074"
+  },
+  "Allergy Lidocaine": {
+    "standardName": "Allergy Lidocaine",
+    "paramId": "SRA_P075"
+  },
+  "Allergy Lobster": {
+    "standardName": "Allergy Lobster",
+    "paramId": "SRA_P076"
+  },
+  "Allergy Lychee": {
+    "standardName": "Allergy Lychee",
+    "paramId": "SRA_P077"
+  },
+  "Allergy Mackerel": {
+    "standardName": "Allergy Mackerel",
+    "paramId": "SRA_P078"
+  },
+  "Allergy Metronidazole": {
+    "standardName": "Allergy Metronidazole",
+    "paramId": "SRA_P079"
+  },
+  "Allergy Mint": {
+    "standardName": "Allergy Mint",
+    "paramId": "SRA_P080"
+  },
+  "Allergy Morus Alba (Red Mulberry)": {
+    "standardName": "Allergy Morus Alba (Red Mulberry)",
+    "paramId": "SRA_P081"
+  },
+  "Allergy Mouse (Epithelium, Serum, Urine, Protein)": {
+    "standardName": "Allergy Mouse (Epithelium, Serum, Urine, Protein)",
+    "paramId": "SRA_P082"
+  },
+  "Allergy Mucor": {
+    "standardName": "Allergy Mucor",
+    "paramId": "SRA_P083"
+  },
+  "Allergy Mucor Racemosus": {
+    "standardName": "Allergy Mucor Racemosus",
+    "paramId": "SRA_P084"
+  },
+  "Allergy Naproxen": {
+    "standardName": "Allergy Naproxen",
+    "paramId": "SRA_P085"
+  },
+  "Allergy Nart V1 Artemisia Vulgaris (Mugwort)": {
+    "standardName": "Allergy Nart V1 Artemisia Vulgaris (Mugwort)",
+    "paramId": "SRA_P086"
+  },
+  "Allergy Neomycin": {
+    "standardName": "Allergy Neomycin",
+    "paramId": "SRA_P087"
+  },
+  "Allergy Olive": {
+    "standardName": "Allergy Olive",
+    "paramId": "SRA_P088"
+  },
+  "Allergy Oregano": {
+    "standardName": "Allergy Oregano",
+    "paramId": "SRA_P089"
+  },
+  "Allergy Oxacillin": {
+    "standardName": "Allergy Oxacillin",
+    "paramId": "SRA_P090"
+  },
+  "Allergy P4 Anisakis": {
+    "standardName": "Allergy P4 Anisakis",
+    "paramId": "SRA_P091"
+  },
+  "Allergy Paracetamol": {
+    "standardName": "Allergy Paracetamol",
+    "paramId": "SRA_P092"
+  },
+  "Allergy Parsley": {
+    "standardName": "Allergy Parsley",
+    "paramId": "SRA_P093"
+  },
+  "Allergy Peach": {
+    "standardName": "Allergy Peach",
+    "paramId": "SRA_P094"
+  },
+  "Allergy Pear": {
+    "standardName": "Allergy Pear",
+    "paramId": "SRA_P095"
+  },
+  "Allergy Penicilloyl G": {
+    "standardName": "Allergy Penicilloyl G",
+    "paramId": "SRA_P096"
+  },
+  "Allergy Penicilloyl V": {
+    "standardName": "Allergy Penicilloyl V",
+    "paramId": "SRA_P097"
+  },
+  "Allergy Phleum Pratense (Timothy) By EIA": {
+    "standardName": "Allergy Phleum Pratense (Timothy) By EIA",
+    "paramId": "SRA_P098"
+  },
+  "Allergy Phoma Betae": {
+    "standardName": "Allergy Phoma Betae",
+    "paramId": "SRA_P099"
+  },
+  "Allergy Phosphomycin": {
+    "standardName": "Allergy Phosphomycin",
+    "paramId": "SRA_P100"
+  },
+  "Allergy Phragmites Communis (Common Reed) By EIA": {
+    "standardName": "Allergy Phragmites Communis (Common Reed) By EIA",
+    "paramId": "SRA_P101"
+  },
+  "Allergy Pig Epithelium": {
+    "standardName": "Allergy Pig Epithelium",
+    "paramId": "SRA_P102"
+  },
+  "Allergy Pigeon Droppings": {
+    "standardName": "Allergy Pigeon Droppings",
+    "paramId": "SRA_P103"
+  },
+  "Allergy Pigeon Feathers": {
+    "standardName": "Allergy Pigeon Feathers",
+    "paramId": "SRA_P104"
+  },
+  "Allergy Plum": {
+    "standardName": "Allergy Plum",
+    "paramId": "SRA_P105"
+  },
+  "Allergy Pomegranate": {
+    "standardName": "Allergy Pomegranate",
+    "paramId": "SRA_P106"
+  },
+  "Allergy Pork": {
+    "standardName": "Allergy Pork",
+    "paramId": "SRA_P107"
+  },
+  "Allergy Prilocaine": {
+    "standardName": "Allergy Prilocaine",
+    "paramId": "SRA_P108"
+  },
+  "Allergy Prosopis Juliflora (Mesquite)": {
+    "standardName": "Allergy Prosopis Juliflora (Mesquite)",
+    "paramId": "SRA_P109"
+  },
+  "Allergy Pumpkin": {
+    "standardName": "Allergy Pumpkin",
+    "paramId": "SRA_P110"
+  },
+  "Allergy Pumpkin Seed": {
+    "standardName": "Allergy Pumpkin Seed",
+    "paramId": "SRA_P111"
+  },
+  "Allergy Pyridoxine": {
+    "standardName": "Allergy Pyridoxine",
+    "paramId": "SRA_P112"
+  },
+  "Allergy Rabbit Epithelium": {
+    "standardName": "Allergy Rabbit Epithelium",
+    "paramId": "SRA_P113"
+  },
+  "Allergy Raisin": {
+    "standardName": "Allergy Raisin",
+    "paramId": "SRA_P114"
+  },
+  "Allergy Rhizopus Nigricans": {
+    "standardName": "Allergy Rhizopus Nigricans",
+    "paramId": "SRA_P115"
+  },
+  "Allergy Rifampicin": {
+    "standardName": "Allergy Rifampicin",
+    "paramId": "SRA_P116"
+  },
+  "Allergy Rosemary": {
+    "standardName": "Allergy Rosemary",
+    "paramId": "SRA_P117"
+  },
+  "Allergy Saffron": {
+    "standardName": "Allergy Saffron",
+    "paramId": "SRA_P118"
+  },
+  "Allergy Salix Caprea (Willow)": {
+    "standardName": "Allergy Salix Caprea (Willow)",
+    "paramId": "SRA_P119"
+  },
+  "Allergy Salmon": {
+    "standardName": "Allergy Salmon",
+    "paramId": "SRA_P120"
+  },
+  "Allergy Sardine": {
+    "standardName": "Allergy Sardine",
+    "paramId": "SRA_P121"
+  },
+  "Allergy Semolina": {
+    "standardName": "Allergy Semolina",
+    "paramId": "SRA_P122"
+  },
+  "Allergy Sheep Epithelium": {
+    "standardName": "Allergy Sheep Epithelium",
+    "paramId": "SRA_P123"
+  },
+  "Allergy Sorghum Halepense (Johnson Grass)": {
+    "standardName": "Allergy Sorghum Halepense (Johnson Grass)",
+    "paramId": "SRA_P124"
+  },
+  "Allergy Tea": {
+    "standardName": "Allergy Tea",
+    "paramId": "SRA_P125"
+  },
+  "Allergy Thiamine": {
+    "standardName": "Allergy Thiamine",
+    "paramId": "SRA_P126"
+  },
+  "Allergy Thyme": {
+    "standardName": "Allergy Thyme",
+    "paramId": "SRA_P127"
+  },
+  "Allergy Toxocara Canis": {
+    "standardName": "Allergy Toxocara Canis",
+    "paramId": "SRA_P128"
+  },
+  "Allergy Trichoderma Viride": {
+    "standardName": "Allergy Trichoderma Viride",
+    "paramId": "SRA_P129"
+  },
+  "Allergy Tuna": {
+    "standardName": "Allergy Tuna",
+    "paramId": "SRA_P130"
+  },
+  "Allergy Turkey": {
+    "standardName": "Allergy Turkey",
+    "paramId": "SRA_P131"
+  },
+  "Allergy Turkey Feathers": {
+    "standardName": "Allergy Turkey Feathers",
+    "paramId": "SRA_P132"
+  },
+  "Allergy Turnip": {
+    "standardName": "Allergy Turnip",
+    "paramId": "SRA_P133"
+  },
+  "Allergy Tyrophagus Putresentiae (Cheese Mite)": {
+    "standardName": "Allergy Tyrophagus Putresentiae (Cheese Mite)",
+    "paramId": "SRA_P134"
+  },
+  "Allergy Vanilla": {
+    "standardName": "Allergy Vanilla",
+    "paramId": "SRA_P135"
+  },
+  "Allergy Vespula Germanica (Common Wasp - Yellow Jacket)": {
+    "standardName": "Allergy Vespula Germanica (Common Wasp - Yellow Jacket)",
+    "paramId": "SRA_P136"
+  },
+  "Allergy Walnut": {
+    "standardName": "Allergy Walnut",
+    "paramId": "SRA_P137"
+  },
+  "Allergy White Bean": {
+    "standardName": "Allergy White Bean",
+    "paramId": "SRA_P138"
+  },
+  "Allergy Whole": {
+    "standardName": "Allergy Whole",
+    "paramId": "SRA_P139"
+  },
+  "Allergy Xanthium Commune (Cocklebur)": {
+    "standardName": "Allergy Xanthium Commune (Cocklebur)",
+    "paramId": "SRA_P140"
+  },
+  "Allergy Yogurt": {
+    "standardName": "Allergy Yogurt",
+    "paramId": "SRA_P141"
+  },
+  "Allergy: Carp FISH": {
+    "standardName": "Allergy: Carp FISH",
+    "paramId": "SRA_P142"
+  },
+  "Allergy: Cashew (Kaju) By ImmunoCAP": {
+    "standardName": "Allergy: Cashew (Kaju) By ImmunoCAP",
+    "paramId": "SRA_P143"
+  },
+  "Allergy: Food Basil By ImmunoCAP": {
+    "standardName": "Allergy: Food Basil By ImmunoCAP",
+    "paramId": "SRA_P144"
+  },
+  "Allergy: Mulberry (Shahtoot) By ImmunoCAP": {
+    "standardName": "Allergy: Mulberry (Shahtoot) By ImmunoCAP",
+    "paramId": "SRA_P145"
+  },
+  "Allergy: Olive By ImmunoCAP": {
+    "standardName": "Allergy: Olive By ImmunoCAP",
+    "paramId": "SRA_P146"
+  },
+  "Allergy: Phadiatop (< 5 Years)": {
+    "standardName": "Allergy: Phadiatop (< 5 Years)",
+    "paramId": "SRA_P147"
+  },
+  "Allergy: Poppy": {
+    "standardName": "Allergy: Poppy",
+    "paramId": "SRA_P148"
+  },
+  "Allergy: Ragweed": {
+    "standardName": "Allergy: Ragweed",
+    "paramId": "SRA_P149"
+  },
+  "Almond": {
+    "standardName": "Almond",
+    "paramId": "SRA_P150"
+  },
+  "Alpha Feto Protein - CSF": {
+    "standardName": "Alpha Feto Protein - CSF",
+    "paramId": "SRA_P151"
+  },
+  "Alternaria Tenuis": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "Amoxicillin": {
+    "standardName": "Amoxicillin",
+    "paramId": "SRA_P152"
+  },
+  "Apple": {
+    "standardName": "Apple",
+    "paramId": "SRA_P153"
+  },
+  "Aspergillus Niger": {
+    "standardName": "Aspergillus Niger",
+    "paramId": "SRA_P154"
+  },
+  "Baker's Yeast Allergy": {
+    "standardName": "Baker's Yeast Allergy",
+    "paramId": "SRA_P155"
+  },
+  "Banana Allergy": {
+    "standardName": "Banana Allergy",
+    "paramId": "SRA_P156"
+  },
+  "Bananas": {
+    "standardName": "Bananas",
+    "paramId": "SRA_P157"
+  },
+  "Beans": {
+    "standardName": "Beans",
+    "paramId": "SRA_P158"
+  },
+  "Beef": {
+    "standardName": "Beef",
+    "paramId": "SRA_P159"
+  },
+  "Bermuda Grass": {
+    "standardName": "Bermuda Grass",
+    "paramId": "SRA_P160"
+  },
+  "Black Pepper": {
+    "standardName": "Black Pepper",
+    "paramId": "SRA_P161"
+  },
+  "Cabbage": {
+    "standardName": "Cabbage",
+    "paramId": "SRA_P162"
+  },
+  "Carrot Allergy": {
+    "standardName": "Carrot Allergy",
+    "paramId": "SRA_P163"
+  },
+  "Cashewnut": {
+    "standardName": "Cashewnut",
+    "paramId": "SRA_P164"
+  },
+  "Cat Dander": {
+    "standardName": "Cat Dander",
+    "paramId": "SRA_P165"
+  },
+  "Cauliflowers": {
+    "standardName": "Cauliflowers",
+    "paramId": "SRA_P166"
+  },
+  "Celery": {
+    "standardName": "Celery",
+    "paramId": "SRA_P167"
+  },
+  "Cephalosporin": {
+    "standardName": "Cephalosporin",
+    "paramId": "SRA_P168"
+  },
+  "Cheese": {
+    "standardName": "Cheese",
+    "paramId": "SRA_P169"
+  },
+  "Chenopodium Album": {
+    "standardName": "Chenopodium Album",
+    "paramId": "SRA_P170"
+  },
+  "Chicken Allergy": {
+    "standardName": "Chicken Allergy",
+    "paramId": "SRA_P171"
+  },
+  "Chocolate Allergy": {
+    "standardName": "Chocolate Allergy",
+    "paramId": "SRA_P172"
+  },
+  "Cinnamons": {
+    "standardName": "Cinnamons",
+    "paramId": "SRA_P173"
+  },
+  "Cladosporium hebarum": {
+    "standardName": "Cladosporium hebarum",
+    "paramId": "SRA_P174"
+  },
+  "Cloves": {
+    "standardName": "Cloves",
+    "paramId": "SRA_P175"
+  },
+  "Cloxacillin": {
+    "standardName": "Cloxacillin",
+    "paramId": "SRA_P176"
+  },
+  "Coconut": {
+    "standardName": "Coconut",
+    "paramId": "SRA_P177"
+  },
+  "Codfish Allergy": {
+    "standardName": "Codfish Allergy",
+    "paramId": "SRA_P178"
+  },
+  "Coffees": {
+    "standardName": "Coffees",
+    "paramId": "SRA_P179"
+  },
+  "Corianders": {
+    "standardName": "Corianders",
+    "paramId": "SRA_P180"
+  },
+  "Cotton Fibre": {
+    "standardName": "Cotton Fibre",
+    "paramId": "SRA_P181"
+  },
+  "Cow Dander": {
+    "standardName": "Cow Dander",
+    "paramId": "SRA_P182"
+  },
+  "Cow Milk Allergy": {
+    "standardName": "Cow Milk Allergy",
+    "paramId": "SRA_P183"
+  },
+  "Crab": {
+    "standardName": "Crab",
+    "paramId": "SRA_P184"
+  },
+  "Cucumbers": {
+    "standardName": "Cucumbers",
+    "paramId": "SRA_P185"
+  },
+  "Curd": {
+    "standardName": "Curd",
+    "paramId": "SRA_P186"
+  },
+  "Cynodon Dactylon": {
+    "standardName": "Cynodon Dactylon",
+    "paramId": "SRA_P187"
+  },
+  "Derm Farinae": {
+    "standardName": "Derm Farinae",
+    "paramId": "SRA_P188"
+  },
+  "Diclofenac": {
+    "standardName": "Diclofenac",
+    "paramId": "SRA_P189"
+  },
+  "Dog Dander": {
+    "standardName": "Dog Dander",
+    "paramId": "SRA_P190"
+  },
+  "Doxycycline": {
+    "standardName": "Doxycycline",
+    "paramId": "SRA_P191"
+  },
+  "Egg White Allergy": {
+    "standardName": "Egg White Allergy",
+    "paramId": "SRA_P192"
+  },
+  "Egg Yolk Allergy": {
+    "standardName": "Egg Yolk Allergy",
+    "paramId": "SRA_P193"
+  },
+  "Eggplant": {
+    "standardName": "Eggplant",
+    "paramId": "SRA_P194"
+  },
+  "Erythromycin": {
+    "standardName": "Erythromycin",
+    "paramId": "SRA_P195"
+  },
+  "Eucalyptus": {
+    "standardName": "Eucalyptus",
+    "paramId": "SRA_P196"
+  },
+  "Fish (cod)": {
+    "standardName": "Fish (cod)",
+    "paramId": "SRA_P197"
+  },
+  "Garlic": {
+    "standardName": "Garlic",
+    "paramId": "SRA_P198"
+  },
+  "Ginger": {
+    "standardName": "Ginger",
+    "paramId": "SRA_P199"
+  },
+  "Goat Dander": {
+    "standardName": "Goat Dander",
+    "paramId": "SRA_P200"
+  },
+  "Grapes": {
+    "standardName": "Grapes",
+    "paramId": "SRA_P201"
+  },
+  "Guavas": {
+    "standardName": "Guavas",
+    "paramId": "SRA_P202"
+  },
+  "HLA â€“ ABACAVIR HYPERSENSTIVITY": {
+    "standardName": "HLA â€“ ABACAVIR HYPERSENSTIVITY",
+    "paramId": "SRA_P203"
+  },
+  "Hay Dust": {
+    "standardName": "Hay Dust",
+    "paramId": "SRA_P204"
+  },
+  "Honey Bee": {
+    "standardName": "Honey Bee",
+    "paramId": "SRA_P205"
+  },
+  "House Dust": {
+    "standardName": "House Dust",
+    "paramId": "SRA_P206"
+  },
+  "Lamb Allergy": {
+    "standardName": "Lamb Allergy",
+    "paramId": "SRA_P207"
+  },
+  "Latex": {
+    "standardName": "Latex",
+    "paramId": "SRA_P208"
+  },
+  "Lemons": {
+    "standardName": "Lemons",
+    "paramId": "SRA_P209"
+  },
+  "Lettuce": {
+    "standardName": "Lettuce",
+    "paramId": "SRA_P210"
+  },
+  "Maize": {
+    "standardName": "Maize",
+    "paramId": "SRA_P211"
+  },
+  "Mango Allergy": {
+    "standardName": "Mango Allergy",
+    "paramId": "SRA_P212"
+  },
+  "Melons": {
+    "standardName": "Melons",
+    "paramId": "SRA_P213"
+  },
+  "Mosquito": {
+    "standardName": "Mosquito",
+    "paramId": "SRA_P214"
+  },
+  "Mugwort Sagebrush": {
+    "standardName": "Mugwort Sagebrush",
+    "paramId": "SRA_P215"
+  },
+  "Mushroom": {
+    "standardName": "Mushroom",
+    "paramId": "SRA_P216"
+  },
+  "Mustard": {
+    "standardName": "Mustard",
+    "paramId": "SRA_P217"
+  },
+  "Mutton": {
+    "standardName": "Mutton",
+    "paramId": "SRA_P218"
+  },
+  "Nut Mix Allergy": {
+    "standardName": "Nut Mix Allergy",
+    "paramId": "SRA_P219"
+  },
+  "Nutmeg": {
+    "standardName": "Nutmeg",
+    "paramId": "SRA_P220"
+  },
+  "Oat": {
+    "standardName": "Oat",
+    "paramId": "SRA_P221"
+  },
+  "Ofloxacin": {
+    "standardName": "Ofloxacin",
+    "paramId": "SRA_P222"
+  },
+  "Onion Allergy": {
+    "standardName": "Onion Allergy",
+    "paramId": "SRA_P223"
+  },
+  "Orange Allergy": {
+    "standardName": "Orange Allergy",
+    "paramId": "SRA_P224"
+  },
+  "Papaya": {
+    "standardName": "Papaya",
+    "paramId": "SRA_P225"
+  },
+  "Pea": {
+    "standardName": "Pea",
+    "paramId": "SRA_P226"
+  },
+  "Peanut Allergy": {
+    "standardName": "Peanut Allergy",
+    "paramId": "SRA_P227"
+  },
+  "Pearl Millet": {
+    "standardName": "Pearl Millet",
+    "paramId": "SRA_P228"
+  },
+  "Penicillin": {
+    "standardName": "Penicillin",
+    "paramId": "SRA_P229"
+  },
+  "Phadiatop": {
+    "standardName": "Phadiatop",
+    "paramId": "SRA_P230"
+  },
+  "Phadiatop Allergen screening -Adult": {
+    "standardName": "Phadiatop Allergen screening -Adult",
+    "paramId": "SRA_P231"
+  },
+  "Phinf Top": {
+    "standardName": "Phinf Top",
+    "paramId": "SRA_P232"
+  },
+  "Pineapple": {
+    "standardName": "Pineapple",
+    "paramId": "SRA_P233"
+  },
+  "Piroxicam": {
+    "standardName": "Piroxicam",
+    "paramId": "SRA_P234"
+  },
+  "Pistachio": {
+    "standardName": "Pistachio",
+    "paramId": "SRA_P235"
+  },
+  "Potato": {
+    "standardName": "Potato",
+    "paramId": "SRA_P236"
+  },
+  "Radishes": {
+    "standardName": "Radishes",
+    "paramId": "SRA_P237"
+  },
+  "Rice": {
+    "standardName": "Rice",
+    "paramId": "SRA_P238"
+  },
+  "Rye Grass": {
+    "standardName": "Rye Grass",
+    "paramId": "SRA_P239"
+  },
+  "Sesame": {
+    "standardName": "Sesame",
+    "paramId": "SRA_P240"
+  },
+  "Sheep Wool": {
+    "standardName": "Sheep Wool",
+    "paramId": "SRA_P241"
+  },
+  "Shrimp": {
+    "standardName": "Shrimp",
+    "paramId": "SRA_P242"
+  },
+  "Shrimp/Prawn Allergy": {
+    "standardName": "Shrimp/Prawn Allergy",
+    "paramId": "SRA_P243"
+  },
+  "Silk": {
+    "standardName": "Silk",
+    "paramId": "SRA_P244"
+  },
+  "Soy Bean Allergy": {
+    "standardName": "Soy Bean Allergy",
+    "paramId": "SRA_P245"
+  },
+  "Spinach": {
+    "standardName": "Spinach",
+    "paramId": "SRA_P246"
+  },
+  "Straw Berry": {
+    "standardName": "Straw Berry",
+    "paramId": "SRA_P247"
+  },
+  "Strawberry Allergy": {
+    "standardName": "Strawberry Allergy",
+    "paramId": "SRA_P248"
+  },
+  "Streptomycin": {
+    "standardName": "Streptomycin",
+    "paramId": "SRA_P249"
+  },
+  "Sunflower": {
+    "standardName": "Sunflower",
+    "paramId": "SRA_P250"
+  },
+  "Tobacco": {
+    "standardName": "Tobacco",
+    "paramId": "SRA_P251"
+  },
+  "Tomato Allergy": {
+    "standardName": "Tomato Allergy",
+    "paramId": "SRA_P252"
+  },
+  "Walnut (Hazel)": {
+    "standardName": "Walnut (Hazel)",
+    "paramId": "SRA_P253"
+  },
+  "Wheat Flour Allergy": {
+    "standardName": "Wheat Flour Allergy",
+    "paramId": "SRA_P254"
+  },
+  "Wood Mix": {
+    "standardName": "Wood Mix",
+    "paramId": "SRA_P255"
+  },
+  "Yeast": {
+    "standardName": "Yeast",
+    "paramId": "SRA_P256"
+  },
+  "llergy: Pear (Nashpati) By ImmunoCAP": {
+    "standardName": "llergy: Pear (Nashpati) By ImmunoCAP",
+    "paramId": "SRA_P257"
+  },
+  "% Saturation Transferrin": {
+    "standardName": "% Saturation Transferrin",
+    "paramId": "SRA_P258"
+  },
+  "Content Haemoglobin (CH)": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Erythropoietin": {
+    "standardName": "Erythropoietin",
+    "paramId": "SRA_P259"
+  },
+  "Ferritin": {
+    "standardName": "Ferritin",
+    "paramId": "SRA_P260"
+  },
+  "G6PD (Qualitative)": {
+    "standardName": "G6PD (Qualitative)",
+    "paramId": "SRA_P261"
+  },
+  "G6PD (Quantitative)": {
+    "standardName": "G6PD (Quantitative)",
+    "paramId": "SRA_P262"
+  },
+  "Glucose-6-Phosphate Dehydrogenase Enzyme Activity": {
+    "standardName": "Glucose-6-Phosphate Dehydrogenase Enzyme Activity",
+    "paramId": "SRA_P263"
+  },
+  "Iron": {
+    "standardName": "Iron",
+    "paramId": "SRA_P264"
+  },
+  "Methaemoglobin Estimation": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Porphobilinogen (PBG) Quantitative, 24 Hrs Urine": {
+    "standardName": "Porphobilinogen (PBG) Quantitative, 24 Hrs Urine",
+    "paramId": "SRA_P265"
+  },
+  "Porphobilinogen (PBG) Quantitative, Spot Urine": {
+    "standardName": "Porphobilinogen (PBG) Quantitative, Spot Urine",
+    "paramId": "SRA_P266"
+  },
+  "Porphyrins Qualitative, Spot Urine": {
+    "standardName": "Porphyrins Qualitative, Spot Urine",
+    "paramId": "SRA_P267"
+  },
+  "RBC (Synovial Fluid)": {
+    "standardName": "RBC (Synovial Fluid)",
+    "paramId": "SRA_P268"
+  },
+  "SICKLING, SCREENING TEST": {
+    "standardName": "SICKLING, SCREENING TEST",
+    "paramId": "SRA_P269"
+  },
+  "Serum Folate": {
+    "standardName": "Serum Folate",
+    "paramId": "SRA_P270"
+  },
+  "Sickle Cell Solubility Test-Sickling phenomenon": {
+    "standardName": "Sickle Cell Solubility Test-Sickling phenomenon",
+    "paramId": "SRA_P271"
+  },
+  "Soluble Transferrin Receptor( STFR)": {
+    "standardName": "Soluble Transferrin Receptor( STFR)",
+    "paramId": "SRA_P272"
+  },
+  "TIBC": {
+    "standardName": "TIBC",
+    "paramId": "SRA_P273"
+  },
+  "Transferrin Serum": {
+    "standardName": "Transferrin Serum",
+    "paramId": "SRA_P274"
+  },
+  "UIBC": {
+    "standardName": "UIBC",
+    "paramId": "SRA_P275"
+  },
+  "ASO (quantitative)": {
+    "standardName": "ASO (quantitative)",
+    "paramId": "SRA_P276"
+  },
+  "Ionized Calcium": {
+    "standardName": "Ionized Calcium",
+    "paramId": "SRA_P277"
+  },
+  "Non Ionized Calcium": {
+    "standardName": "Non Ionized Calcium",
+    "paramId": "SRA_P278"
+  },
+  "RA factor (descriptive)": {
+    "standardName": "RA factor (descriptive)",
+    "paramId": "SRA_P279"
+  },
+  "RA factor (quantitative)": {
+    "standardName": "RA factor (quantitative)",
+    "paramId": "SRA_P280"
+  },
+  "ANA (Antinuclear Antibody)-Screen": {
+    "standardName": "ANA (Antinuclear Antibody)-Screen",
+    "paramId": "SRA_P281"
+  },
+  "ANA-Titer": {
+    "standardName": "ANA-Titer",
+    "paramId": "SRA_P282"
+  },
+  "ANTI CCP (CYCLIC CITRULLINATED PEPTIDE)": {
+    "standardName": "ANTI CCP (CYCLIC CITRULLINATED PEPTIDE)",
+    "paramId": "SRA_P283"
+  },
+  "ANTI SOLUBLE LIVER ANTIGEN (SLA)": {
+    "standardName": "ANTI SOLUBLE LIVER ANTIGEN (SLA)",
+    "paramId": "SRA_P284"
+  },
+  "Anti CCP": {
+    "standardName": "Anti CCP",
+    "paramId": "SRA_P285"
+  },
+  "Anti Cardiolipin IgA": {
+    "standardName": "Anti Cardiolipin IgA",
+    "paramId": "SRA_P286"
+  },
+  "Anti Cardiolipin IgG": {
+    "standardName": "Anti Cardiolipin IgG",
+    "paramId": "SRA_P287"
+  },
+  "Anti Cardiolipin IgM": {
+    "standardName": "Anti Cardiolipin IgM",
+    "paramId": "SRA_P288"
+  },
+  "Anti DNA Abs.": {
+    "standardName": "Anti DNA Abs.",
+    "paramId": "SRA_P289"
+  },
+  "Anti Double Stranded DNA ( dsDNA-IgG)": {
+    "standardName": "Anti Double Stranded DNA ( dsDNA-IgG)",
+    "paramId": "SRA_P290"
+  },
+  "Anti Double Stranded DNA (DsDNA) BY IFA": {
+    "standardName": "Anti Double Stranded DNA (DsDNA) BY IFA",
+    "paramId": "SRA_P291"
+  },
+  "Anti Epidermal (Pemphigus) Antibody By IF": {
+    "standardName": "Anti Epidermal (Pemphigus) Antibody By IF",
+    "paramId": "SRA_P292"
+  },
+  "Anti Nuclear Antibody by IFA": {
+    "standardName": "Anti Nuclear Antibody by IFA",
+    "paramId": "SRA_P293"
+  },
+  "Anti-Phospholipid (IgG)": {
+    "standardName": "Anti-Phospholipid (IgG)",
+    "paramId": "SRA_P294"
+  },
+  "Anti-Phospholipid (IgM)": {
+    "standardName": "Anti-Phospholipid (IgM)",
+    "paramId": "SRA_P295"
+  },
+  "Anti-TPO": {
+    "standardName": "Anti-TPO",
+    "paramId": "SRA_P296"
+  },
+  "Anti-Tissue Transglutaminase IgA": {
+    "standardName": "Anti-Tissue Transglutaminase IgA",
+    "paramId": "SRA_P297"
+  },
+  "Antimitochondrial M2 Antibody.": {
+    "standardName": "Antimitochondrial M2 Antibody.",
+    "paramId": "SRA_P298"
+  },
+  "Bullous Pemphigoid 180": {
+    "standardName": "Bullous Pemphigoid 180",
+    "paramId": "SRA_P299"
+  },
+  "Bullous Pemphigoid 230": {
+    "standardName": "Bullous Pemphigoid 230",
+    "paramId": "SRA_P300"
+  },
+  "C3 COMPLEMENT, SERUM": {
+    "standardName": "C3 COMPLEMENT, SERUM",
+    "paramId": "SRA_P301"
+  },
+  "C4 COMPLEMENT, SERUM": {
+    "standardName": "C4 COMPLEMENT, SERUM",
+    "paramId": "SRA_P302"
+  },
+  "CENP-B": {
+    "standardName": "CENP-B",
+    "paramId": "SRA_P303"
+  },
+  "CH-50Complement, total": {
+    "standardName": "CH-50Complement, total",
+    "paramId": "SRA_P304"
+  },
+  "Centromere Antibody IgG": {
+    "standardName": "Centromere Antibody IgG",
+    "paramId": "SRA_P305"
+  },
+  "Coombs Test (Indirect)": {
+    "standardName": "Coombs Test (Indirect)",
+    "paramId": "SRA_P306"
+  },
+  "Degeneration (Synovial Fluid)": {
+    "standardName": "Degeneration (Synovial Fluid)",
+    "paramId": "SRA_P307"
+  },
+  "Desmoglein I Antibody": {
+    "standardName": "Desmoglein I Antibody",
+    "paramId": "SRA_P308"
+  },
+  "Desmoglein III Antibody": {
+    "standardName": "Desmoglein III Antibody",
+    "paramId": "SRA_P309"
+  },
+  "GAD-65 (GLUTAMIC ACID DECARBOXYLASE- 65) ,SERUM": {
+    "standardName": "GAD-65 (GLUTAMIC ACID DECARBOXYLASE- 65) ,SERUM",
+    "paramId": "SRA_P310"
+  },
+  "Glucose (Synovial Fluid)": {
+    "standardName": "Glucose (Synovial Fluid)",
+    "paramId": "SRA_P311"
+  },
+  "HLA B27 Detection": {
+    "standardName": "HLA B27 Detection",
+    "paramId": "SRA_P312"
+  },
+  "Histone Antibody": {
+    "standardName": "Histone Antibody",
+    "paramId": "SRA_P313"
+  },
+  "Histones": {
+    "standardName": "Histones",
+    "paramId": "SRA_P314"
+  },
+  "Jo - 1": {
+    "standardName": "Jo - 1",
+    "paramId": "SRA_P315"
+  },
+  "Jo-1 Antibody IgG": {
+    "standardName": "Jo-1 Antibody IgG",
+    "paramId": "SRA_P316"
+  },
+  "Ku": {
+    "standardName": "Ku",
+    "paramId": "SRA_P317"
+  },
+  "LC-1 Antibody": {
+    "standardName": "LC-1 Antibody",
+    "paramId": "SRA_P318"
+  },
+  "Lupus Anticoagulant": {
+    "standardName": "Lupus Anticoagulant",
+    "paramId": "SRA_P319"
+  },
+  "M2-3E (BPO) Antibody.": {
+    "standardName": "M2-3E (BPO) Antibody.",
+    "paramId": "SRA_P320"
+  },
+  "MPO p-ANCA": {
+    "standardName": "MPO p-ANCA",
+    "paramId": "SRA_P321"
+  },
+  "Mi-2": {
+    "standardName": "Mi-2",
+    "paramId": "SRA_P322"
+  },
+  "Monocytes (Synovial Fluid)": {
+    "standardName": "Monocytes (Synovial Fluid)",
+    "paramId": "SRA_P323"
+  },
+  "Nucleosomes": {
+    "standardName": "Nucleosomes",
+    "paramId": "SRA_P324"
+  },
+  "Ovarian Antibody": {
+    "standardName": "Ovarian Antibody",
+    "paramId": "SRA_P325"
+  },
+  "PCNA": {
+    "standardName": "PCNA",
+    "paramId": "SRA_P326"
+  },
+  "PM-Scl": {
+    "standardName": "PM-Scl",
+    "paramId": "SRA_P327"
+  },
+  "PML Antibody": {
+    "standardName": "PML Antibody",
+    "paramId": "SRA_P328"
+  },
+  "PR3 by EIAc-ANCA": {
+    "standardName": "PR3 by EIAc-ANCA",
+    "paramId": "SRA_P329"
+  },
+  "Rh Antibody Titre": {
+    "standardName": "Rh Antibody Titre",
+    "paramId": "SRA_P330"
+  },
+  "Rheumatoid Factors ,Qualitative": {
+    "standardName": "Rheumatoid Factors ,Qualitative",
+    "paramId": "SRA_P331"
+  },
+  "Rib- P Protein": {
+    "standardName": "Rib- P Protein",
+    "paramId": "SRA_P332"
+  },
+  "Ro- 52": {
+    "standardName": "Ro- 52",
+    "paramId": "SRA_P333"
+  },
+  "Ro-52 Antibody": {
+    "standardName": "Ro-52 Antibody",
+    "paramId": "SRA_P334"
+  },
+  "SLA/LP Antibody": {
+    "standardName": "SLA/LP Antibody",
+    "paramId": "SRA_P335"
+  },
+  "SS-A(RO)": {
+    "standardName": "SS-A(RO)",
+    "paramId": "SRA_P336"
+  },
+  "SS-B/La": {
+    "standardName": "SS-B/La",
+    "paramId": "SRA_P337"
+  },
+  "SSA - A (Soluble Substance A) IgG": {
+    "standardName": "SSA - A (Soluble Substance A) IgG",
+    "paramId": "SRA_P338"
+  },
+  "SSB - B Antibody": {
+    "standardName": "SSB - B Antibody",
+    "paramId": "SRA_P339"
+  },
+  "SSB - La (Soluble Substance B) IgG": {
+    "standardName": "SSB - La (Soluble Substance B) IgG",
+    "paramId": "SRA_P340"
+  },
+  "Scl - 70": {
+    "standardName": "Scl - 70",
+    "paramId": "SRA_P341"
+  },
+  "Scl - 70 Antibody IgG": {
+    "standardName": "Scl - 70 Antibody IgG",
+    "paramId": "SRA_P342"
+  },
+  "Sm": {
+    "standardName": "Sm",
+    "paramId": "SRA_P343"
+  },
+  "Sm Antibody IgG": {
+    "standardName": "Sm Antibody IgG",
+    "paramId": "SRA_P344"
+  },
+  "SnRNP ANTIBODIES": {
+    "standardName": "SnRNP ANTIBODIES",
+    "paramId": "SRA_P345"
+  },
+  "Sp100 Antibody": {
+    "standardName": "Sp100 Antibody",
+    "paramId": "SRA_P346"
+  },
+  "Total Proteins (Synovial Fluid)": {
+    "standardName": "Total Proteins (Synovial Fluid)",
+    "paramId": "SRA_P347"
+  },
+  "U1-nRNP/Sm": {
+    "standardName": "U1-nRNP/Sm",
+    "paramId": "SRA_P348"
+  },
+  "Volume (Synovial Fluid)": {
+    "standardName": "Volume (Synovial Fluid)",
+    "paramId": "SRA_P349"
+  },
+  "anti- liver-kidney microsomal IgG antibodies": {
+    "standardName": "anti- liver-kidney microsomal IgG antibodies",
+    "paramId": "SRA_P350"
+  },
+  "anti- liver-kidney microsomal IgG antibodies.": {
+    "standardName": "anti- liver-kidney microsomal IgG antibodies.",
+    "paramId": "SRA_P351"
+  },
+  "anti-Glomerular Basement Membrane protein (GBM)": {
+    "standardName": "anti-Glomerular Basement Membrane protein (GBM)",
+    "paramId": "SRA_P352"
+  },
+  "c-ANCA": {
+    "standardName": "c-ANCA",
+    "paramId": "SRA_P353"
+  },
+  "ds-DNA": {
+    "standardName": "ds-DNA",
+    "paramId": "SRA_P354"
+  },
+  "gp210 Antibody": {
+    "standardName": "gp210 Antibody",
+    "paramId": "SRA_P355"
+  },
+  "p-ANCA": {
+    "standardName": "p-ANCA",
+    "paramId": "SRA_P356"
+  },
+  "Gram Stain": {
+    "standardName": "Gram Stain",
+    "paramId": "SRA_P357"
+  },
+  "Helicobacter Antigen in Stool": {
+    "standardName": "Helicobacter Antigen in Stool",
+    "paramId": "SRA_P358"
+  },
+  "Helicobacter Pylori Abs.(IgG)": {
+    "standardName": "Helicobacter Pylori Abs.(IgG)",
+    "paramId": "SRA_P359"
+  },
+  "Helicobacter Pylori Abs.(IgM)": {
+    "standardName": "Helicobacter Pylori Abs.(IgM)",
+    "paramId": "SRA_P360"
+  },
+  "Typhidot": {
+    "standardName": "Typhidot",
+    "paramId": "SRA_P361"
+  },
+  "Urea Breath Test": {
+    "standardName": "Urea Breath Test",
+    "paramId": "SRA_P362"
+  },
+  "WIDAL TEST (SLIDE METHOD)": {
+    "standardName": "WIDAL TEST (SLIDE METHOD)",
+    "paramId": "SRA_P363"
+  },
+  "APTT": {
+    "standardName": "APTT",
+    "paramId": "SRA_P364"
+  },
+  "Activated Partial Thromboplastin Time": {
+    "standardName": "Activated Partial Thromboplastin Time",
+    "paramId": "SRA_P365"
+  },
+  "Anti Phospholipid IgA": {
+    "standardName": "Anti Phospholipid IgA",
+    "paramId": "SRA_P366"
+  },
+  "Anti Thrombin III Activity": {
+    "standardName": "Anti Thrombin III Activity",
+    "paramId": "SRA_P367"
+  },
+  "Beta-2-Glycoprotein 1 -IgG": {
+    "standardName": "Beta-2-Glycoprotein 1 -IgG",
+    "paramId": "SRA_P368"
+  },
+  "Beta-2-Glycoprotein 1 -IgM": {
+    "standardName": "Beta-2-Glycoprotein 1 -IgM",
+    "paramId": "SRA_P369"
+  },
+  "Beta-2-Glycoprotein IgM Antibody": {
+    "standardName": "Beta-2-Glycoprotein IgM Antibody",
+    "paramId": "SRA_P370"
+  },
+  "Cardiolipin Antibody ACL-IgA": {
+    "standardName": "Cardiolipin Antibody ACL-IgA",
+    "paramId": "SRA_P371"
+  },
+  "Control (MNAPTT)": {
+    "standardName": "Control (MNAPTT)",
+    "paramId": "SRA_P372"
+  },
+  "D-Dimer": {
+    "standardName": "D-Dimer",
+    "paramId": "SRA_P373"
+  },
+  "DRVVT Screening": {
+    "standardName": "DRVVT Screening",
+    "paramId": "SRA_P374"
+  },
+  "FACTOR VII FUNCTIONAL": {
+    "standardName": "FACTOR VII FUNCTIONAL",
+    "paramId": "SRA_P375"
+  },
+  "FACTOR VIII FUNCTIONAL": {
+    "standardName": "FACTOR VIII FUNCTIONAL",
+    "paramId": "SRA_P376"
+  },
+  "FACTOR X FUNCTIONAL": {
+    "standardName": "FACTOR X FUNCTIONAL",
+    "paramId": "SRA_P377"
+  },
+  "FIBRINOGEN DEGRADATION PRODUCTS (FDP), BLOOD": {
+    "standardName": "FIBRINOGEN DEGRADATION PRODUCTS (FDP), BLOOD",
+    "paramId": "SRA_P378"
+  },
+  "Factor IX Functional": {
+    "standardName": "Factor IX Functional",
+    "paramId": "SRA_P379"
+  },
+  "Factor XI Activity": {
+    "standardName": "Factor XI Activity",
+    "paramId": "SRA_P380"
+  },
+  "Lupus DRVV Screen (Control)": {
+    "standardName": "Lupus DRVV Screen (Control)",
+    "paramId": "SRA_P381"
+  },
+  "Lupus DRVV Screen (Ratio)": {
+    "standardName": "Lupus DRVV Screen (Ratio)",
+    "paramId": "SRA_P382"
+  },
+  "Lupus DRVV Screen (Test)": {
+    "standardName": "Lupus DRVV Screen (Test)",
+    "paramId": "SRA_P383"
+  },
+  "Mixing Studies Inhibitors": {
+    "standardName": "Mixing Studies Inhibitors",
+    "paramId": "SRA_P384"
+  },
+  "PT TEST": {
+    "standardName": "PT TEST",
+    "paramId": "SRA_P385"
+  },
+  "Phosphatidylserine IgM Antibody": {
+    "standardName": "Phosphatidylserine IgM Antibody",
+    "paramId": "SRA_P386"
+  },
+  "Protein C Activity": {
+    "standardName": "Protein C Activity",
+    "paramId": "SRA_P387"
+  },
+  "Prothrombin Gene Mutation Analysis (Factor II)": {
+    "standardName": "Prothrombin Gene Mutation Analysis (Factor II)",
+    "paramId": "SRA_P388"
+  },
+  "Screen Ratio": {
+    "standardName": "Screen Ratio",
+    "paramId": "SRA_P389"
+  },
+  "Thrombin Time": {
+    "standardName": "Thrombin Time",
+    "paramId": "SRA_P390"
+  },
+  "ABNORMAL CELLS": {
+    "standardName": "ABNORMAL CELLS",
+    "paramId": "SRA_P391"
+  },
+  "ABSOLUTE RETICULOCYTE COUNT": {
+    "standardName": "ABSOLUTE RETICULOCYTE COUNT",
+    "paramId": "SRA_P392"
+  },
+  "AMH2": {
+    "standardName": "AMH2",
+    "paramId": "SRA_P393"
+  },
+  "Abs. Basophil Count": {
+    "standardName": "Abs. Basophil Count",
+    "paramId": "SRA_P394"
+  },
+  "Abs. Eosinophil Count": {
+    "standardName": "Abs. Eosinophil Count",
+    "paramId": "SRA_P395"
+  },
+  "Abs. Immature Granulocytes": {
+    "standardName": "Abs. Immature Granulocytes",
+    "paramId": "SRA_P396"
+  },
+  "Abs. Lymphocyte Count": {
+    "standardName": "Abs. Lymphocyte Count",
+    "paramId": "SRA_P397"
+  },
+  "Abs. Monocyte Count": {
+    "standardName": "Abs. Monocyte Count",
+    "paramId": "SRA_P398"
+  },
+  "Abs. Neutrophil Count": {
+    "standardName": "Abs. Neutrophil Count",
+    "paramId": "SRA_P399"
+  },
+  "Absolute Granulocytes count": {
+    "standardName": "Absolute Granulocytes count",
+    "paramId": "SRA_P400"
+  },
+  "Absolute Large Unstained Cell": {
+    "standardName": "Absolute Large Unstained Cell",
+    "paramId": "SRA_P401"
+  },
+  "Absolute Nucleated red blood cells": {
+    "standardName": "Absolute Nucleated red blood cells",
+    "paramId": "SRA_P402"
+  },
+  "Anti Nuclear Antibodies (ANA)": {
+    "standardName": "Anti Nuclear Antibodies (ANA)",
+    "paramId": "SRA_P403"
+  },
+  "Atypical Cell": {
+    "standardName": "Atypical Cell",
+    "paramId": "SRA_P404"
+  },
+  "Atypical Lymphocytes (LUC)": {
+    "standardName": "Atypical Lymphocytes (LUC)",
+    "paramId": "SRA_P405"
+  },
+  "Atypical Lymphoid Cell": {
+    "standardName": "Atypical Lymphoid Cell",
+    "paramId": "SRA_P406"
+  },
+  "Atypical Monocytoid cell": {
+    "standardName": "Atypical Monocytoid cell",
+    "paramId": "SRA_P407"
+  },
+  "Atypical Plasma Cell": {
+    "standardName": "Atypical Plasma Cell",
+    "paramId": "SRA_P408"
+  },
+  "Band Cells": {
+    "standardName": "Band Cells",
+    "paramId": "SRA_P409"
+  },
+  "Basophils": {
+    "standardName": "Basophils",
+    "paramId": "SRA_P410"
+  },
+  "Blast Cells": {
+    "standardName": "Blast Cells",
+    "paramId": "SRA_P411"
+  },
+  "C-Peptide (Fasting)": {
+    "standardName": "C-Peptide (Fasting)",
+    "paramId": "SRA_P412"
+  },
+  "C-Peptide (Post prandial)": {
+    "standardName": "C-Peptide (Post prandial)",
+    "paramId": "SRA_P413"
+  },
+  "CORRECTED RETICULOCYTE COUNT": {
+    "standardName": "CORRECTED RETICULOCYTE COUNT",
+    "paramId": "SRA_P414"
+  },
+  "Corrected TLC": {
+    "standardName": "Corrected TLC",
+    "paramId": "SRA_P415"
+  },
+  "ESR": {
+    "standardName": "ESR",
+    "paramId": "SRA_P416"
+  },
+  "Eosinophils": {
+    "standardName": "Eosinophils",
+    "paramId": "SRA_P417"
+  },
+  "Granulocytes": {
+    "standardName": "Granulocytes",
+    "paramId": "SRA_P418"
+  },
+  "HDW (Haemoglobin Distribution Width)": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HEMOPARASITES": {
+    "standardName": "HEMOPARASITES",
+    "paramId": "SRA_P419"
+  },
+  "Haematocrit": {
+    "standardName": "Haematocrit",
+    "paramId": "SRA_P420"
+  },
+  "Haemoglobin": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "IMMATURE PLATELET FRACTION": {
+    "standardName": "IMMATURE PLATELET FRACTION",
+    "paramId": "SRA_P421"
+  },
+  "IgA": {
+    "standardName": "IgA",
+    "paramId": "SRA_P422"
+  },
+  "IgG": {
+    "standardName": "IgG",
+    "paramId": "SRA_P423"
+  },
+  "Immature Granulocytes": {
+    "standardName": "Immature Granulocytes",
+    "paramId": "SRA_P424"
+  },
+  "LIC#": {
+    "standardName": "LIC#",
+    "paramId": "SRA_P425"
+  },
+  "LIC%": {
+    "standardName": "LIC%",
+    "paramId": "SRA_P426"
+  },
+  "Large Unstained Cell": {
+    "standardName": "Large Unstained Cell",
+    "paramId": "SRA_P427"
+  },
+  "Lymphoblasts": {
+    "standardName": "Lymphoblasts",
+    "paramId": "SRA_P428"
+  },
+  "Lymphocyte-Monocyte Ratio": {
+    "standardName": "Lymphocyte-Monocyte Ratio",
+    "paramId": "SRA_P429"
+  },
+  "Lymphocytes": {
+    "standardName": "Lymphocytes",
+    "paramId": "SRA_P430"
+  },
+  "MCH": {
+    "standardName": "MCH",
+    "paramId": "SRA_P431"
+  },
+  "MCHC": {
+    "standardName": "MCHC",
+    "paramId": "SRA_P432"
+  },
+  "MCV": {
+    "standardName": "MCV",
+    "paramId": "SRA_P433"
+  },
+  "MENTZER INDEX": {
+    "standardName": "MENTZER INDEX",
+    "paramId": "SRA_P434"
+  },
+  "MPV": {
+    "standardName": "MPV",
+    "paramId": "SRA_P435"
+  },
+  "MYELOBLAST": {
+    "standardName": "MYELOBLAST",
+    "paramId": "SRA_P436"
+  },
+  "Mean Platelet Component (MPC)": {
+    "standardName": "Mean Platelet Component (MPC)",
+    "paramId": "SRA_P437"
+  },
+  "Mean Platelet Mass (MPM)": {
+    "standardName": "Mean Platelet Mass (MPM)",
+    "paramId": "SRA_P438"
+  },
+  "Meta-Myelocytes": {
+    "standardName": "Meta-Myelocytes",
+    "paramId": "SRA_P439"
+  },
+  "Mixed Cells": {
+    "standardName": "Mixed Cells",
+    "paramId": "SRA_P440"
+  },
+  "Monocytes": {
+    "standardName": "Monocytes",
+    "paramId": "SRA_P441"
+  },
+  "Myelocytes": {
+    "standardName": "Myelocytes",
+    "paramId": "SRA_P442"
+  },
+  "Neutrophil Lymphocyte Ratio": {
+    "standardName": "Neutrophil Lymphocyte Ratio",
+    "paramId": "SRA_P443"
+  },
+  "Neutrophil lymhocyte ratio": {
+    "standardName": "Neutrophil lymhocyte ratio",
+    "paramId": "SRA_P444"
+  },
+  "Neutrophils": {
+    "standardName": "Neutrophils",
+    "paramId": "SRA_P445"
+  },
+  "Nucleated red blood cells": {
+    "standardName": "Nucleated red blood cells",
+    "paramId": "SRA_P446"
+  },
+  "Other Leukocyte": {
+    "standardName": "Other Leukocyte",
+    "paramId": "SRA_P447"
+  },
+  "P-LCC": {
+    "standardName": "P-LCC",
+    "paramId": "SRA_P448"
+  },
+  "P-LCR": {
+    "standardName": "P-LCR",
+    "paramId": "SRA_P449"
+  },
+  "PCT": {
+    "standardName": "PCT",
+    "paramId": "SRA_P450"
+  },
+  "PDW": {
+    "standardName": "PDW",
+    "paramId": "SRA_P451"
+  },
+  "PDW - SD": {
+    "standardName": "PDW - SD",
+    "paramId": "SRA_P452"
+  },
+  "PERIPHERAL SMEAR": {
+    "standardName": "PERIPHERAL SMEAR",
+    "paramId": "SRA_P453"
+  },
+  "Peripheral smear": {
+    "standardName": "Peripheral smear",
+    "paramId": "SRA_P454"
+  },
+  "Plasma Cell": {
+    "standardName": "Plasma Cell",
+    "paramId": "SRA_P455"
+  },
+  "Platelate Morphology": {
+    "standardName": "Platelate Morphology",
+    "paramId": "SRA_P456"
+  },
+  "Platelet Count": {
+    "standardName": "Platelet Count",
+    "paramId": "SRA_P457"
+  },
+  "Platelet Crit": {
+    "standardName": "Platelet Crit",
+    "paramId": "SRA_P458"
+  },
+  "Platelet(PBS)": {
+    "standardName": "Platelet(PBS)",
+    "paramId": "SRA_P459"
+  },
+  "Platelet-Lymphocyte Ratio": {
+    "standardName": "Platelet-Lymphocyte Ratio",
+    "paramId": "SRA_P460"
+  },
+  "Platelets Morphology": {
+    "standardName": "Platelets Morphology",
+    "paramId": "SRA_P461"
+  },
+  "Polymorphonuclear Leukocytes": {
+    "standardName": "Polymorphonuclear Leukocytes",
+    "paramId": "SRA_P462"
+  },
+  "Polymorphs": {
+    "standardName": "Polymorphs",
+    "paramId": "SRA_P463"
+  },
+  "Pro-Myelocytes": {
+    "standardName": "Pro-Myelocytes",
+    "paramId": "SRA_P464"
+  },
+  "Promonocytes": {
+    "standardName": "Promonocytes",
+    "paramId": "SRA_P465"
+  },
+  "RBC Morphology": {
+    "standardName": "RBC Morphology",
+    "paramId": "SRA_P466"
+  },
+  "RBC count": {
+    "standardName": "RBC count",
+    "paramId": "SRA_P467"
+  },
+  "RBC(PBS)": {
+    "standardName": "RBC(PBS)",
+    "paramId": "SRA_P468"
+  },
+  "RBCs": {
+    "standardName": "RBCs",
+    "paramId": "SRA_P469"
+  },
+  "RDW": {
+    "standardName": "RDW",
+    "paramId": "SRA_P470"
+  },
+  "RDW-CV": {
+    "standardName": "RDW-CV",
+    "paramId": "SRA_P471"
+  },
+  "RDW-SD": {
+    "standardName": "RDW-SD",
+    "paramId": "SRA_P472"
+  },
+  "RETICULOCYTE HEAMOGLOBIN EQUIVELENT": {
+    "standardName": "RETICULOCYTE HEAMOGLOBIN EQUIVELENT",
+    "paramId": "SRA_P473"
+  },
+  "Reticulocyte Index": {
+    "standardName": "Reticulocyte Index",
+    "paramId": "SRA_P474"
+  },
+  "Reticulocytes Count": {
+    "standardName": "Reticulocytes Count",
+    "paramId": "SRA_P475"
+  },
+  "Segmented Neutrophils": {
+    "standardName": "Segmented Neutrophils",
+    "paramId": "SRA_P476"
+  },
+  "Total Diff %": {
+    "standardName": "Total Diff %",
+    "paramId": "SRA_P477"
+  },
+  "Total Leukocyte Count": {
+    "standardName": "Total Leukocyte Count",
+    "paramId": "SRA_P478"
+  },
+  "WBC Morphology": {
+    "standardName": "WBC Morphology",
+    "paramId": "SRA_P479"
+  },
+  "WBC(PBS)": {
+    "standardName": "WBC(PBS)",
+    "paramId": "SRA_P480"
+  },
+  "Activated Protein C Resistance (APCR)": {
+    "standardName": "Activated Protein C Resistance (APCR)",
+    "paramId": "SRA_P481"
+  },
+  "Band forms": {
+    "standardName": "Band forms",
+    "paramId": "SRA_P482"
+  },
+  "Clotting Time": {
+    "standardName": "Clotting Time",
+    "paramId": "SRA_P483"
+  },
+  "Coagulum": {
+    "standardName": "Coagulum",
+    "paramId": "SRA_P484"
+  },
+  "Haemoglobin C (HbC)": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Haemoglobin D (HbD)": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Haemoglobin E (HbE)": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Haemoglobin S (HbS)": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Heparin Induced Thrombocytopenia (HIT)": {
+    "standardName": "Heparin Induced Thrombocytopenia (HIT)",
+    "paramId": "SRA_P485"
+  },
+  "LUC - (Atypical cells)": {
+    "standardName": "LUC - (Atypical cells)",
+    "paramId": "SRA_P486"
+  },
+  "Parietal Cell Antibody": {
+    "standardName": "Parietal Cell Antibody",
+    "paramId": "SRA_P487"
+  },
+  "Prolymphocytes": {
+    "standardName": "Prolymphocytes",
+    "paramId": "SRA_P488"
+  },
+  "VANCOMYCIN": {
+    "standardName": "VANCOMYCIN",
+    "paramId": "SRA_P489"
+  },
+  "Blood Group": {
+    "standardName": "Blood Group",
+    "paramId": "SRA_P490"
+  },
+  "Rh Factor": {
+    "standardName": "Rh Factor",
+    "paramId": "SRA_P491"
+  },
+  "Rh Factor Quantitative": {
+    "standardName": "Rh Factor Quantitative",
+    "paramId": "SRA_P492"
+  },
+  "Blood Pressure": {
+    "standardName": "Blood Pressure",
+    "paramId": "SRA_P493"
+  },
+  "Blood pressure": {
+    "standardName": "Blood pressure",
+    "paramId": "SRA_P494"
+  },
+  "Body Mass Index(BMI)": {
+    "standardName": "Body Mass Index(BMI)",
+    "paramId": "SRA_P495"
+  },
+  "Body Temperature": {
+    "standardName": "Body Temperature",
+    "paramId": "SRA_P496"
+  },
+  "Diastolic": {
+    "standardName": "Diastolic",
+    "paramId": "SRA_P497"
+  },
+  "Height": {
+    "standardName": "Height",
+    "paramId": "SRA_P498"
+  },
+  "Pulse": {
+    "standardName": "Pulse",
+    "paramId": "SRA_P499"
+  },
+  "Systolic": {
+    "standardName": "Systolic",
+    "paramId": "SRA_P500"
+  },
+  "Weight": {
+    "standardName": "Weight",
+    "paramId": "SRA_P501"
+  },
+  "Alkaline Phosphatase with Bone Fraction Ostase": {
+    "standardName": "Alkaline Phosphatase with Bone Fraction Ostase",
+    "paramId": "SRA_P502"
+  },
+  "Beta-2-Crosslaps C-Telopeptides (BCTX)": {
+    "standardName": "Beta-2-Crosslaps C-Telopeptides (BCTX)",
+    "paramId": "SRA_P503"
+  },
+  "Fibroblast Growth Factor 23 (FGF 23)": {
+    "standardName": "Fibroblast Growth Factor 23 (FGF 23)",
+    "paramId": "SRA_P504"
+  },
+  "NTx N-Tellopeptide, 24 Hrs Urine": {
+    "standardName": "NTx N-Tellopeptide, 24 Hrs Urine",
+    "paramId": "SRA_P505"
+  },
+  "Osteocalcin": {
+    "standardName": "Osteocalcin",
+    "paramId": "SRA_P506"
+  },
+  "Total P1NP": {
+    "standardName": "Total P1NP",
+    "paramId": "SRA_P507"
+  },
+  "% fPSA": {
+    "standardName": "% fPSA",
+    "paramId": "SRA_P508"
+  },
+  "Adrenaline (Epinephrine) level Urine": {
+    "standardName": "Adrenaline (Epinephrine) level Urine",
+    "paramId": "SRA_P509"
+  },
+  "Adrenaline (Epinephrine) level Urine 24 hrs": {
+    "standardName": "Adrenaline (Epinephrine) level Urine 24 hrs",
+    "paramId": "SRA_P510"
+  },
+  "BETA 2 MICROGLOBULIN": {
+    "standardName": "BETA 2 MICROGLOBULIN",
+    "paramId": "SRA_P511"
+  },
+  "CA 125": {
+    "standardName": "CA 125",
+    "paramId": "SRA_P512"
+  },
+  "CA 15-3": {
+    "standardName": "CA 15-3",
+    "paramId": "SRA_P513"
+  },
+  "CA 19-9": {
+    "standardName": "CA 19-9",
+    "paramId": "SRA_P514"
+  },
+  "CA 72.4 (TAG-72) GASTRIC CANCER MARKER,SERUM": {
+    "standardName": "CA 72.4 (TAG-72) GASTRIC CANCER MARKER,SERUM",
+    "paramId": "SRA_P515"
+  },
+  "CEA": {
+    "standardName": "CEA",
+    "paramId": "SRA_P516"
+  },
+  "CYFRA 21-1 (Lung Cancer Marker)": {
+    "standardName": "CYFRA 21-1 (Lung Cancer Marker)",
+    "paramId": "SRA_P517"
+  },
+  "Calcitonin": {
+    "standardName": "Calcitonin",
+    "paramId": "SRA_P518"
+  },
+  "Carcinoembryonic Antigen (CEA) Fluid": {
+    "standardName": "Carcinoembryonic Antigen (CEA) Fluid",
+    "paramId": "SRA_P519"
+  },
+  "Chromogranin A": {
+    "standardName": "Chromogranin A",
+    "paramId": "SRA_P520"
+  },
+  "DES-GAMMA CARBOXY PROTHROMBIN (DCP)/PIVKA II": {
+    "standardName": "DES-GAMMA CARBOXY PROTHROMBIN (DCP)/PIVKA II",
+    "paramId": "SRA_P521"
+  },
+  "HCG BETA, TOTAL, TUMOR MARKER": {
+    "standardName": "HCG BETA, TOTAL, TUMOR MARKER",
+    "paramId": "SRA_P522"
+  },
+  "HE4 (HUMAN EPIDIDYMIS PROTEIN 4) , SERUM": {
+    "standardName": "HE4 (HUMAN EPIDIDYMIS PROTEIN 4) , SERUM",
+    "paramId": "SRA_P523"
+  },
+  "HOMOVANILLIC ACID (HVA)": {
+    "standardName": "HOMOVANILLIC ACID (HVA)",
+    "paramId": "SRA_P524"
+  },
+  "Nor Metanephrine Free, Plasma": {
+    "standardName": "Nor Metanephrine Free, Plasma",
+    "paramId": "SRA_P525"
+  },
+  "Nor-Adrenaline (Nor-epinephrine) Plasma": {
+    "standardName": "Nor-Adrenaline (Nor-epinephrine) Plasma",
+    "paramId": "SRA_P526"
+  },
+  "Prostate-Specific Antigen Free": {
+    "standardName": "Prostate-Specific Antigen Free",
+    "paramId": "SRA_P527"
+  },
+  "Prostate-Specific Antigen Total": {
+    "standardName": "Prostate-Specific Antigen Total",
+    "paramId": "SRA_P528"
+  },
+  "ROMA (Post-menopausal)": {
+    "standardName": "ROMA (Post-menopausal)",
+    "paramId": "SRA_P529"
+  },
+  "ROMA (Pre-menopausal)": {
+    "standardName": "ROMA (Pre-menopausal)",
+    "paramId": "SRA_P530"
+  },
+  "Serotonin-(5-Hydroxy Tryptamine)": {
+    "standardName": "Serotonin-(5-Hydroxy Tryptamine)",
+    "paramId": "SRA_P531"
+  },
+  "TNF Alpha (Tumour Necrosis Factor)": {
+    "standardName": "TNF Alpha (Tumour Necrosis Factor)",
+    "paramId": "SRA_P532"
+  },
+  "Tumor marker test": {
+    "standardName": "Tumor marker test",
+    "paramId": "SRA_P533"
+  },
+  "p2PSA": {
+    "standardName": "p2PSA",
+    "paramId": "SRA_P534"
+  },
+  "phi (Prostate Health Index)": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "BNP; B-TYPE NATRIURETIC PEPTIDE, PLASMA": {
+    "standardName": "BNP; B-TYPE NATRIURETIC PEPTIDE, PLASMA",
+    "paramId": "SRA_P535"
+  },
+  "CK-MB": {
+    "standardName": "CK-MB",
+    "paramId": "SRA_P536"
+  },
+  "CK-Total": {
+    "standardName": "CK-Total",
+    "paramId": "SRA_P537"
+  },
+  "Chylomicron Qualitative": {
+    "standardName": "Chylomicron Qualitative",
+    "paramId": "SRA_P538"
+  },
+  "Chylomicron Qualitative Urine": {
+    "standardName": "Chylomicron Qualitative Urine",
+    "paramId": "SRA_P539"
+  },
+  "Homocysteine": {
+    "standardName": "Homocysteine",
+    "paramId": "SRA_P540"
+  },
+  "Homocysteine Qualitative": {
+    "standardName": "Homocysteine Qualitative",
+    "paramId": "SRA_P541"
+  },
+  "LDH:Lactate Dehydrogenase": {
+    "standardName": "LDH:Lactate Dehydrogenase",
+    "paramId": "SRA_P542"
+  },
+  "Lipoprotein Associated Phospholipase A2 (Lp-PLA2)": {
+    "standardName": "Lipoprotein Associated Phospholipase A2 (Lp-PLA2)",
+    "paramId": "SRA_P543"
+  },
+  "Myoglobin": {
+    "standardName": "Myoglobin",
+    "paramId": "SRA_P544"
+  },
+  "Myoglobin, Serum": {
+    "standardName": "Myoglobin, Serum",
+    "paramId": "SRA_P545"
+  },
+  "NT-Pro-BNP": {
+    "standardName": "NT-Pro-BNP",
+    "paramId": "SRA_P546"
+  },
+  "TROPONI - I": {
+    "standardName": "TROPONI - I",
+    "paramId": "SRA_P547"
+  },
+  "TROPONIN-I,HIGH SENSITIVE": {
+    "standardName": "TROPONIN-I,HIGH SENSITIVE",
+    "paramId": "SRA_P548"
+  },
+  "Troponin - T": {
+    "standardName": "Troponin - T",
+    "paramId": "SRA_P549"
+  },
+  "Troponin I": {
+    "standardName": "Troponin I",
+    "paramId": "SRA_P550"
+  },
+  "Troponin-T High Sensitive": {
+    "standardName": "Troponin-T High Sensitive",
+    "paramId": "SRA_P551"
+  },
+  "COVID 19 IgM": {
+    "standardName": "COVID 19 IgM",
+    "paramId": "SRA_P552"
+  },
+  "COVID Antibody": {
+    "standardName": "COVID Antibody",
+    "paramId": "SRA_P553"
+  },
+  "COVID RT-PCR": {
+    "standardName": "COVID RT-PCR",
+    "paramId": "SRA_P554"
+  },
+  "Covid-19 IgG": {
+    "standardName": "Covid-19 IgG",
+    "paramId": "SRA_P555"
+  },
+  "Covid-19 IgG Antibody (Qualitative)": {
+    "standardName": "Covid-19 IgG Antibody (Qualitative)",
+    "paramId": "SRA_P556"
+  },
+  "Cycle Threshold E-gene": {
+    "standardName": "Cycle Threshold E-gene",
+    "paramId": "SRA_P557"
+  },
+  "Cycle Threshold N-gene": {
+    "standardName": "Cycle Threshold N-gene",
+    "paramId": "SRA_P558"
+  },
+  "Cycle Threshold Orf 1a-gene": {
+    "standardName": "Cycle Threshold Orf 1a-gene",
+    "paramId": "SRA_P559"
+  },
+  "Cycle Threshold RDRP": {
+    "standardName": "Cycle Threshold RDRP",
+    "paramId": "SRA_P560"
+  },
+  "N Gene CT Value": {
+    "standardName": "N Gene CT Value",
+    "paramId": "SRA_P561"
+  },
+  "Amylase": {
+    "standardName": "Amylase",
+    "paramId": "SRA_P562"
+  },
+  "Anti GAD-65 Antibody (Paraneoplastic Syndrome)": {
+    "standardName": "Anti GAD-65 Antibody (Paraneoplastic Syndrome)",
+    "paramId": "SRA_P563"
+  },
+  "Anti IA-2 (Insulinoma Associated Antigen)": {
+    "standardName": "Anti IA-2 (Insulinoma Associated Antigen)",
+    "paramId": "SRA_P564"
+  },
+  "Average Glucose Value(Past 3 Months IFCC)": {
+    "standardName": "HbA1c",
+    "paramId": "SRA_P007"
+  },
+  "Blood Glucose (1 Hour 30 Mins).": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Blood Glucose (2 Hour 30 Mins)": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Blood Glucose (30 MIns)": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Blood Sugar (Fasting)": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Blood Sugar (Postprandial)": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Blood Sugar (Random)": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "C - PEPTIDE (Fasting)": {
+    "standardName": "C - PEPTIDE (Fasting)",
+    "paramId": "SRA_P565"
+  },
+  "C - PEPTIDE (PP)": {
+    "standardName": "C - PEPTIDE (PP)",
+    "paramId": "SRA_P566"
+  },
+  "C Peptide Random": {
+    "standardName": "C Peptide Random",
+    "paramId": "SRA_P567"
+  },
+  "Diabetes Monitoring": {
+    "standardName": "Diabetes Monitoring",
+    "paramId": "SRA_P568"
+  },
+  "Fructosamine": {
+    "standardName": "Fructosamine",
+    "paramId": "SRA_P569"
+  },
+  "Glucose (Fluid)": {
+    "standardName": "Glucose (Fluid)",
+    "paramId": "SRA_P570"
+  },
+  "Glucose 2 Hour Post Load": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Glucose Challenge Test (GCT)": {
+    "standardName": "Glucose Challenge Test (GCT)",
+    "paramId": "SRA_P571"
+  },
+  "Glycosylated Haemoglobin(Hb A1c) IFCC": {
+    "standardName": "HbA1c",
+    "paramId": "SRA_P007"
+  },
+  "HOMA IR Index": {
+    "standardName": "HOMA IR Index",
+    "paramId": "SRA_P572"
+  },
+  "HbA1c (Glycosylated Haemoglobin)": {
+    "standardName": "HbA1c",
+    "paramId": "SRA_P007"
+  },
+  "HbA1c (mmol/mol)": {
+    "standardName": "HbA1c",
+    "paramId": "SRA_P007"
+  },
+  "Insulin (Fasting)": {
+    "standardName": "Insulin (Fasting)",
+    "paramId": "SRA_P573"
+  },
+  "Insulin (Postprandial)": {
+    "standardName": "Insulin (Postprandial)",
+    "paramId": "SRA_P574"
+  },
+  "Insulin (Random)": {
+    "standardName": "Insulin (Random)",
+    "paramId": "SRA_P575"
+  },
+  "KETONE BODY (BETA HYDROXYBUTYRATE)": {
+    "standardName": "KETONE BODY (BETA HYDROXYBUTYRATE)",
+    "paramId": "SRA_P576"
+  },
+  "Microalbumin": {
+    "standardName": "Microalbumin",
+    "paramId": "SRA_P577"
+  },
+  "POST GLUCOSE (BLOOD SUGAR LEVELS)": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Total Galactose (TGAL)": {
+    "standardName": "Triglycerides",
+    "paramId": "SRA_P005"
+  },
+  "Urine Glucose (30 Mins)": {
+    "standardName": "Urine Glucose (30 Mins)",
+    "paramId": "SRA_P578"
+  },
+  "Urine sugar(2hr)": {
+    "standardName": "Urine sugar(2hr)",
+    "paramId": "SRA_P579"
+  },
+  "Urine sugar(3hr)": {
+    "standardName": "Urine sugar(3hr)",
+    "paramId": "SRA_P580"
+  },
+  "ZnT8 (ZINC TRANSPORTER 8) ANTIBODY": {
+    "standardName": "ZnT8 (ZINC TRANSPORTER 8) ANTIBODY",
+    "paramId": "SRA_P581"
+  },
+  "eAG (Estimated Average Glucose)": {
+    "standardName": "eAG (Estimated Average Glucose)",
+    "paramId": "SRA_P582"
+  },
+  "Bicarbonate": {
+    "standardName": "Bicarbonate",
+    "paramId": "SRA_P583"
+  },
+  "Calcium": {
+    "standardName": "Calcium",
+    "paramId": "SRA_P584"
+  },
+  "Calcium Ionised": {
+    "standardName": "Calcium Ionised",
+    "paramId": "SRA_P585"
+  },
+  "Calcium, Urine by Arsenazo III dye Method": {
+    "standardName": "Calcium, Urine by Arsenazo III dye Method",
+    "paramId": "SRA_P586"
+  },
+  "Chloride": {
+    "standardName": "Chloride",
+    "paramId": "SRA_P587"
+  },
+  "Chloride, Urine": {
+    "standardName": "Chloride, Urine",
+    "paramId": "SRA_P588"
+  },
+  "Corrected Calcium": {
+    "standardName": "Corrected Calcium",
+    "paramId": "SRA_P589"
+  },
+  "Lactate": {
+    "standardName": "Lactate",
+    "paramId": "SRA_P590"
+  },
+  "MANGANESE URINE": {
+    "standardName": "MANGANESE URINE",
+    "paramId": "SRA_P591"
+  },
+  "Magnesium": {
+    "standardName": "Magnesium",
+    "paramId": "SRA_P592"
+  },
+  "Magnesium,Serum": {
+    "standardName": "Magnesium,Serum",
+    "paramId": "SRA_P593"
+  },
+  "Osmolality serum": {
+    "standardName": "Osmolality serum",
+    "paramId": "SRA_P594"
+  },
+  "Phosphate": {
+    "standardName": "Phosphate",
+    "paramId": "SRA_P595"
+  },
+  "Phosphates/Urates": {
+    "standardName": "Phosphates/Urates",
+    "paramId": "SRA_P596"
+  },
+  "Phosphorus": {
+    "standardName": "Phosphorus",
+    "paramId": "SRA_P597"
+  },
+  "Phosphorus, Urine by Phosphomolybdate Method": {
+    "standardName": "Phosphorus, Urine by Phosphomolybdate Method",
+    "paramId": "SRA_P598"
+  },
+  "Potassium": {
+    "standardName": "Potassium",
+    "paramId": "SRA_P599"
+  },
+  "Potassium, Urine": {
+    "standardName": "Potassium, Urine",
+    "paramId": "SRA_P600"
+  },
+  "Potassium,Urine": {
+    "standardName": "Potassium,Urine",
+    "paramId": "SRA_P601"
+  },
+  "Selenium, Serum by ICPMS": {
+    "standardName": "Selenium, Serum by ICPMS",
+    "paramId": "SRA_P602"
+  },
+  "Serum Copper": {
+    "standardName": "Serum Copper",
+    "paramId": "SRA_P603"
+  },
+  "Sodium": {
+    "standardName": "Sodium",
+    "paramId": "SRA_P604"
+  },
+  "Sodium 24 Hours Total Volume": {
+    "standardName": "Sodium 24 Hours Total Volume",
+    "paramId": "SRA_P605"
+  },
+  "Sodium : Potassium ratio": {
+    "standardName": "Sodium : Potassium ratio",
+    "paramId": "SRA_P606"
+  },
+  "Sodium urine by ISE Method": {
+    "standardName": "Sodium urine by ISE Method",
+    "paramId": "SRA_P607"
+  },
+  "Sodium,Urine": {
+    "standardName": "Sodium,Urine",
+    "paramId": "SRA_P608"
+  },
+  "Uric Acid": {
+    "standardName": "Uric Acid",
+    "paramId": "SRA_P609"
+  },
+  "Urinary Calcium level per day (Calculated)": {
+    "standardName": "Urinary Calcium level per day (Calculated)",
+    "paramId": "SRA_P610"
+  },
+  "Urine Potassium per Day(Calculation)": {
+    "standardName": "Urine Potassium per Day(Calculation)",
+    "paramId": "SRA_P611"
+  },
+  "Urine Sodium Random": {
+    "standardName": "Urine Sodium Random",
+    "paramId": "SRA_P612"
+  },
+  "Zinc": {
+    "standardName": "Zinc",
+    "paramId": "SRA_P613"
+  },
+  "AMH": {
+    "standardName": "AMH",
+    "paramId": "SRA_P614"
+  },
+  "Androstenedione": {
+    "standardName": "Androstenedione",
+    "paramId": "SRA_P615"
+  },
+  "DHEA-Sulphate": {
+    "standardName": "DHEA-Sulphate",
+    "paramId": "SRA_P616"
+  },
+  "Estradiol (E2)": {
+    "standardName": "Estradiol (E2)",
+    "paramId": "SRA_P617"
+  },
+  "Estrogen": {
+    "standardName": "Estrogen",
+    "paramId": "SRA_P618"
+  },
+  "FSH": {
+    "standardName": "FSH",
+    "paramId": "SRA_P619"
+  },
+  "Leutinizing Harmone": {
+    "standardName": "Leutinizing Harmone",
+    "paramId": "SRA_P620"
+  },
+  "Leutinizing Hormone": {
+    "standardName": "Leutinizing Hormone",
+    "paramId": "SRA_P621"
+  },
+  "Oestradiol": {
+    "standardName": "Oestradiol",
+    "paramId": "SRA_P622"
+  },
+  "Progesterone": {
+    "standardName": "Progesterone",
+    "paramId": "SRA_P623"
+  },
+  "SHBG": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Testosterone": {
+    "standardName": "Testosterone",
+    "paramId": "SRA_P624"
+  },
+  "Testosterone(Free)": {
+    "standardName": "Testosterone(Free)",
+    "paramId": "SRA_P625"
+  },
+  "Heart Assure (High Sensitive Troponin I)": {
+    "standardName": "Heart Assure (High Sensitive Troponin I)",
+    "paramId": "SRA_P626"
+  },
+  "HbA": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HbA2": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HbC": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HbD": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HbF": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HbS": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Unidentified": {
+    "standardName": "Unidentified",
+    "paramId": "SRA_P627"
+  },
+  "Anti HCV": {
+    "standardName": "Anti HCV",
+    "paramId": "SRA_P628"
+  },
+  "Anti Hbs Titre": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "CMV AB IgG": {
+    "standardName": "CMV AB IgG",
+    "paramId": "SRA_P629"
+  },
+  "CMV AB IgM": {
+    "standardName": "CMV AB IgM",
+    "paramId": "SRA_P630"
+  },
+  "HAV AB": {
+    "standardName": "HAV AB",
+    "paramId": "SRA_P631"
+  },
+  "HAV AB IgM": {
+    "standardName": "HAV AB IgM",
+    "paramId": "SRA_P632"
+  },
+  "HAV AB Total": {
+    "standardName": "HAV AB Total",
+    "paramId": "SRA_P633"
+  },
+  "HBcAb IgM": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HBcAb Total": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HBeAg": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HBsAb": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HBsAg Test Value": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HCV AB": {
+    "standardName": "HCV AB",
+    "paramId": "SRA_P634"
+  },
+  "HCV, IgG": {
+    "standardName": "HCV, IgG",
+    "paramId": "SRA_P635"
+  },
+  "17-Hydroxy Progesterone": {
+    "standardName": "17-Hydroxy Progesterone",
+    "paramId": "SRA_P636"
+  },
+  "17-Hydroxy Progesterone (17-OHP)": {
+    "standardName": "17-Hydroxy Progesterone (17-OHP)",
+    "paramId": "SRA_P637"
+  },
+  "17-HydroxyProgesterone": {
+    "standardName": "17-HydroxyProgesterone",
+    "paramId": "SRA_P638"
+  },
+  "ADH (Anti Diuretic Hormone)": {
+    "standardName": "ADH (Anti Diuretic Hormone)",
+    "paramId": "SRA_P639"
+  },
+  "ANTI MULLERIAN HORMONE; AMH,SERUM": {
+    "standardName": "ANTI MULLERIAN HORMONE; AMH,SERUM",
+    "paramId": "SRA_P640"
+  },
+  "Aldosterone, Serum": {
+    "standardName": "Aldosterone, Serum",
+    "paramId": "SRA_P641"
+  },
+  "Aldosterone, Urine": {
+    "standardName": "Aldosterone, Urine",
+    "paramId": "SRA_P642"
+  },
+  "Beta HCG": {
+    "standardName": "Beta HCG",
+    "paramId": "SRA_P643"
+  },
+  "Cortisol (Random)": {
+    "standardName": "Cortisol (Random)",
+    "paramId": "SRA_P644"
+  },
+  "Cortisol Serum (p.m)": {
+    "standardName": "Cortisol Serum (p.m)",
+    "paramId": "SRA_P645"
+  },
+  "Cortosol Random": {
+    "standardName": "Cortosol Random",
+    "paramId": "SRA_P646"
+  },
+  "DHEAS": {
+    "standardName": "DHEAS",
+    "paramId": "SRA_P647"
+  },
+  "DHT": {
+    "standardName": "DHT",
+    "paramId": "SRA_P648"
+  },
+  "Follicle Stimulating Hormone (FSH)": {
+    "standardName": "Follicle Stimulating Hormone (FSH)",
+    "paramId": "SRA_P649"
+  },
+  "Free Androgen Index": {
+    "standardName": "Free Androgen Index",
+    "paramId": "SRA_P650"
+  },
+  "Growth Hormone": {
+    "standardName": "Growth Hormone",
+    "paramId": "SRA_P651"
+  },
+  "IGF BP3": {
+    "standardName": "IGF BP3",
+    "paramId": "SRA_P652"
+  },
+  "IGF-1 (Somatomedin C)": {
+    "standardName": "IGF-1 (Somatomedin C)",
+    "paramId": "SRA_P653"
+  },
+  "LH / FSH Ratio": {
+    "standardName": "LH / FSH Ratio",
+    "paramId": "SRA_P654"
+  },
+  "Pregnancy Test Serum": {
+    "standardName": "Pregnancy Test Serum",
+    "paramId": "SRA_P655"
+  },
+  "Prolactin": {
+    "standardName": "Prolactin",
+    "paramId": "SRA_P656"
+  },
+  "SEX HORMONE BINDING GLOBULIN (SHBG),SERUM": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Serum for Beta HCG": {
+    "standardName": "Serum for Beta HCG",
+    "paramId": "SRA_P657"
+  },
+  "TSH (Thyroid Stimulating Hormone)": {
+    "standardName": "TSH",
+    "paramId": "SRA_P010"
+  },
+  "Urine for Beta HCG": {
+    "standardName": "Urine for Beta HCG",
+    "paramId": "SRA_P658"
+  },
+  "Plasma Renin Direct": {
+    "standardName": "Plasma Renin Direct",
+    "paramId": "SRA_P659"
+  },
+  "CD3": {
+    "standardName": "CD3",
+    "paramId": "SRA_P660"
+  },
+  "CD3-/CD(16+56)++": {
+    "standardName": "CD3-/CD(16+56)++",
+    "paramId": "SRA_P661"
+  },
+  "CD4": {
+    "standardName": "CD4",
+    "paramId": "SRA_P662"
+  },
+  "CD4/CD8 ratio": {
+    "standardName": "CD4/CD8 ratio",
+    "paramId": "SRA_P663"
+  },
+  "CD8": {
+    "standardName": "CD8",
+    "paramId": "SRA_P664"
+  },
+  "IMMUNOGLOBULIN IgA,Serum": {
+    "standardName": "IMMUNOGLOBULIN IgA,Serum",
+    "paramId": "SRA_P665"
+  },
+  "IMMUNOGLOBULIN IgG,Serum": {
+    "standardName": "IMMUNOGLOBULIN IgG,Serum",
+    "paramId": "SRA_P666"
+  },
+  "IMMUNOGLOBULIN IgM, SERUM": {
+    "standardName": "IMMUNOGLOBULIN IgM, SERUM",
+    "paramId": "SRA_P667"
+  },
+  "IgE Total": {
+    "standardName": "IgE Total",
+    "paramId": "SRA_P668"
+  },
+  "IgM Level": {
+    "standardName": "IgM Level",
+    "paramId": "SRA_P669"
+  },
+  "Natural Killer Cells": {
+    "standardName": "Natural Killer Cells",
+    "paramId": "SRA_P670"
+  },
+  "ANTI HEV IgG": {
+    "standardName": "ANTI HEV IgG",
+    "paramId": "SRA_P671"
+  },
+  "ASCA IgA": {
+    "standardName": "ASCA IgA",
+    "paramId": "SRA_P672"
+  },
+  "ASCA IgG": {
+    "standardName": "ASCA IgG",
+    "paramId": "SRA_P673"
+  },
+  "ASO Qualitative": {
+    "standardName": "ASO Qualitative",
+    "paramId": "SRA_P674"
+  },
+  "Adenosine Deaminase; ADA": {
+    "standardName": "Adenosine Deaminase; ADA",
+    "paramId": "SRA_P675"
+  },
+  "Adenovirus IgG": {
+    "standardName": "Adenovirus IgG",
+    "paramId": "SRA_P676"
+  },
+  "Adenovirus IgM Antibody": {
+    "standardName": "Adenovirus IgM Antibody",
+    "paramId": "SRA_P677"
+  },
+  "Agglutination": {
+    "standardName": "Agglutination",
+    "paramId": "SRA_P678"
+  },
+  "Anti-HBc IgM": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Anti-HBe": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Anti-HBs": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Anti-HCV": {
+    "standardName": "Anti-HCV",
+    "paramId": "SRA_P679"
+  },
+  "Anti-HDV": {
+    "standardName": "Anti-HDV",
+    "paramId": "SRA_P680"
+  },
+  "Antistreptolysin-O ( ASO) Titre, Serum": {
+    "standardName": "Antistreptolysin-O ( ASO) Titre, Serum",
+    "paramId": "SRA_P681"
+  },
+  "Aspergillus Antigen": {
+    "standardName": "Aspergillus Antigen",
+    "paramId": "SRA_P682"
+  },
+  "Beta-D-Glucan": {
+    "standardName": "Beta-D-Glucan",
+    "paramId": "SRA_P683"
+  },
+  "CMV IgG": {
+    "standardName": "CMV IgG",
+    "paramId": "SRA_P684"
+  },
+  "CMV IgM": {
+    "standardName": "CMV IgM",
+    "paramId": "SRA_P685"
+  },
+  "Chikungunya IgG": {
+    "standardName": "Chikungunya IgG",
+    "paramId": "SRA_P686"
+  },
+  "Chikungunya IgM": {
+    "standardName": "Chikungunya IgM",
+    "paramId": "SRA_P687"
+  },
+  "Chlamydia IgA": {
+    "standardName": "Chlamydia IgA",
+    "paramId": "SRA_P688"
+  },
+  "Chlamydia IgG": {
+    "standardName": "Chlamydia IgG",
+    "paramId": "SRA_P689"
+  },
+  "Chlamydia Trachomatis IgG": {
+    "standardName": "Chlamydia Trachomatis IgG",
+    "paramId": "SRA_P690"
+  },
+  "Coxiella IgG": {
+    "standardName": "Coxiella IgG",
+    "paramId": "SRA_P691"
+  },
+  "Coxiella IgM": {
+    "standardName": "Coxiella IgM",
+    "paramId": "SRA_P692"
+  },
+  "Coxsackie IgG Antibody": {
+    "standardName": "Coxsackie IgG Antibody",
+    "paramId": "SRA_P693"
+  },
+  "Coxsackie IgM Antibody": {
+    "standardName": "Coxsackie IgM Antibody",
+    "paramId": "SRA_P694"
+  },
+  "Cryptococcus Antigen": {
+    "standardName": "Cryptococcus Antigen",
+    "paramId": "SRA_P695"
+  },
+  "Cryptosporidium Antigen": {
+    "standardName": "Cryptosporidium Antigen",
+    "paramId": "SRA_P696"
+  },
+  "Cyst (Stool routine)": {
+    "standardName": "Cyst (Stool routine)",
+    "paramId": "SRA_P697"
+  },
+  "Cytomegalovirus Antibody-IgM": {
+    "standardName": "Cytomegalovirus Antibody-IgM",
+    "paramId": "SRA_P698"
+  },
+  "Diphtheria Antibogy IgG": {
+    "standardName": "Diphtheria Antibogy IgG",
+    "paramId": "SRA_P699"
+  },
+  "Direct Microscopy (Saline and Iodine mount)": {
+    "standardName": "Direct Microscopy (Saline and Iodine mount)",
+    "paramId": "SRA_P700"
+  },
+  "E Gene CT Value": {
+    "standardName": "E Gene CT Value",
+    "paramId": "SRA_P701"
+  },
+  "E. Coli Antigen": {
+    "standardName": "E. Coli Antigen",
+    "paramId": "SRA_P702"
+  },
+  "EBV EA IgG": {
+    "standardName": "EBV EA IgG",
+    "paramId": "SRA_P703"
+  },
+  "EBV IgM": {
+    "standardName": "EBV IgM",
+    "paramId": "SRA_P704"
+  },
+  "Echinococcus IgG": {
+    "standardName": "Echinococcus IgG",
+    "paramId": "SRA_P705"
+  },
+  "Entamoeba Antigen": {
+    "standardName": "Entamoeba Antigen",
+    "paramId": "SRA_P706"
+  },
+  "Epstein-Barr VCA IgG": {
+    "standardName": "Epstein-Barr VCA IgG",
+    "paramId": "SRA_P707"
+  },
+  "Estimated Titre": {
+    "standardName": "Estimated Titre",
+    "paramId": "SRA_P708"
+  },
+  "Factor V Functional / Activity": {
+    "standardName": "Factor V Functional / Activity",
+    "paramId": "SRA_P709"
+  },
+  "Filaria Antigen": {
+    "standardName": "Filaria Antigen",
+    "paramId": "SRA_P710"
+  },
+  "Filaria IgG": {
+    "standardName": "Filaria IgG",
+    "paramId": "SRA_P711"
+  },
+  "Filaria IgM": {
+    "standardName": "Filaria IgM",
+    "paramId": "SRA_P712"
+  },
+  "Form & Consistency (Stool routine)": {
+    "standardName": "Form & Consistency (Stool routine)",
+    "paramId": "SRA_P713"
+  },
+  "Giardia Antigen": {
+    "standardName": "Giardia Antigen",
+    "paramId": "SRA_P714"
+  },
+  "Group B Strep": {
+    "standardName": "Group B Strep",
+    "paramId": "SRA_P715"
+  },
+  "H. Influenzae B": {
+    "standardName": "H. Influenzae B",
+    "paramId": "SRA_P716"
+  },
+  "HAV IgM": {
+    "standardName": "HAV IgM",
+    "paramId": "SRA_P717"
+  },
+  "HCV Total": {
+    "standardName": "HCV Total",
+    "paramId": "SRA_P718"
+  },
+  "HDV IgM": {
+    "standardName": "HDV IgM",
+    "paramId": "SRA_P719"
+  },
+  "HEPATITIS B CORE ANTIBODY (Anti- HBc), TOTAL": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HEV IgM": {
+    "standardName": "HEV IgM",
+    "paramId": "SRA_P720"
+  },
+  "HIV 1&2": {
+    "standardName": "HIV 1&2",
+    "paramId": "SRA_P721"
+  },
+  "HMPV RNA Qualitative": {
+    "standardName": "HMPV RNA Qualitative",
+    "paramId": "SRA_P722"
+  },
+  "HSV 1&2 IgM": {
+    "standardName": "HSV 1&2 IgM",
+    "paramId": "SRA_P723"
+  },
+  "HSV-1 IgG": {
+    "standardName": "HSV-1 IgG",
+    "paramId": "SRA_P724"
+  },
+  "HSV-2 IgG": {
+    "standardName": "HSV-2 IgG",
+    "paramId": "SRA_P725"
+  },
+  "HTLV I & II Total Antibody": {
+    "standardName": "HTLV I & II Total Antibody",
+    "paramId": "SRA_P726"
+  },
+  "Hepatitis A Antibody (Anti-HAV)- IgG": {
+    "standardName": "Hepatitis A Antibody (Anti-HAV)- IgG",
+    "paramId": "SRA_P727"
+  },
+  "Hepatitis B Envelope Antigen (HBeAg )": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Hepatitis B surface antigen (HBs Ag)": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Herpes simplex virus 1+2, IgG": {
+    "standardName": "Herpes simplex virus 1+2, IgG",
+    "paramId": "SRA_P728"
+  },
+  "Herpes simplex virus 1+2, IgM": {
+    "standardName": "Herpes simplex virus 1+2, IgM",
+    "paramId": "SRA_P729"
+  },
+  "Induration in mm": {
+    "standardName": "Induration in mm",
+    "paramId": "SRA_P730"
+  },
+  "Influenza A IgG": {
+    "standardName": "Influenza A IgG",
+    "paramId": "SRA_P731"
+  },
+  "Influenza B IgM": {
+    "standardName": "Influenza B IgM",
+    "paramId": "SRA_P732"
+  },
+  "Influenza IgG": {
+    "standardName": "Influenza IgG",
+    "paramId": "SRA_P733"
+  },
+  "LEPTOSPIRA ANTIBODY, IgM,SERUM": {
+    "standardName": "LEPTOSPIRA ANTIBODY, IgM,SERUM",
+    "paramId": "SRA_P734"
+  },
+  "LEPTOSPIRA ANTIBODY,IgG,RAPID CARD": {
+    "standardName": "LEPTOSPIRA ANTIBODY,IgG,RAPID CARD",
+    "paramId": "SRA_P735"
+  },
+  "LEPTOSPIRA ANTIBODY,IgM,RAPID CARD": {
+    "standardName": "LEPTOSPIRA ANTIBODY,IgM,RAPID CARD",
+    "paramId": "SRA_P736"
+  },
+  "Legionella Antigen": {
+    "standardName": "Legionella Antigen",
+    "paramId": "SRA_P737"
+  },
+  "Legionella IgG": {
+    "standardName": "Legionella IgG",
+    "paramId": "SRA_P738"
+  },
+  "Legionella IgM": {
+    "standardName": "Legionella IgM",
+    "paramId": "SRA_P739"
+  },
+  "Leishmania IgG": {
+    "standardName": "Leishmania IgG",
+    "paramId": "SRA_P740"
+  },
+  "Leptospira IgG": {
+    "standardName": "Leptospira IgG",
+    "paramId": "SRA_P741"
+  },
+  "Lyme IgG": {
+    "standardName": "Lyme IgG",
+    "paramId": "SRA_P742"
+  },
+  "LymeBorrelia Burgdorferi IgM antibodies": {
+    "standardName": "LymeBorrelia Burgdorferi IgM antibodies",
+    "paramId": "SRA_P743"
+  },
+  "Measles IgG": {
+    "standardName": "Measles IgG",
+    "paramId": "SRA_P744"
+  },
+  "Measles IgM": {
+    "standardName": "Measles IgM",
+    "paramId": "SRA_P745"
+  },
+  "Monospot": {
+    "standardName": "Monospot",
+    "paramId": "SRA_P746"
+  },
+  "Mumps IgG": {
+    "standardName": "Mumps IgG",
+    "paramId": "SRA_P747"
+  },
+  "Mumps IgM": {
+    "standardName": "Mumps IgM",
+    "paramId": "SRA_P748"
+  },
+  "Mycobacterium tuberculosis complex (MTBC)": {
+    "standardName": "Mycobacterium tuberculosis complex (MTBC)",
+    "paramId": "SRA_P749"
+  },
+  "Mycoplasma Pneumoniae IgG": {
+    "standardName": "Mycoplasma Pneumoniae IgG",
+    "paramId": "SRA_P750"
+  },
+  "Ova (Stool routine)": {
+    "standardName": "Ova (Stool routine)",
+    "paramId": "SRA_P751"
+  },
+  "Parvovirus (B19) IgM*": {
+    "standardName": "Parvovirus (B19) IgM*",
+    "paramId": "SRA_P752"
+  },
+  "Pertussis IgG": {
+    "standardName": "Pertussis IgG",
+    "paramId": "SRA_P753"
+  },
+  "Pneumococcal Antigen": {
+    "standardName": "Pneumococcal Antigen",
+    "paramId": "SRA_P754"
+  },
+  "Post Stool Concentration Microscopy (Saline and Iodine mount)": {
+    "standardName": "Post Stool Concentration Microscopy (Saline and Iodine mount)",
+    "paramId": "SRA_P755"
+  },
+  "ROTAVIRUS ANTIGEN, STOOL": {
+    "standardName": "ROTAVIRUS ANTIGEN, STOOL",
+    "paramId": "SRA_P756"
+  },
+  "RPR, Serum": {
+    "standardName": "RPR, Serum",
+    "paramId": "SRA_P757"
+  },
+  "RSV IgG": {
+    "standardName": "RSV IgG",
+    "paramId": "SRA_P758"
+  },
+  "RSV IgM": {
+    "standardName": "RSV IgM",
+    "paramId": "SRA_P759"
+  },
+  "Rabies antibody IgG": {
+    "standardName": "Rabies antibody IgG",
+    "paramId": "SRA_P760"
+  },
+  "RdRp Gene CT Value": {
+    "standardName": "RdRp Gene CT Value",
+    "paramId": "SRA_P761"
+  },
+  "Rubella Ab IgG": {
+    "standardName": "Rubella Ab IgG",
+    "paramId": "SRA_P762"
+  },
+  "Rubella Ab IgM": {
+    "standardName": "Rubella Ab IgM",
+    "paramId": "SRA_P763"
+  },
+  "SARS CoV-2 RNA Qualitative": {
+    "standardName": "SARS CoV-2 RNA Qualitative",
+    "paramId": "SRA_P764"
+  },
+  "SARS-CoV-2 IgG": {
+    "standardName": "SARS-CoV-2 IgG",
+    "paramId": "SRA_P765"
+  },
+  "SCRUB TYPHUS (TSUTSUGAMUSHI) ANTIBODY IgM, RAPID ASSAY": {
+    "standardName": "SCRUB TYPHUS (TSUTSUGAMUSHI) ANTIBODY IgM, RAPID ASSAY",
+    "paramId": "SRA_P766"
+  },
+  "Salmonella Antigen": {
+    "standardName": "Salmonella Antigen",
+    "paramId": "SRA_P767"
+  },
+  "Salmonella H": {
+    "standardName": "Salmonella H",
+    "paramId": "SRA_P768"
+  },
+  "Salmonella IgG": {
+    "standardName": "Salmonella IgG",
+    "paramId": "SRA_P769"
+  },
+  "Salmonella IgM": {
+    "standardName": "Salmonella IgM",
+    "paramId": "SRA_P770"
+  },
+  "Salmonella O": {
+    "standardName": "Salmonella O",
+    "paramId": "SRA_P771"
+  },
+  "Salmonella Paratyphi B(H)": {
+    "standardName": "Salmonella Paratyphi B(H)",
+    "paramId": "SRA_P772"
+  },
+  "Salmonella paratyphi A(H)": {
+    "standardName": "Salmonella paratyphi A(H)",
+    "paramId": "SRA_P773"
+  },
+  "Scrub Typhus IgG": {
+    "standardName": "Scrub Typhus IgG",
+    "paramId": "SRA_P774"
+  },
+  "Scrub Typhus IgM": {
+    "standardName": "Scrub Typhus IgM",
+    "paramId": "SRA_P775"
+  },
+  "Syphilis Antibodies": {
+    "standardName": "Syphilis Antibodies",
+    "paramId": "SRA_P776"
+  },
+  "TB Antigen": {
+    "standardName": "TB Antigen",
+    "paramId": "SRA_P777"
+  },
+  "TB Antigen-Nil": {
+    "standardName": "TB Antigen-Nil",
+    "paramId": "SRA_P778"
+  },
+  "TB Nil": {
+    "standardName": "TB Nil",
+    "paramId": "SRA_P779"
+  },
+  "TB Resistance": {
+    "standardName": "TB Resistance",
+    "paramId": "SRA_P780"
+  },
+  "TPHA": {
+    "standardName": "TPHA",
+    "paramId": "SRA_P781"
+  },
+  "Tetanus IgG": {
+    "standardName": "Tetanus IgG",
+    "paramId": "SRA_P782"
+  },
+  "Titre": {
+    "standardName": "Titre",
+    "paramId": "SRA_P783"
+  },
+  "Toxoplasma Ab IgG": {
+    "standardName": "Toxoplasma Ab IgG",
+    "paramId": "SRA_P784"
+  },
+  "Toxoplasma Ab IgM": {
+    "standardName": "Toxoplasma Ab IgM",
+    "paramId": "SRA_P785"
+  },
+  "Treponema Pallidium Haemagglutination (TPHA) TITRE": {
+    "standardName": "Treponema Pallidium Haemagglutination (TPHA) TITRE",
+    "paramId": "SRA_P786"
+  },
+  "Trophozoites (Stool routine)": {
+    "standardName": "Trophozoites (Stool routine)",
+    "paramId": "SRA_P787"
+  },
+  "Tuberculin Test": {
+    "standardName": "Tuberculin Test",
+    "paramId": "SRA_P788"
+  },
+  "West Nile IgG": {
+    "standardName": "West Nile IgG",
+    "paramId": "SRA_P789"
+  },
+  "West Nile IgM": {
+    "standardName": "West Nile IgM",
+    "paramId": "SRA_P790"
+  },
+  "Worms (Adult/Segment) (Stool routine)": {
+    "standardName": "Worms (Adult/Segment) (Stool routine)",
+    "paramId": "SRA_P791"
+  },
+  "ZN Stain": {
+    "standardName": "ZN Stain",
+    "paramId": "SRA_P792"
+  },
+  "p24 antigen with HIV 1 & 2 Antibody": {
+    "standardName": "p24 antigen with HIV 1 & 2 Antibody",
+    "paramId": "SRA_P793"
+  },
+  "Amyloid A": {
+    "standardName": "Amyloid A",
+    "paramId": "SRA_P794"
+  },
+  "C-reactive protein (CRP),Qualitative": {
+    "standardName": "C-reactive protein (CRP),Qualitative",
+    "paramId": "SRA_P795"
+  },
+  "CRP": {
+    "standardName": "CRP",
+    "paramId": "SRA_P796"
+  },
+  "Fibrinogen level": {
+    "standardName": "Fibrinogen level",
+    "paramId": "SRA_P797"
+  },
+  "IL6": {
+    "standardName": "IL6",
+    "paramId": "SRA_P798"
+  },
+  "Mucus (Stool routine)": {
+    "standardName": "Mucus (Stool routine)",
+    "paramId": "SRA_P799"
+  },
+  "WBC count (Synovial Fluid)": {
+    "standardName": "WBC count (Synovial Fluid)",
+    "paramId": "SRA_P800"
+  },
+  "17 Ketosteroids,urine": {
+    "standardName": "17 Ketosteroids,urine",
+    "paramId": "SRA_P801"
+  },
+  "24 Hours Total Volume(Urine)": {
+    "standardName": "24 Hours Total Volume(Urine)",
+    "paramId": "SRA_P802"
+  },
+  "24 Hrs total volume": {
+    "standardName": "24 Hrs total volume",
+    "paramId": "SRA_P803"
+  },
+  "ALBUMIN, FLUID": {
+    "standardName": "ALBUMIN, FLUID",
+    "paramId": "SRA_P804"
+  },
+  "Albumin Qualitative, Urine": {
+    "standardName": "Albumin Qualitative, Urine",
+    "paramId": "SRA_P805"
+  },
+  "Albuminuria": {
+    "standardName": "Albuminuria",
+    "paramId": "SRA_P806"
+  },
+  "Aminolevulinic acid 24Hrs Urine": {
+    "standardName": "Aminolevulinic acid 24Hrs Urine",
+    "paramId": "SRA_P807"
+  },
+  "BUN : Creatinine ratio": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Blood Urea": {
+    "standardName": "Blood Urea",
+    "paramId": "SRA_P808"
+  },
+  "Blood Urea Nitrogen (BUN)": {
+    "standardName": "Blood Urea Nitrogen (BUN)",
+    "paramId": "SRA_P809"
+  },
+  "Calcium, Urine,": {
+    "standardName": "Calcium, Urine,",
+    "paramId": "SRA_P810"
+  },
+  "Creatinine Clearence (Calculated)": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Creatinine Urine per day(Calculated)": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Creatinine, 24 hours urine (Calculated)": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Creatinine, Fluid": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Creatinine, Urine by Jaffe Method": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Cystatin C": {
+    "standardName": "Cystatin C",
+    "paramId": "SRA_P811"
+  },
+  "Cystine Quantitative, Spot Urine": {
+    "standardName": "Cystine Quantitative, Spot Urine",
+    "paramId": "SRA_P812"
+  },
+  "Glomerular Filtration Rate": {
+    "standardName": "Glomerular Filtration Rate",
+    "paramId": "SRA_P813"
+  },
+  "Glomerular Filtration Rate CKD": {
+    "standardName": "Glomerular Filtration Rate CKD",
+    "paramId": "SRA_P814"
+  },
+  "Microalb / Creatinine Ratio": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Microalbumin : Creatinine ratio": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Microalbumin, Urine per day": {
+    "standardName": "Microalbumin, Urine per day",
+    "paramId": "SRA_P815"
+  },
+  "Nor-Epinephrine, 24 Hrs Urine": {
+    "standardName": "Nor-Epinephrine, 24 Hrs Urine",
+    "paramId": "SRA_P816"
+  },
+  "Osmolality urine": {
+    "standardName": "Osmolality urine",
+    "paramId": "SRA_P817"
+  },
+  "Oxalate, Urine": {
+    "standardName": "Oxalate, Urine",
+    "paramId": "SRA_P818"
+  },
+  "Protein,urine 24 hours": {
+    "standardName": "Protein,urine 24 hours",
+    "paramId": "SRA_P819"
+  },
+  "SERUM BICARBONATE(D)": {
+    "standardName": "SERUM BICARBONATE(D)",
+    "paramId": "SRA_P820"
+  },
+  "Serum Creatinine": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Sodium urine per day (Calculated)": {
+    "standardName": "Sodium urine per day (Calculated)",
+    "paramId": "SRA_P821"
+  },
+  "Total Proteins (Fluid, Biochemical)": {
+    "standardName": "Total Proteins (Fluid, Biochemical)",
+    "paramId": "SRA_P822"
+  },
+  "Total urine volume in 24 hrs": {
+    "standardName": "Total urine volume in 24 hrs",
+    "paramId": "SRA_P823"
+  },
+  "Urea : Creatinine ratio": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Urinary Phosphorus level per day (Calculated)": {
+    "standardName": "Urinary Phosphorus level per day (Calculated)",
+    "paramId": "SRA_P824"
+  },
+  "Urine volume in 24 hours": {
+    "standardName": "Urine volume in 24 hours",
+    "paramId": "SRA_P825"
+  },
+  "Urine volume in 24 hours.": {
+    "standardName": "Urine volume in 24 hours.",
+    "paramId": "SRA_P826"
+  },
+  "APO A : APO B Ratio": {
+    "standardName": "APO A : APO B Ratio",
+    "paramId": "SRA_P827"
+  },
+  "APO B : APO A Ratio": {
+    "standardName": "APO B : APO A Ratio",
+    "paramId": "SRA_P828"
+  },
+  "Apo A": {
+    "standardName": "Apo A",
+    "paramId": "SRA_P829"
+  },
+  "Apo B": {
+    "standardName": "Apo B",
+    "paramId": "SRA_P830"
+  },
+  "Bile Acid (Fasting)": {
+    "standardName": "Bile Acid (Fasting)",
+    "paramId": "SRA_P831"
+  },
+  "Bile Acid (Postprandial)": {
+    "standardName": "Bile Acid (Postprandial)",
+    "paramId": "SRA_P832"
+  },
+  "Direct LDL Cholestrol": {
+    "standardName": "Total Cholesterol",
+    "paramId": "SRA_P002"
+  },
+  "HDL % of total": {
+    "standardName": "HDL Cholesterol",
+    "paramId": "SRA_P003"
+  },
+  "HDL : LDL ratio": {
+    "standardName": "HDL Cholesterol",
+    "paramId": "SRA_P003"
+  },
+  "HDL :Total Cholesterol ratio": {
+    "standardName": "Total Cholesterol",
+    "paramId": "SRA_P002"
+  },
+  "HDL Cholesterol": {
+    "standardName": "Total Cholesterol",
+    "paramId": "SRA_P002"
+  },
+  "HsCRP": {
+    "standardName": "HsCRP",
+    "paramId": "SRA_P833"
+  },
+  "LDL : HDL ratio": {
+    "standardName": "HDL Cholesterol",
+    "paramId": "SRA_P003"
+  },
+  "LDL Cholesterol": {
+    "standardName": "Total Cholesterol",
+    "paramId": "SRA_P002"
+  },
+  "Lipoprotein (a) [Lp(a)]": {
+    "standardName": "Lipoprotein (a) [Lp(a)]",
+    "paramId": "SRA_P834"
+  },
+  "Non - HDL Cholesterol": {
+    "standardName": "Total Cholesterol",
+    "paramId": "SRA_P002"
+  },
+  "TG : HDL Ratio": {
+    "standardName": "HDL Cholesterol",
+    "paramId": "SRA_P003"
+  },
+  "TOTAL LIPID": {
+    "standardName": "TOTAL LIPID",
+    "paramId": "SRA_P835"
+  },
+  "Total Cholesterol": {
+    "standardName": "Total Cholesterol",
+    "paramId": "SRA_P002"
+  },
+  "Total Cholesterol : HDL ratio": {
+    "standardName": "Total Cholesterol",
+    "paramId": "SRA_P002"
+  },
+  "Triglycerides": {
+    "standardName": "Triglycerides",
+    "paramId": "SRA_P005"
+  },
+  "VLDL": {
+    "standardName": "LDL Cholesterol",
+    "paramId": "SRA_P004"
+  },
+  "ALP": {
+    "standardName": "ALP",
+    "paramId": "SRA_P836"
+  },
+  "ALP - GGT RATIO": {
+    "standardName": "ALP - GGT RATIO",
+    "paramId": "SRA_P837"
+  },
+  "AST / ALT Ratio": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "Albumin": {
+    "standardName": "Albumin",
+    "paramId": "SRA_P838"
+  },
+  "Albumin / Creatinine ratio": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Albumin : Globulin ratio": {
+    "standardName": "Albumin : Globulin ratio",
+    "paramId": "SRA_P839"
+  },
+  "Alpha 2 Macroglobulin": {
+    "standardName": "Alpha 2 Macroglobulin",
+    "paramId": "SRA_P840"
+  },
+  "Alpha Feto Protein (AFP),Serum": {
+    "standardName": "Alpha Feto Protein (AFP),Serum",
+    "paramId": "SRA_P841"
+  },
+  "Bile Acids-Total": {
+    "standardName": "Bile Acids-Total",
+    "paramId": "SRA_P842"
+  },
+  "Bilirubin Total (Fluid)": {
+    "standardName": "Bilirubin Total (Fluid)",
+    "paramId": "SRA_P843"
+  },
+  "Creatine-Kinase": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Direct Bilirubin": {
+    "standardName": "Direct Bilirubin",
+    "paramId": "SRA_P844"
+  },
+  "FIB-4 Score": {
+    "standardName": "FIB-4 Score",
+    "paramId": "SRA_P845"
+  },
+  "Fatty liver Index(FLI)": {
+    "standardName": "Fatty liver Index(FLI)",
+    "paramId": "SRA_P846"
+  },
+  "GGT": {
+    "standardName": "GGT",
+    "paramId": "SRA_P847"
+  },
+  "Globulin": {
+    "standardName": "Globulin",
+    "paramId": "SRA_P848"
+  },
+  "Indirect Bilirubin": {
+    "standardName": "Indirect Bilirubin",
+    "paramId": "SRA_P849"
+  },
+  "LDH": {
+    "standardName": "LDH",
+    "paramId": "SRA_P850"
+  },
+  "NAFLD Fibrosis score": {
+    "standardName": "NAFLD Fibrosis score",
+    "paramId": "SRA_P851"
+  },
+  "Pre Albumin": {
+    "standardName": "Pre Albumin",
+    "paramId": "SRA_P852"
+  },
+  "Protein (Total)": {
+    "standardName": "Protein (Total)",
+    "paramId": "SRA_P853"
+  },
+  "Pseudocholinesterase,Serum": {
+    "standardName": "Pseudocholinesterase,Serum",
+    "paramId": "SRA_P854"
+  },
+  "SGOT (ALT)": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "SGOT (AST)": {
+    "standardName": "SGOT (AST)",
+    "paramId": "SRA_P855"
+  },
+  "SGPT (ALT)": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "SGPT (AST)": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "Total Bilirubin": {
+    "standardName": "Total Bilirubin",
+    "paramId": "SRA_P856"
+  },
+  "Malaria Parasite": {
+    "standardName": "Malaria Parasite",
+    "paramId": "SRA_P857"
+  },
+  "ALUMINUM, SERUM": {
+    "standardName": "ALUMINUM, SERUM",
+    "paramId": "SRA_P858"
+  },
+  "Aluminum spot urine": {
+    "standardName": "Aluminum spot urine",
+    "paramId": "SRA_P859"
+  },
+  "CADMIUM": {
+    "standardName": "CADMIUM",
+    "paramId": "SRA_P860"
+  },
+  "Cobalt Blood": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "Copper": {
+    "standardName": "Copper",
+    "paramId": "SRA_P861"
+  },
+  "Manganese ICPMS": {
+    "standardName": "Manganese ICPMS",
+    "paramId": "SRA_P862"
+  },
+  "Phosphorus, Spot Urine": {
+    "standardName": "Phosphorus, Spot Urine",
+    "paramId": "SRA_P863"
+  },
+  "Thallium - Blood": {
+    "standardName": "Thallium - Blood",
+    "paramId": "SRA_P864"
+  },
+  "Thallium ICPMS Urine Spot": {
+    "standardName": "Thallium ICPMS Urine Spot",
+    "paramId": "SRA_P865"
+  },
+  "Zinc Urine by ICPMS": {
+    "standardName": "Zinc Urine by ICPMS",
+    "paramId": "SRA_P866"
+  },
+  "ACTH, EDTA PLASMA": {
+    "standardName": "ACTH, EDTA PLASMA",
+    "paramId": "SRA_P867"
+  },
+  "AChR- Acetyl Choline Receptor Antibodies": {
+    "standardName": "AChR- Acetyl Choline Receptor Antibodies",
+    "paramId": "SRA_P868"
+  },
+  "AMPA (Anti-glutamate receptor)-GluR1": {
+    "standardName": "AMPA (Anti-glutamate receptor)-GluR1",
+    "paramId": "SRA_P869"
+  },
+  "AMPA (Anti-glutamate receptor)-GluR2": {
+    "standardName": "AMPA (Anti-glutamate receptor)-GluR2",
+    "paramId": "SRA_P870"
+  },
+  "ANNA-1/Hu": {
+    "standardName": "ANNA-1/Hu",
+    "paramId": "SRA_P871"
+  },
+  "ANNA-2/Ri": {
+    "standardName": "ANNA-2/Ri",
+    "paramId": "SRA_P872"
+  },
+  "ASKA (Striated) Muscle Antibody": {
+    "standardName": "ASKA (Striated) Muscle Antibody",
+    "paramId": "SRA_P873"
+  },
+  "Albumin CSF": {
+    "standardName": "Albumin CSF",
+    "paramId": "SRA_P874"
+  },
+  "Amphiphysin": {
+    "standardName": "Amphiphysin",
+    "paramId": "SRA_P875"
+  },
+  "Amphiphysin Antibody": {
+    "standardName": "Amphiphysin Antibody",
+    "paramId": "SRA_P876"
+  },
+  "Angiotensin Converting Enzyme (ACE) CSF": {
+    "standardName": "Angiotensin Converting Enzyme (ACE) CSF",
+    "paramId": "SRA_P877"
+  },
+  "Anti Hu Antibody": {
+    "standardName": "Anti Hu Antibody",
+    "paramId": "SRA_P878"
+  },
+  "Anti Myelin Oligodendrocyte Glycoprotein (MOG)": {
+    "standardName": "Anti Myelin Oligodendrocyte Glycoprotein (MOG)",
+    "paramId": "SRA_P879"
+  },
+  "Anti Neuromyelitis Optica / Aquaporin 4 (NMO)": {
+    "standardName": "Anti Neuromyelitis Optica / Aquaporin 4 (NMO)",
+    "paramId": "SRA_P880"
+  },
+  "Anti Phospholipase A2 Recepto": {
+    "standardName": "Anti Phospholipase A2 Recepto",
+    "paramId": "SRA_P881"
+  },
+  "CASPR2 antibody (VGKC type)": {
+    "standardName": "CASPR2 antibody (VGKC type)",
+    "paramId": "SRA_P882"
+  },
+  "CSF Glucose": {
+    "standardName": "CSF Glucose",
+    "paramId": "SRA_P883"
+  },
+  "CSF Proteins": {
+    "standardName": "CSF Proteins",
+    "paramId": "SRA_P884"
+  },
+  "CV2.1": {
+    "standardName": "CV2.1",
+    "paramId": "SRA_P885"
+  },
+  "Carbamazepine (Tegretol)": {
+    "standardName": "Carbamazepine (Tegretol)",
+    "paramId": "SRA_P886"
+  },
+  "Cryptococcus Antigen, CSF": {
+    "standardName": "Cryptococcus Antigen, CSF",
+    "paramId": "SRA_P887"
+  },
+  "GABA-B receptor antibody": {
+    "standardName": "GABA-B receptor antibody",
+    "paramId": "SRA_P888"
+  },
+  "GD1a": {
+    "standardName": "GD1a",
+    "paramId": "SRA_P889"
+  },
+  "GD1b": {
+    "standardName": "GD1b",
+    "paramId": "SRA_P890"
+  },
+  "GM1": {
+    "standardName": "GM1",
+    "paramId": "SRA_P891"
+  },
+  "GM2": {
+    "standardName": "GM2",
+    "paramId": "SRA_P892"
+  },
+  "GM3": {
+    "standardName": "GM3",
+    "paramId": "SRA_P893"
+  },
+  "GQ1b": {
+    "standardName": "GQ1b",
+    "paramId": "SRA_P894"
+  },
+  "GT1b": {
+    "standardName": "GT1b",
+    "paramId": "SRA_P895"
+  },
+  "Immunoglobulin G (IgG), CSF": {
+    "standardName": "Immunoglobulin G (IgG), CSF",
+    "paramId": "SRA_P896"
+  },
+  "Japanese Encephalitis Virus By PCR": {
+    "standardName": "Japanese Encephalitis Virus By PCR",
+    "paramId": "SRA_P897"
+  },
+  "Japanese Encephalitis Virus IgM Antibody": {
+    "standardName": "Japanese Encephalitis Virus IgM Antibody",
+    "paramId": "SRA_P898"
+  },
+  "LGI-1 antibody (VGKC type)": {
+    "standardName": "LGI-1 antibody (VGKC type)",
+    "paramId": "SRA_P899"
+  },
+  "Lactate CSF": {
+    "standardName": "Lactate CSF",
+    "paramId": "SRA_P900"
+  },
+  "Levetiracetam": {
+    "standardName": "Levetiracetam",
+    "paramId": "SRA_P901"
+  },
+  "M2-3E (BPO) Antibody": {
+    "standardName": "M2-3E (BPO) Antibody",
+    "paramId": "SRA_P902"
+  },
+  "MuSK ANTIBODY": {
+    "standardName": "MuSK ANTIBODY",
+    "paramId": "SRA_P903"
+  },
+  "Myelin Associated Glycoprotein (MAG)": {
+    "standardName": "Myelin Associated Glycoprotein (MAG)",
+    "paramId": "SRA_P904"
+  },
+  "NMDA (Anti-glutamate receptor against NR1 subunit)": {
+    "standardName": "NMDA (Anti-glutamate receptor against NR1 subunit)",
+    "paramId": "SRA_P905"
+  },
+  "Neuron Specific Enolase (NSE)": {
+    "standardName": "Neuron Specific Enolase (NSE)",
+    "paramId": "SRA_P906"
+  },
+  "PCA-1/Yo": {
+    "standardName": "PCA-1/Yo",
+    "paramId": "SRA_P907"
+  },
+  "PHENYTOIN, SERUM": {
+    "standardName": "PHENYTOIN, SERUM",
+    "paramId": "SRA_P908"
+  },
+  "PNMA2 (Ma2/Ta)": {
+    "standardName": "PNMA2 (Ma2/Ta)",
+    "paramId": "SRA_P909"
+  },
+  "Phenobarbitone (Gardinal)": {
+    "standardName": "Phenobarbitone (Gardinal)",
+    "paramId": "SRA_P910"
+  },
+  "Protein Total CSF": {
+    "standardName": "Protein Total CSF",
+    "paramId": "SRA_P911"
+  },
+  "VALPROIC ACID, SERUM": {
+    "standardName": "VALPROIC ACID, SERUM",
+    "paramId": "SRA_P912"
+  },
+  "VDRL CSF": {
+    "standardName": "VDRL CSF",
+    "paramId": "SRA_P913"
+  },
+  "Yo Antibody": {
+    "standardName": "Yo Antibody",
+    "paramId": "SRA_P914"
+  },
+  "Amylase, Fluid": {
+    "standardName": "Amylase, Fluid",
+    "paramId": "SRA_P915"
+  },
+  "Canine Pancreatic Lipase Immunoreactivity": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Feline Pancreatic Lipase Immunoreactivity": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Lipase": {
+    "standardName": "Lipase",
+    "paramId": "SRA_P916"
+  },
+  "Lipase Fluid": {
+    "standardName": "Lipase Fluid",
+    "paramId": "SRA_P917"
+  },
+  "Trypsin-Like Immunoractivity": {
+    "standardName": "Trypsin-Like Immunoractivity",
+    "paramId": "SRA_P918"
+  },
+  "Alpha-fetoprotein (AFP)": {
+    "standardName": "Alpha-fetoprotein (AFP)",
+    "paramId": "SRA_P919"
+  },
+  "ESTRIOL, UNCONJUGATED / FREE (uE3), SERUM": {
+    "standardName": "ESTRIOL, UNCONJUGATED / FREE (uE3), SERUM",
+    "paramId": "SRA_P920"
+  },
+  "HCG Beta Subunit, Urine Spot": {
+    "standardName": "HCG Beta Subunit, Urine Spot",
+    "paramId": "SRA_P921"
+  },
+  "INHIBIN A, REPRODUCTIVE MARKER , SERUM": {
+    "standardName": "INHIBIN A, REPRODUCTIVE MARKER , SERUM",
+    "paramId": "SRA_P922"
+  },
+  "Inhibin": {
+    "standardName": "Inhibin",
+    "paramId": "SRA_P923"
+  },
+  "Inhibin A": {
+    "standardName": "Inhibin A",
+    "paramId": "SRA_P924"
+  },
+  "PAPP-A (Pregnancy Associated Plasma Protein)": {
+    "standardName": "PAPP-A (Pregnancy Associated Plasma Protein)",
+    "paramId": "SRA_P925"
+  },
+  "PAPPa (Pregnancy Associated Plasma Protein)": {
+    "standardName": "PAPPa (Pregnancy Associated Plasma Protein)",
+    "paramId": "SRA_P926"
+  },
+  "PlGF (Placental Growth Factor)": {
+    "standardName": "PlGF (Placental Growth Factor)",
+    "paramId": "SRA_P927"
+  },
+  "Placental growth factor (PlGF)": {
+    "standardName": "Placental growth factor (PlGF)",
+    "paramId": "SRA_P928"
+  },
+  "Pregnancy Associated Plasma Protein(PAPP-A)": {
+    "standardName": "Pregnancy Associated Plasma Protein(PAPP-A)",
+    "paramId": "SRA_P929"
+  },
+  "uE3, unconjugated Estriol": {
+    "standardName": "uE3, unconjugated Estriol",
+    "paramId": "SRA_P930"
+  },
+  "Mean Normal Prothrombic Time": {
+    "standardName": "Mean Normal Prothrombic Time",
+    "paramId": "SRA_P931"
+  },
+  "PT (Control)": {
+    "standardName": "PT (Control)",
+    "paramId": "SRA_P932"
+  },
+  "PT ratio": {
+    "standardName": "PT ratio",
+    "paramId": "SRA_P933"
+  },
+  "PT-INR": {
+    "standardName": "PT-INR",
+    "paramId": "SRA_P934"
+  },
+  "Partial Thromboplastin Time(Control)": {
+    "standardName": "Partial Thromboplastin Time(Control)",
+    "paramId": "SRA_P935"
+  },
+  "Abnormal Form": {
+    "standardName": "Abnormal Form",
+    "paramId": "SRA_P936"
+  },
+  "Abnormal Forms": {
+    "standardName": "Abnormal Forms",
+    "paramId": "SRA_P937"
+  },
+  "Abnormal Head": {
+    "standardName": "Abnormal Head",
+    "paramId": "SRA_P938"
+  },
+  "Abnormal Neck 8 midpiece": {
+    "standardName": "Abnormal Neck 8 midpiece",
+    "paramId": "SRA_P939"
+  },
+  "Abnormal Tail": {
+    "standardName": "Abnormal Tail",
+    "paramId": "SRA_P940"
+  },
+  "Abstinence Period": {
+    "standardName": "Abstinence Period",
+    "paramId": "SRA_P941"
+  },
+  "Alive Spermatozoa %": {
+    "standardName": "Alive Spermatozoa %",
+    "paramId": "SRA_P942"
+  },
+  "Analysis Time": {
+    "standardName": "Analysis Time",
+    "paramId": "SRA_P943"
+  },
+  "Appearance (Semen)": {
+    "standardName": "Appearance (Semen)",
+    "paramId": "SRA_P944"
+  },
+  "Appearance of Semen": {
+    "standardName": "Appearance of Semen",
+    "paramId": "SRA_P945"
+  },
+  "Collection Time": {
+    "standardName": "Collection Time",
+    "paramId": "SRA_P946"
+  },
+  "Days Of Abstinence": {
+    "standardName": "Days Of Abstinence",
+    "paramId": "SRA_P947"
+  },
+  "Dead Spermatozoa %": {
+    "standardName": "Dead Spermatozoa %",
+    "paramId": "SRA_P948"
+  },
+  "Immotile": {
+    "standardName": "Immotile",
+    "paramId": "SRA_P949"
+  },
+  "Immotile (IM %)": {
+    "standardName": "Immotile (IM %)",
+    "paramId": "SRA_P950"
+  },
+  "Leukocyte (Semen)": {
+    "standardName": "Leukocyte (Semen)",
+    "paramId": "SRA_P951"
+  },
+  "Liquefaction": {
+    "standardName": "Liquefaction",
+    "paramId": "SRA_P952"
+  },
+  "Liquefaction Time (Semen)": {
+    "standardName": "Liquefaction Time (Semen)",
+    "paramId": "SRA_P953"
+  },
+  "Microscopic Examination (Microscopy) Vitality": {
+    "standardName": "Microscopic Examination (Microscopy) Vitality",
+    "paramId": "SRA_P954"
+  },
+  "Morphology Abnormal": {
+    "standardName": "Morphology Abnormal",
+    "paramId": "SRA_P955"
+  },
+  "Morphology Head Defects": {
+    "standardName": "Morphology Head Defects",
+    "paramId": "SRA_P956"
+  },
+  "Morphology Mid Picce Defects": {
+    "standardName": "Morphology Mid Picce Defects",
+    "paramId": "SRA_P957"
+  },
+  "Morphology Normal": {
+    "standardName": "Morphology Normal",
+    "paramId": "SRA_P958"
+  },
+  "Morphology Tail Defects": {
+    "standardName": "Morphology Tail Defects",
+    "paramId": "SRA_P959"
+  },
+  "Motile": {
+    "standardName": "Motile",
+    "paramId": "SRA_P960"
+  },
+  "Motility Assessment(After Liquefaction)": {
+    "standardName": "Motility Assessment(After Liquefaction)",
+    "paramId": "SRA_P961"
+  },
+  "Non Progressive": {
+    "standardName": "Non Progressive",
+    "paramId": "SRA_P962"
+  },
+  "Non Progressive (NP, %)": {
+    "standardName": "Non Progressive (NP, %)",
+    "paramId": "SRA_P963"
+  },
+  "Normal Form": {
+    "standardName": "Normal Form",
+    "paramId": "SRA_P964"
+  },
+  "Progressive": {
+    "standardName": "Progressive",
+    "paramId": "SRA_P965"
+  },
+  "Progressive (PR, %)": {
+    "standardName": "Progressive (PR, %)",
+    "paramId": "SRA_P966"
+  },
+  "Semen Fructose": {
+    "standardName": "Semen Fructose",
+    "paramId": "SRA_P967"
+  },
+  "Sperm Antibody (ASAB) -Total": {
+    "standardName": "Sperm Antibody (ASAB) -Total",
+    "paramId": "SRA_P968"
+  },
+  "Sperm Count / ejaculate": {
+    "standardName": "Sperm Count / ejaculate",
+    "paramId": "SRA_P969"
+  },
+  "Sperm Count / ml": {
+    "standardName": "Sperm Count / ml",
+    "paramId": "SRA_P970"
+  },
+  "Total Motility (PR+NP, %)": {
+    "standardName": "Total Motility (PR+NP, %)",
+    "paramId": "SRA_P971"
+  },
+  "Volume of Semen": {
+    "standardName": "Volume of Semen",
+    "paramId": "SRA_P972"
+  },
+  "WBCs": {
+    "standardName": "WBCs",
+    "paramId": "SRA_P973"
+  },
+  "pH of Semen": {
+    "standardName": "pH of Semen",
+    "paramId": "SRA_P974"
+  },
+  "Amikacin": {
+    "standardName": "Amikacin",
+    "paramId": "SRA_P975"
+  },
+  "Amoxycillin": {
+    "standardName": "Amoxycillin",
+    "paramId": "SRA_P976"
+  },
+  "Amoxycillin + Clavulanic Acid": {
+    "standardName": "Amoxycillin + Clavulanic Acid",
+    "paramId": "SRA_P977"
+  },
+  "Ampicillin": {
+    "standardName": "Ampicillin",
+    "paramId": "SRA_P978"
+  },
+  "Ampicillin + Salbactum": {
+    "standardName": "Ampicillin + Salbactum",
+    "paramId": "SRA_P979"
+  },
+  "Aztreonam": {
+    "standardName": "Aztreonam",
+    "paramId": "SRA_P980"
+  },
+  "Cefazolin": {
+    "standardName": "Cefazolin",
+    "paramId": "SRA_P981"
+  },
+  "Cefepime": {
+    "standardName": "Cefepime",
+    "paramId": "SRA_P982"
+  },
+  "Cefitriaxone": {
+    "standardName": "Cefitriaxone",
+    "paramId": "SRA_P983"
+  },
+  "Cefoperazone + Sulbactum": {
+    "standardName": "Cefoperazone + Sulbactum",
+    "paramId": "SRA_P984"
+  },
+  "Cefotaxime": {
+    "standardName": "Cefotaxime",
+    "paramId": "SRA_P985"
+  },
+  "Cefoxitin": {
+    "standardName": "Cefoxitin",
+    "paramId": "SRA_P986"
+  },
+  "Ceftazidime": {
+    "standardName": "Ceftazidime",
+    "paramId": "SRA_P987"
+  },
+  "Cefuroxime": {
+    "standardName": "Cefuroxime",
+    "paramId": "SRA_P988"
+  },
+  "Ciprofloxacin": {
+    "standardName": "Ciprofloxacin",
+    "paramId": "SRA_P989"
+  },
+  "Cotrimoxazole": {
+    "standardName": "Cotrimoxazole",
+    "paramId": "SRA_P990"
+  },
+  "Gentamicin": {
+    "standardName": "Gentamicin",
+    "paramId": "SRA_P991"
+  },
+  "Imipenem": {
+    "standardName": "Imipenem",
+    "paramId": "SRA_P992"
+  },
+  "Levofloxacine": {
+    "standardName": "Levofloxacine",
+    "paramId": "SRA_P993"
+  },
+  "Meropenem": {
+    "standardName": "Meropenem",
+    "paramId": "SRA_P994"
+  },
+  "Norfloxacin": {
+    "standardName": "Norfloxacin",
+    "paramId": "SRA_P995"
+  },
+  "Oflaxacine": {
+    "standardName": "Oflaxacine",
+    "paramId": "SRA_P996"
+  },
+  "Piperacillin": {
+    "standardName": "Piperacillin",
+    "paramId": "SRA_P997"
+  },
+  "Piperacillin + Tazobactum": {
+    "standardName": "Piperacillin + Tazobactum",
+    "paramId": "SRA_P998"
+  },
+  "Primary Smear of Semen": {
+    "standardName": "Primary Smear of Semen",
+    "paramId": "SRA_P999"
+  },
+  "Semen Type": {
+    "standardName": "Semen Type",
+    "paramId": "SRA_P1000"
+  },
+  "Tetracycline": {
+    "standardName": "Tetracycline",
+    "paramId": "SRA_P1001"
+  },
+  "Ticarcillin": {
+    "standardName": "Ticarcillin",
+    "paramId": "SRA_P1002"
+  },
+  "Ticarcillin + Clavulanic Acid": {
+    "standardName": "Ticarcillin + Clavulanic Acid",
+    "paramId": "SRA_P1003"
+  },
+  "Chlamydia IgM": {
+    "standardName": "Chlamydia IgM",
+    "paramId": "SRA_P1004"
+  },
+  "Gonorrhoea Ag": {
+    "standardName": "Gonorrhoea Ag",
+    "paramId": "SRA_P1005"
+  },
+  "HBsAg": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HCV": {
+    "standardName": "HCV",
+    "paramId": "SRA_P1006"
+  },
+  "HIV": {
+    "standardName": "HIV",
+    "paramId": "SRA_P1007"
+  },
+  "HIV AB": {
+    "standardName": "HIV AB",
+    "paramId": "SRA_P1008"
+  },
+  "HIV Combo (Ag+Ab)": {
+    "standardName": "HIV Combo (Ag+Ab)",
+    "paramId": "SRA_P1009"
+  },
+  "HPV": {
+    "standardName": "HPV",
+    "paramId": "SRA_P1010"
+  },
+  "Hepatitis B": {
+    "standardName": "Hepatitis B",
+    "paramId": "SRA_P1011"
+  },
+  "Herpes Semplex Virus": {
+    "standardName": "Herpes Semplex Virus",
+    "paramId": "SRA_P1012"
+  },
+  "Herpes Semplex Virus I IgM": {
+    "standardName": "Herpes Semplex Virus I IgM",
+    "paramId": "SRA_P1013"
+  },
+  "Herpes Semplex Virus II IgM": {
+    "standardName": "Herpes Semplex Virus II IgM",
+    "paramId": "SRA_P1014"
+  },
+  "High Vaginal Swab": {
+    "standardName": "High Vaginal Swab",
+    "paramId": "SRA_P1015"
+  },
+  "RAPID TP(SYPHILIS), VDRL": {
+    "standardName": "RAPID TP(SYPHILIS), VDRL",
+    "paramId": "SRA_P1016"
+  },
+  "Rapid Plasma Reagin": {
+    "standardName": "Rapid Plasma Reagin",
+    "paramId": "SRA_P1017"
+  },
+  "TPHA (TREPONEMA PALLIDUM)": {
+    "standardName": "TPHA (TREPONEMA PALLIDUM)",
+    "paramId": "SRA_P1018"
+  },
+  "VDRL": {
+    "standardName": "VDRL",
+    "paramId": "SRA_P1019"
+  },
+  "Adult Parasite": {
+    "standardName": "Adult Parasite",
+    "paramId": "SRA_P1020"
+  },
+  "Blood (Stool routine)": {
+    "standardName": "Blood (Stool routine)",
+    "paramId": "SRA_P1021"
+  },
+  "Cysts": {
+    "standardName": "Cysts",
+    "paramId": "SRA_P1022"
+  },
+  "Epithelial Cells (Stool routine)": {
+    "standardName": "Epithelial Cells (Stool routine)",
+    "paramId": "SRA_P1023"
+  },
+  "Fat (Stool routine)": {
+    "standardName": "Fat (Stool routine)",
+    "paramId": "SRA_P1024"
+  },
+  "OVA": {
+    "standardName": "OVA",
+    "paramId": "SRA_P1025"
+  },
+  "Occult Blood in Stool": {
+    "standardName": "Occult Blood in Stool",
+    "paramId": "SRA_P1026"
+  },
+  "Organism Isolated": {
+    "standardName": "Organism Isolated",
+    "paramId": "SRA_P1027"
+  },
+  "Pus Cells (WBCs) (Stool routine)": {
+    "standardName": "Pus Cells (WBCs) (Stool routine)",
+    "paramId": "SRA_P1028"
+  },
+  "Pus Cells in Stool": {
+    "standardName": "Pus Cells in Stool",
+    "paramId": "SRA_P1029"
+  },
+  "Reaction (Stool routine)": {
+    "standardName": "Reaction (Stool routine)",
+    "paramId": "SRA_P1030"
+  },
+  "Red Blood Cell": {
+    "standardName": "Red Blood Cell",
+    "paramId": "SRA_P1031"
+  },
+  "Red blood Cells (Stool routine)": {
+    "standardName": "Red blood Cells (Stool routine)",
+    "paramId": "SRA_P1032"
+  },
+  "Stool Color": {
+    "standardName": "Stool Color",
+    "paramId": "SRA_P1033"
+  },
+  "Stool Consistency": {
+    "standardName": "Stool Consistency",
+    "paramId": "SRA_P1034"
+  },
+  "Stool Mucus": {
+    "standardName": "Stool Mucus",
+    "paramId": "SRA_P1035"
+  },
+  "Stool Odour": {
+    "standardName": "Stool Odour",
+    "paramId": "SRA_P1036"
+  },
+  "Stool Specimen Type": {
+    "standardName": "Stool Specimen Type",
+    "paramId": "SRA_P1037"
+  },
+  "Trophozoites": {
+    "standardName": "Trophozoites",
+    "paramId": "SRA_P1038"
+  },
+  "Undigested Food": {
+    "standardName": "Undigested Food",
+    "paramId": "SRA_P1039"
+  },
+  "Undigestive Material (Stool routine)": {
+    "standardName": "Undigestive Material (Stool routine)",
+    "paramId": "SRA_P1040"
+  },
+  "Visible Blood": {
+    "standardName": "Visible Blood",
+    "paramId": "SRA_P1041"
+  },
+  "AMA- M2": {
+    "standardName": "AMA- M2",
+    "paramId": "SRA_P1042"
+  },
+  "ANTI THYROID PEROXIDASE ANTIBODY;(ANTI TPO), SERUM": {
+    "standardName": "ANTI THYROID PEROXIDASE ANTIBODY;(ANTI TPO), SERUM",
+    "paramId": "SRA_P1043"
+  },
+  "Anti Thyroglobulin Abs": {
+    "standardName": "Anti Thyroglobulin Abs",
+    "paramId": "SRA_P1044"
+  },
+  "Antimitochondrial M2 Antibody": {
+    "standardName": "Antimitochondrial M2 Antibody",
+    "paramId": "SRA_P1045"
+  },
+  "Free T3 (Triiodothyronine)": {
+    "standardName": "Free T3 (Triiodothyronine)",
+    "paramId": "SRA_P1046"
+  },
+  "Free T4 (Thyroxine)": {
+    "standardName": "Free T4 (Thyroxine)",
+    "paramId": "SRA_P1047"
+  },
+  "Microsomal (TPO) Antibody": {
+    "standardName": "Microsomal (TPO) Antibody",
+    "paramId": "SRA_P1048"
+  },
+  "Mitochondrial (M2) Antibody": {
+    "standardName": "Mitochondrial (M2) Antibody",
+    "paramId": "SRA_P1049"
+  },
+  "Parathyroid Hormone (PTH)": {
+    "standardName": "Parathyroid Hormone (PTH)",
+    "paramId": "SRA_P1050"
+  },
+  "T3 (Triiodothyronine)": {
+    "standardName": "T3 (Triiodothyronine)",
+    "paramId": "SRA_P1051"
+  },
+  "T4 (Thyroxine)": {
+    "standardName": "T4 (Thyroxine)",
+    "paramId": "SRA_P1052"
+  },
+  "THYROGLOBULIN": {
+    "standardName": "THYROGLOBULIN",
+    "paramId": "SRA_P1053"
+  },
+  "TSH": {
+    "standardName": "TSH",
+    "paramId": "SRA_P010"
+  },
+  "TSH 3RD GENERATION": {
+    "standardName": "TSH",
+    "paramId": "SRA_P010"
+  },
+  "TSH RECEPTOR ANTIBODY, SERUM": {
+    "standardName": "TSH",
+    "paramId": "SRA_P010"
+  },
+  "Thyroxine Binding Globulin (TBG)": {
+    "standardName": "Thyroxine Binding Globulin (TBG)",
+    "paramId": "SRA_P1054"
+  },
+  "Ultra TSH": {
+    "standardName": "TSH",
+    "paramId": "SRA_P010"
+  },
+  "Aluminium": {
+    "standardName": "Aluminium",
+    "paramId": "SRA_P1055"
+  },
+  "Antimony": {
+    "standardName": "Antimony",
+    "paramId": "SRA_P1056"
+  },
+  "Arsenic": {
+    "standardName": "Arsenic",
+    "paramId": "SRA_P1057"
+  },
+  "Arsenic in 24 hrs Urine": {
+    "standardName": "Arsenic in 24 hrs Urine",
+    "paramId": "SRA_P1058"
+  },
+  "Arsenic, Urine": {
+    "standardName": "Arsenic, Urine",
+    "paramId": "SRA_P1059"
+  },
+  "Barium": {
+    "standardName": "Barium",
+    "paramId": "SRA_P1060"
+  },
+  "Beryllium": {
+    "standardName": "Beryllium",
+    "paramId": "SRA_P1061"
+  },
+  "Bismuth": {
+    "standardName": "Bismuth",
+    "paramId": "SRA_P1062"
+  },
+  "Cadmium": {
+    "standardName": "Cadmium",
+    "paramId": "SRA_P1063"
+  },
+  "Caesium": {
+    "standardName": "Caesium",
+    "paramId": "SRA_P1064"
+  },
+  "Chromium": {
+    "standardName": "Chromium",
+    "paramId": "SRA_P1065"
+  },
+  "Cobalt": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "Copper, Urine Spot": {
+    "standardName": "Copper, Urine Spot",
+    "paramId": "SRA_P1066"
+  },
+  "Lead": {
+    "standardName": "Lead",
+    "paramId": "SRA_P1067"
+  },
+  "Lead Urine Spot by ICPMS": {
+    "standardName": "Lead Urine Spot by ICPMS",
+    "paramId": "SRA_P1068"
+  },
+  "Lead, Blood": {
+    "standardName": "Lead, Blood",
+    "paramId": "SRA_P1069"
+  },
+  "METHADONE SCREEN, URINE": {
+    "standardName": "METHADONE SCREEN, URINE",
+    "paramId": "SRA_P1070"
+  },
+  "METHAMPHETAMINE SCREEN, URINE": {
+    "standardName": "METHAMPHETAMINE SCREEN, URINE",
+    "paramId": "SRA_P1071"
+  },
+  "Manganese": {
+    "standardName": "Manganese",
+    "paramId": "SRA_P1072"
+  },
+  "Mercury": {
+    "standardName": "Mercury",
+    "paramId": "SRA_P1073"
+  },
+  "Mercury Serum by ICPMS": {
+    "standardName": "Mercury Serum by ICPMS",
+    "paramId": "SRA_P1074"
+  },
+  "Molybdenum": {
+    "standardName": "Molybdenum",
+    "paramId": "SRA_P1075"
+  },
+  "Nickel": {
+    "standardName": "Nickel",
+    "paramId": "SRA_P1076"
+  },
+  "Nickel Serum": {
+    "standardName": "Nickel Serum",
+    "paramId": "SRA_P1077"
+  },
+  "Nicotine - Cotinine Urine": {
+    "standardName": "Nicotine - Cotinine Urine",
+    "paramId": "SRA_P1078"
+  },
+  "Nicotine Metabolite, Urine": {
+    "standardName": "Nicotine Metabolite, Urine",
+    "paramId": "SRA_P1079"
+  },
+  "Phenol Urine": {
+    "standardName": "Phenol Urine",
+    "paramId": "SRA_P1080"
+  },
+  "Selenium": {
+    "standardName": "Selenium",
+    "paramId": "SRA_P1081"
+  },
+  "Silver": {
+    "standardName": "Silver",
+    "paramId": "SRA_P1082"
+  },
+  "Strontium": {
+    "standardName": "Strontium",
+    "paramId": "SRA_P1083"
+  },
+  "Thallium": {
+    "standardName": "Thallium",
+    "paramId": "SRA_P1084"
+  },
+  "Tin": {
+    "standardName": "Tin",
+    "paramId": "SRA_P1085"
+  },
+  "Uranium": {
+    "standardName": "Uranium",
+    "paramId": "SRA_P1086"
+  },
+  "Vanadium": {
+    "standardName": "Vanadium",
+    "paramId": "SRA_P1087"
+  },
+  "Alfa Feto Protein (AFP)": {
+    "standardName": "Alfa Feto Protein (AFP)",
+    "paramId": "SRA_P1088"
+  },
+  "Absorbic Acid": {
+    "standardName": "Absorbic Acid",
+    "paramId": "SRA_P1089"
+  },
+  "Acetone": {
+    "standardName": "Acetone",
+    "paramId": "SRA_P1090"
+  },
+  "Albumin, Urine": {
+    "standardName": "Albumin, Urine",
+    "paramId": "SRA_P1091"
+  },
+  "Amorphous Deposit": {
+    "standardName": "Amorphous Deposit",
+    "paramId": "SRA_P1092"
+  },
+  "Appearance": {
+    "standardName": "Appearance",
+    "paramId": "SRA_P1093"
+  },
+  "Bacteria": {
+    "standardName": "Bacteria",
+    "paramId": "SRA_P1094"
+  },
+  "Bile Pigment": {
+    "standardName": "Bile Pigment",
+    "paramId": "SRA_P1095"
+  },
+  "Bile Salts": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "Bilirubin": {
+    "standardName": "Bilirubin",
+    "paramId": "SRA_P1096"
+  },
+  "Blood": {
+    "standardName": "Blood",
+    "paramId": "SRA_P1097"
+  },
+  "Candida in Urine": {
+    "standardName": "Candida in Urine",
+    "paramId": "SRA_P1098"
+  },
+  "Casts": {
+    "standardName": "Casts",
+    "paramId": "SRA_P1099"
+  },
+  "Chemical Examination": {
+    "standardName": "Chemical Examination",
+    "paramId": "SRA_P1100"
+  },
+  "Crystals": {
+    "standardName": "Crystals",
+    "paramId": "SRA_P1101"
+  },
+  "DEPOSITS :": {
+    "standardName": "DEPOSITS :",
+    "paramId": "SRA_P1102"
+  },
+  "Epithelial Cells": {
+    "standardName": "Epithelial Cells",
+    "paramId": "SRA_P1103"
+  },
+  "Frank blood": {
+    "standardName": "Frank blood",
+    "paramId": "SRA_P1104"
+  },
+  "Glucose in Urine": {
+    "standardName": "Glucose in Urine",
+    "paramId": "SRA_P1105"
+  },
+  "Ketone": {
+    "standardName": "Ketone",
+    "paramId": "SRA_P1106"
+  },
+  "Ketones in Urine": {
+    "standardName": "Ketones in Urine",
+    "paramId": "SRA_P1107"
+  },
+  "Leukocyte Esterase": {
+    "standardName": "Leukocyte Esterase",
+    "paramId": "SRA_P1108"
+  },
+  "Leukocyte esterase": {
+    "standardName": "Leukocyte esterase",
+    "paramId": "SRA_P1109"
+  },
+  "Leukocytes": {
+    "standardName": "Leukocytes",
+    "paramId": "SRA_P1110"
+  },
+  "Microorganism": {
+    "standardName": "Microorganism",
+    "paramId": "SRA_P1111"
+  },
+  "Microscopic Examination": {
+    "standardName": "Microscopic Examination",
+    "paramId": "SRA_P1112"
+  },
+  "Nitrite": {
+    "standardName": "Nitrite",
+    "paramId": "SRA_P1113"
+  },
+  "Other compounds in Urine": {
+    "standardName": "Other compounds in Urine",
+    "paramId": "SRA_P1114"
+  },
+  "Protein": {
+    "standardName": "Protein",
+    "paramId": "SRA_P1115"
+  },
+  "Protein urine": {
+    "standardName": "Protein urine",
+    "paramId": "SRA_P1116"
+  },
+  "Protozoa": {
+    "standardName": "Protozoa",
+    "paramId": "SRA_P1117"
+  },
+  "Pus Cells": {
+    "standardName": "Pus Cells",
+    "paramId": "SRA_P1118"
+  },
+  "RBC": {
+    "standardName": "RBC",
+    "paramId": "SRA_P1119"
+  },
+  "Reducing Substances": {
+    "standardName": "Reducing Substances",
+    "paramId": "SRA_P1120"
+  },
+  "SPOT PROTEIN & CREATININE RATIO": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Sediment": {
+    "standardName": "Sediment",
+    "paramId": "SRA_P1121"
+  },
+  "Specific Gravity": {
+    "standardName": "Specific Gravity",
+    "paramId": "SRA_P1122"
+  },
+  "Sugar in Urine": {
+    "standardName": "Sugar in Urine",
+    "paramId": "SRA_P1123"
+  },
+  "Trichomonas Vaginalis": {
+    "standardName": "Trichomonas Vaginalis",
+    "paramId": "SRA_P1124"
+  },
+  "URINE SPOT CREATININE": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "URINE SPOT PROTEIN": {
+    "standardName": "URINE SPOT PROTEIN",
+    "paramId": "SRA_P1125"
+  },
+  "Urinary Albumin": {
+    "standardName": "Urinary Albumin",
+    "paramId": "SRA_P1126"
+  },
+  "Urinary Calcium": {
+    "standardName": "Urinary Calcium",
+    "paramId": "SRA_P1127"
+  },
+  "Urinary Creatinine": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Urinary Sodium": {
+    "standardName": "Urinary Sodium",
+    "paramId": "SRA_P1128"
+  },
+  "Urine Clarity": {
+    "standardName": "Urine Clarity",
+    "paramId": "SRA_P1129"
+  },
+  "Urine Colour": {
+    "standardName": "Urine Colour",
+    "paramId": "SRA_P1130"
+  },
+  "Urine Ketones (1 Hour 30 Mins)": {
+    "standardName": "Urine Ketones (1 Hour 30 Mins)",
+    "paramId": "SRA_P1131"
+  },
+  "Urine Ketones (2 Hour)": {
+    "standardName": "Urine Ketones (2 Hour)",
+    "paramId": "SRA_P1132"
+  },
+  "Urine Ketones (30 Mins)": {
+    "standardName": "Urine Ketones (30 Mins)",
+    "paramId": "SRA_P1133"
+  },
+  "Urine Odour": {
+    "standardName": "Urine Odour",
+    "paramId": "SRA_P1134"
+  },
+  "Urine Spot Microalbumin": {
+    "standardName": "Urine Spot Microalbumin",
+    "paramId": "SRA_P1135"
+  },
+  "Urobilinogen": {
+    "standardName": "Urobilinogen",
+    "paramId": "SRA_P1136"
+  },
+  "VOLUME": {
+    "standardName": "VOLUME",
+    "paramId": "SRA_P1137"
+  },
+  "Yeast cells": {
+    "standardName": "Yeast cells",
+    "paramId": "SRA_P1138"
+  },
+  "pH": {
+    "standardName": "pH",
+    "paramId": "SRA_P1139"
+  },
+  "Dengue IgG": {
+    "standardName": "Dengue IgG",
+    "paramId": "SRA_P1140"
+  },
+  "Dengue IgM": {
+    "standardName": "Dengue IgM",
+    "paramId": "SRA_P1141"
+  },
+  "Dengue NS1": {
+    "standardName": "Dengue NS1",
+    "paramId": "SRA_P1142"
+  },
+  "Malaria (FALCIPARUM)": {
+    "standardName": "Malaria (FALCIPARUM)",
+    "paramId": "SRA_P1143"
+  },
+  "Malaria (VIVAX)": {
+    "standardName": "Malaria (VIVAX)",
+    "paramId": "SRA_P1144"
+  },
+  "S.Typhi AH": {
+    "standardName": "S.Typhi AH",
+    "paramId": "SRA_P1145"
+  },
+  "S.Typhi BH": {
+    "standardName": "S.Typhi BH",
+    "paramId": "SRA_P1146"
+  },
+  "S.Typhi H Antibody": {
+    "standardName": "S.Typhi H Antibody",
+    "paramId": "SRA_P1147"
+  },
+  "S.Typhi O Antibody": {
+    "standardName": "S.Typhi O Antibody",
+    "paramId": "SRA_P1148"
+  },
+  "Typhoid (Widal Test)": {
+    "standardName": "Typhoid (Widal Test)",
+    "paramId": "SRA_P1149"
+  },
+  "Varicella Zoster Ab IgG": {
+    "standardName": "Varicella Zoster Ab IgG",
+    "paramId": "SRA_P1150"
+  },
+  "1,25-Dihydroxy vitamin D": {
+    "standardName": "1,25-Dihydroxy vitamin D",
+    "paramId": "SRA_P1151"
+  },
+  "Biotin": {
+    "standardName": "Biotin",
+    "paramId": "SRA_P1152"
+  },
+  "Ceruloplasmin": {
+    "standardName": "Ceruloplasmin",
+    "paramId": "SRA_P1153"
+  },
+  "Fat Burner": {
+    "standardName": "Fat Burner",
+    "paramId": "SRA_P1154"
+  },
+  "Folate (Folic Acid) *": {
+    "standardName": "Folate (Folic Acid) *",
+    "paramId": "SRA_P1155"
+  },
+  "Glutathione": {
+    "standardName": "Glutathione",
+    "paramId": "SRA_P1156"
+  },
+  "Holotranscobalamin (Active Vitamin B12)": {
+    "standardName": "Holotranscobalamin (Active Vitamin B12)",
+    "paramId": "SRA_P1157"
+  },
+  "Vitamin A": {
+    "standardName": "Vitamin A",
+    "paramId": "SRA_P1158"
+  },
+  "Vitamin B-Complex": {
+    "standardName": "Vitamin B-Complex",
+    "paramId": "SRA_P1159"
+  },
+  "Vitamin B1": {
+    "standardName": "Vitamin B1",
+    "paramId": "SRA_P1160"
+  },
+  "Vitamin B12": {
+    "standardName": "Vitamin B12",
+    "paramId": "SRA_P1161"
+  },
+  "Vitamin B2": {
+    "standardName": "Vitamin B2",
+    "paramId": "SRA_P1162"
+  },
+  "Vitamin B3": {
+    "standardName": "Vitamin B3",
+    "paramId": "SRA_P1163"
+  },
+  "Vitamin B3 (Niacin)": {
+    "standardName": "Vitamin B3 (Niacin)",
+    "paramId": "SRA_P1164"
+  },
+  "Vitamin B6": {
+    "standardName": "Vitamin B6",
+    "paramId": "SRA_P1165"
+  },
+  "Vitamin B7 (BIOTIN)": {
+    "standardName": "Vitamin B7 (BIOTIN)",
+    "paramId": "SRA_P1166"
+  },
+  "Vitamin B9": {
+    "standardName": "Vitamin B9",
+    "paramId": "SRA_P1167"
+  },
+  "Vitamin C": {
+    "standardName": "Vitamin C",
+    "paramId": "SRA_P1168"
+  },
+  "Vitamin D (25-Hydroxy)": {
+    "standardName": "Vitamin D (25-Hydroxy)",
+    "paramId": "SRA_P1169"
+  },
+  "Vitamin E": {
+    "standardName": "Vitamin E",
+    "paramId": "SRA_P1170"
+  },
+  "Vitamin K1 (Phylloquinone)": {
+    "standardName": "Vitamin K1 (Phylloquinone)",
+    "paramId": "SRA_P1171"
+  },
+  "Hemoglobin": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Blood Glucose Fasting": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "HbA1c": {
+    "standardName": "HbA1c",
+    "paramId": "SRA_P007"
+  },
+  "Creatinine": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Hb": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "Hgb": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "HB": {
+    "standardName": "Hemoglobin",
+    "paramId": "SRA_P001"
+  },
+  "FBS": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "FBG": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Sr. Creatinine": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Creatinine, Serum": {
+    "standardName": "Creatinine",
+    "paramId": "SRA_P008"
+  },
+  "Total Chol": {
+    "standardName": "Total Cholesterol",
+    "paramId": "SRA_P002"
+  },
+  "HDL-C": {
+    "standardName": "HDL Cholesterol",
+    "paramId": "SRA_P003"
+  },
+  "LDL-C": {
+    "standardName": "LDL Cholesterol",
+    "paramId": "SRA_P004"
+  },
+  "TG": {
+    "standardName": "Triglycerides",
+    "paramId": "SRA_P005"
+  },
+  "TC": {
+    "standardName": "Total Cholesterol",
+    "paramId": "SRA_P002"
+  },
+  "ALT": {
+    "standardName": "SGPT (ALT)",
+    "paramId": "SRA_P009"
+  },
+  "HbA1C": {
+    "standardName": "HbA1c",
+    "paramId": "SRA_P007"
+  },
+  "Glycosylated Hb": {
+    "standardName": "HbA1c",
+    "paramId": "SRA_P007"
+  },
+  "Fasting Blood Sugar": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Fasting Glucose": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "RBS": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Post Prandial Glucose": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "PP Blood Sugar": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  },
+  "Random Blood Sugar": {
+    "standardName": "Blood Glucose Fasting",
+    "paramId": "SRA_P006"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "report": {
+    "title": "Zdravotní laboratorní zpráva",
+    "summary": "Shrnutí zprávy",
+    "patientInfo": "Informace o pacientovi",
+    "patientName": "Jméno pacienta",
+    "patient": "Pacient",
+    "age": "Věk",
+    "gender": "Pohlaví",
+    "labNo": "Číslo laboratoře",
+    "workOrderId": "ID pracovní objednávky",
+    "referredBy": "Odeslal",
+    "reportDate": "Datum zprávy",
+    "date": "Datum",
+    "totalTests": "Celkem testů",
+    "normal": "Normální",
+    "needAttention": "Vyžaduje pozornost",
+    "profileSummary": "Shrnutí profilu",
+    "healthInsights": "Přehled zdraví a analýza",
+    "overallHealthScore": "Celkové skóre zdraví",
+    "riskAssessment": "Posouzení rizik",
+    "keyRecommendations": "Klíčová doporučení",
+    "keyFindings": "Klíčová zjištění",
+    "basedOnBiomarkers": "Založeno na analýze {count} biomarkerů.",
+    "noRiskFactors": "Na základě aktuálních výsledků nebyly identifikovány žádné specifické rizikové faktory.",
+    "keepUpLifestyle": "Pokračujte ve zdravém životním stylu!",
+    "consultProvider": "Pro podrobné vedení se poraďte se svým poskytovatelem zdravotní péče.",
+    "consultProviderBrief": "Pro personalizované vedení se poraďte se svým poskytovatelem zdravotní péče.",
+    "importantNote": "Tato doporučení jsou obecné pokyny. Před provedením jakýchkoli změn v dietě, cvičení nebo lécích se vždy poraďte se svým poskytovatelem zdravotní péče.",
+    "allNormal": "Všechny testy jsou v normálním rozsahu.",
+    "noAbnormalFindings": "Všechny výsledky testů jsou v normální referenční oblasti. Žádné abnormální nálezy k hlášení.",
+    "testsRequireAttention": "{count} test(ů) vyžaduje pozornost",
+    "generateDate": "Vygenerováno:"
+  },
+  "status": {
+    "normal": "Normální",
+    "borderline": "Hraniční",
+    "abnormal": "Abnormální",
+    "highRisk": "Vysoké riziko",
+    "critical": "Kritické",
+    "allNormal": "Vše normální",
+    "review": "K revizi",
+    "needsAttention": "Vyžaduje pozornost"
+  },
+  "gender": {
+    "male": "Muž",
+    "female": "Žena"
+  },
+  "format": {
+    "years": "let",
+    "compactReport": "Stručná laboratorní zpráva",
+    "hybridReport": "Laboratorní zpráva (hybridní formát)"
+  }
+}

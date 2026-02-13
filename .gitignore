@@ -3,4 +3,11 @@ dist/
 *.log
 .DS_Store
 reports/*.pdf
+reports/debug.html
 !reports/.gitkeep
+
+# Test outputs (from test-pdf, test-analytics)
+test-output/
+test-output-*.pdf
+output-*-test.html
+storage/

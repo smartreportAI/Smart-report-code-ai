@@ -1,0 +1,345 @@
+{
+    "Hemoglobin": {
+        "displayName": {
+            "en": "Hemoglobin",
+            "hi": "हीमोग्लोबिन",
+            "cz": "Hemoglobin",
+            "ar": "الهيموجلوبين"
+        },
+        "sliderType": "LNH",
+        "chartType": "BC",
+        "category": "Complete Blood Count",
+        "text": {
+            "en": "Hemoglobin is a protein in red blood cells that carries oxygen throughout your body.",
+            "hi": "हीमोग्लोबिन लाल रक्त कोशिकाओं में एक प्रोटीन है जो आपके पूरे शरीर में ऑक्सीजन ले जाता है।"
+        },
+        "recommendations": {
+            "low": [
+                "Increase iron-rich foods (spinach, red meat, beans)",
+                "Consider iron supplements after consulting your doctor",
+                "Get tested for iron deficiency anemia",
+                "Ensure adequate vitamin C intake for better iron absorption"
+            ],
+            "high": [
+                "Stay well hydrated",
+                "Avoid smoking",
+                "Consult a doctor to rule out underlying conditions",
+                "Monitor oxygen levels if living at high altitude"
+            ],
+            "normal": [
+                "Maintain a balanced diet",
+                "Stay hydrated",
+                "Regular exercise helps maintain healthy blood cells"
+            ]
+        }
+    },
+    "Total Cholesterol": {
+        "displayName": {
+            "en": "Total Cholesterol",
+            "hi": "कुल कोलेस्ट्रॉल",
+            "cz": "Celkový cholesterol",
+            "ar": "الكوليسترول الكلي"
+        },
+        "sliderType": "LH",
+        "chartType": "BC",
+        "category": "Lipid Profile",
+        "text": {
+            "en": "Total cholesterol measures all the cholesterol in your blood, including LDL and HDL.",
+            "hi": "कुल कोलेस्ट्रॉल आपके रक्त में सभी कोलेस्ट्रॉल को मापता है, जिसमें एलडीएल और एचडीएल शामिल हैं।"
+        },
+        "recommendations": {
+            "low": [
+                "Ensure adequate healthy fats in diet",
+                "Include nuts, avocados, and olive oil",
+                "Consult doctor if persistently low"
+            ],
+            "high": [
+                "Reduce saturated and trans fats",
+                "Increase fiber intake (oats, beans, fruits)",
+                "Exercise regularly (30 minutes daily)",
+                "Consider medication if lifestyle changes insufficient",
+                "Limit red meat and full-fat dairy"
+            ],
+            "normal": [
+                "Maintain current healthy diet",
+                "Continue regular exercise",
+                "Annual cholesterol screening recommended"
+            ]
+        }
+    },
+    "HDL Cholesterol": {
+        "displayName": {
+            "en": "HDL Cholesterol (Good Cholesterol)",
+            "hi": "एचडीएल कोलेस्ट्रॉल (अच्छा कोलेस्ट्रॉल)",
+            "cz": "HDL cholesterol",
+            "ar": "كوليسترول HDL"
+        },
+        "sliderType": "NH",
+        "chartType": "BC",
+        "category": "Lipid Profile",
+        "text": {
+            "en": "HDL cholesterol helps remove other forms of cholesterol from your bloodstream. Higher levels are better.",
+            "hi": "एचडीएल कोलेस्ट्रॉल आपके रक्तप्रवाह से कोलेस्ट्रॉल के अन्य रूपों को हटाने में मदद करता है। उच्च स्तर बेहतर हैं।"
+        },
+        "recommendations": {
+            "low": [
+                "Exercise regularly (aerobic exercise raises HDL)",
+                "Quit smoking (smoking lowers HDL)",
+                "Include healthy fats (olive oil, nuts, fatty fish)",
+                "Lose weight if overweight",
+                "Limit refined carbohydrates"
+            ],
+            "high": [
+                "Excellent! Maintain current lifestyle",
+                "Continue healthy eating habits",
+                "Keep up regular exercise routine"
+            ],
+            "normal": [
+                "Maintain healthy lifestyle",
+                "Regular exercise",
+                "Balanced diet with healthy fats"
+            ]
+        }
+    },
+    "LDL Cholesterol": {
+        "displayName": {
+            "en": "LDL Cholesterol (Bad Cholesterol)",
+            "hi": "एलडीएल कोलेस्ट्रॉल (खराब कोलेस्ट्रॉल)",
+            "cz": "LDL cholesterol",
+            "ar": "كوليسترول LDL"
+        },
+        "sliderType": "LH",
+        "chartType": "BC",
+        "category": "Lipid Profile",
+        "text": {
+            "en": "LDL cholesterol can build up in artery walls. Lower levels are better for heart health.",
+            "hi": "एलडीएल कोलेस्ट्रॉल धमनी की दीवारों में जमा हो सकता है। हृदय स्वास्थ्य के लिए निम्न स्तर बेहतर हैं।"
+        },
+        "recommendations": {
+            "low": [
+                "Good! Maintain current lifestyle",
+                "Continue heart-healthy diet"
+            ],
+            "high": [
+                "Reduce saturated fats (red meat, butter, cheese)",
+                "Increase soluble fiber (oats, beans, apples)",
+                "Exercise 30 minutes daily",
+                "Consider statin medication if very high",
+                "Eliminate trans fats completely"
+            ],
+            "normal": [
+                "Maintain healthy diet",
+                "Regular exercise",
+                "Monitor annually"
+            ]
+        }
+    },
+    "Triglycerides": {
+        "displayName": {
+            "en": "Triglycerides",
+            "hi": "ट्राइग्लिसराइड्स",
+            "cz": "Triglyceridy",
+            "ar": "الدهون الثلاثية"
+        },
+        "sliderType": "LH",
+        "chartType": "BC",
+        "category": "Lipid Profile",
+        "text": {
+            "en": "Triglycerides are a type of fat in your blood. High levels increase heart disease risk.",
+            "hi": "ट्राइग्लिसराइड्स आपके रक्त में एक प्रकार की वसा है। उच्च स्तर हृदय रोग के जोखिम को बढ़ाते हैं।"
+        },
+        "recommendations": {
+            "low": [
+                "Normal finding",
+                "Maintain healthy lifestyle"
+            ],
+            "high": [
+                "Limit sugar and refined carbohydrates",
+                "Reduce alcohol consumption",
+                "Lose weight if overweight",
+                "Exercise regularly",
+                "Increase omega-3 fatty acids (fish, flaxseed)",
+                "Avoid sugary drinks completely"
+            ],
+            "normal": [
+                "Maintain current diet",
+                "Regular physical activity",
+                "Limit alcohol and sugar"
+            ]
+        }
+    },
+    "Blood Glucose Fasting": {
+        "displayName": {
+            "en": "Blood Glucose (Fasting)",
+            "hi": "रक्त शर्करा (उपवास)",
+            "cz": "Glukóza nalačno",
+            "ar": "جلوكوز الدم (صائم)"
+        },
+        "sliderType": "LNH",
+        "chartType": "GC",
+        "category": "Diabetes Profile",
+        "text": {
+            "en": "Fasting blood glucose measures blood sugar levels after not eating for 8-12 hours.",
+            "hi": "उपवास रक्त शर्करा 8-12 घंटे तक न खाने के बाद रक्त शर्करा के स्तर को मापता है।"
+        },
+        "recommendations": {
+            "low": [
+                "Eat regular meals",
+                "Include complex carbohydrates",
+                "Consult doctor if symptoms persist",
+                "Avoid skipping meals"
+            ],
+            "high": [
+                "Reduce refined carbohydrates and sugar",
+                "Exercise regularly (helps insulin sensitivity)",
+                "Lose weight if overweight",
+                "Monitor blood sugar regularly",
+                "Consult endocrinologist if persistently high",
+                "Consider diabetes screening"
+            ],
+            "normal": [
+                "Maintain balanced diet",
+                "Regular exercise",
+                "Annual screening recommended"
+            ]
+        }
+    },
+    "HbA1c": {
+        "displayName": {
+            "en": "HbA1c (Glycated Hemoglobin)",
+            "hi": "एचबीए1सी (ग्लाइकेटेड हीमोग्लोबिन)",
+            "cz": "HbA1c",
+            "ar": "الهيموجلوبين السكري"
+        },
+        "sliderType": "LH",
+        "chartType": "GC",
+        "category": "Diabetes Profile",
+        "text": {
+            "en": "HbA1c shows average blood sugar levels over the past 2-3 months. Important for diabetes management.",
+            "hi": "एचबीए1सी पिछले 2-3 महीनों में औसत रक्त शर्करा के स्तर को दर्शाता है। मधुमेह प्रबंधन के लिए महत्वपूर्ण।"
+        },
+        "recommendations": {
+            "low": [
+                "Good control",
+                "Maintain current management"
+            ],
+            "high": [
+                "Improve blood sugar control",
+                "Review diabetes medication with doctor",
+                "Strict diet control",
+                "Regular blood sugar monitoring",
+                "Increase physical activity",
+                "Consider diabetes education program"
+            ],
+            "normal": [
+                "Excellent diabetes control",
+                "Continue current management",
+                "Regular monitoring"
+            ]
+        }
+    },
+    "Creatinine": {
+        "displayName": {
+            "en": "Creatinine",
+            "hi": "क्रिएटिनिन",
+            "cz": "Kreatinin",
+            "ar": "الكرياتينين"
+        },
+        "sliderType": "LH",
+        "chartType": "BC",
+        "category": "Kidney Function Test",
+        "text": {
+            "en": "Creatinine is a waste product filtered by kidneys. Levels indicate kidney function.",
+            "hi": "क्रिएटिनिन गुर्दे द्वारा फ़िल्टर किया गया एक अपशिष्ट उत्पाद है। स्तर गुर्दे के कार्य को इंगित करते हैं।"
+        },
+        "recommendations": {
+            "low": [
+                "Usually not concerning",
+                "Ensure adequate protein intake",
+                "Consult doctor if very low"
+            ],
+            "high": [
+                "Increase water intake",
+                "Reduce protein intake if very high",
+                "Avoid NSAIDs (ibuprofen, etc.)",
+                "Consult nephrologist",
+                "Monitor kidney function regularly",
+                "Control blood pressure and diabetes"
+            ],
+            "normal": [
+                "Good kidney function",
+                "Stay well hydrated",
+                "Maintain healthy lifestyle"
+            ]
+        }
+    },
+    "SGPT (ALT)": {
+        "displayName": {
+            "en": "SGPT/ALT (Liver Enzyme)",
+            "hi": "एसजीपीटी/एएलटी (यकृत एंजाइम)",
+            "cz": "SGPT/ALT",
+            "ar": "إنزيم الكبد ALT"
+        },
+        "sliderType": "LH",
+        "chartType": "BC",
+        "category": "Liver Function Test",
+        "text": {
+            "en": "SGPT/ALT is an enzyme found in the liver. Elevated levels may indicate liver damage.",
+            "hi": "एसजीपीटी/एएलटी यकृत में पाया जाने वाला एक एंजाइम है। ऊंचा स्तर यकृत क्षति का संकेत दे सकता है।"
+        },
+        "recommendations": {
+            "low": [
+                "Normal finding",
+                "No action needed"
+            ],
+            "high": [
+                "Limit alcohol consumption",
+                "Avoid hepatotoxic medications",
+                "Lose weight if overweight (fatty liver)",
+                "Get tested for hepatitis",
+                "Consult hepatologist if very high",
+                "Avoid processed foods"
+            ],
+            "normal": [
+                "Good liver health",
+                "Limit alcohol",
+                "Maintain healthy weight"
+            ]
+        }
+    },
+    "TSH": {
+        "displayName": {
+            "en": "TSH (Thyroid Stimulating Hormone)",
+            "hi": "टीएसएच (थायराइड उत्तेजक हार्मोन)",
+            "cz": "TSH",
+            "ar": "الهرمون المنبه للغدة الدرقية"
+        },
+        "sliderType": "LNH",
+        "chartType": "GC",
+        "category": "Thyroid Profile",
+        "text": {
+            "en": "TSH regulates thyroid hormone production. Abnormal levels indicate thyroid dysfunction.",
+            "hi": "टीएसएच थायराइड हार्मोन उत्पादन को नियंत्रित करता है। असामान्य स्तर थायराइड की शिथिलता का संकेत देते हैं।"
+        },
+        "recommendations": {
+            "low": [
+                "May indicate hyperthyroidism",
+                "Consult endocrinologist",
+                "Get complete thyroid panel",
+                "Monitor symptoms (weight loss, rapid heartbeat)"
+            ],
+            "high": [
+                "May indicate hypothyroidism",
+                "Consult endocrinologist",
+                "May need thyroid hormone replacement",
+                "Get complete thyroid panel",
+                "Monitor symptoms (fatigue, weight gain)"
+            ],
+            "normal": [
+                "Good thyroid function",
+                "Annual screening if family history",
+                "Maintain healthy lifestyle"
+            ]
+        }
+    }
+}
